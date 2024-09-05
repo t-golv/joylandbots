@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @keyframes char {
-    0%,100% {
-        transform:scale(1);
-    }
-    50% {
-        transform:scale(.95);    
-    }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95) translateY(0.2rem);
+  }
 }
 .bg {
   background-size: cover;
@@ -16,71 +17,77 @@
   height: 100%;
   z-index: -2;
   opacity: 1;
-
 }
 .container1 {
   backdrop-filter: blur(1rem);
-  background: rgba(0,0,0,0.8) url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F474x%2F50%2F63%2F2c%2F50632cec7901b4d9ac1fd9ee18e9a2a0--mike-dantoni-moodboard.jpg&f=1&nofb=1&ipt=276a2b7d01482e32c1dd400189cb93958cd58e1fff40fba30c6d9580b8167182&ipo=images) no-repeat center bottom;
-  background-size:cover;
-  background-blend-mode:multiply;
+  background: rgba(0, 0, 0, 0.8)
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F474x%2F50%2F63%2F2c%2F50632cec7901b4d9ac1fd9ee18e9a2a0--mike-dantoni-moodboard.jpg&f=1&nofb=1&ipt=276a2b7d01482e32c1dd400189cb93958cd58e1fff40fba30c6d9580b8167182&ipo=images)
+    no-repeat center bottom;
+  background-size: cover;
+  background-blend-mode: multiply;
   padding: 2rem 2rem 0;
-  border-radius:1rem;
-  margin: 1rem auto -2rem;
+  border-radius: 1rem;
+  margin: 1rem auto -2.25rem;
   z-index: -1;
-    overflow:hidden;
+  box-shadow: 0.2rem 0 0.3rem;
+  overflow: hidden;
 }
-.container1 > h3 { font-family: "Roboto Mono", monospace;
-    color:white;
-  text-transform:uppercase;
-  margin: .5rem 0;
-    font-size:2rem;
+.container1 > h3 {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  font-size: 2rem;
 }
-.container1 > p { font-family: "Roboto Mono", monospace;
-    color:#aaa;
-  font-weight:600;
-  text-transform:capitalize;
+.container1 > p {
+  font-family: "Roboto Mono", monospace;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .img-container {
-   width:100%;
-  position:relative;
-   margin-top:-5%;
-   gap:1rem;
-  display:flex;
-  justify-content:center;
+  width: 100%;
+  position: relative;
+  margin-top: -5%;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
   background-blend-mode: multiply;
 }
 .img-container span {
-  content:"";font-family: "Roboto Mono", monospace;
-  margin:0 -5rem 0 5rem;
-  min-width:150px;
-  height:50;
-  color:white;
-  padding-right:2rem;
-  color: rgb(43,48,58);;
-  padding:.2rem .5rem;
-  background:white;
+  content: "";
+  font-family: "Roboto Mono", monospace;
+  margin: 0 -7rem 0 5rem;
+  min-width: 150px;
+  color: white;
+  padding-right: 2rem;
+  color: rgb(43, 48, 58);
+  padding: 0.2rem 0.5rem;
+  background: white;
+  z-index: -1;
 }
 .img_char {
-    width: 150px;user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
-
-    animation: char 2s infinite  ease-in-out;
+  width: 150px;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  animation: char 2s infinite ease-in-out;
+  z-index: -1;
 }
 .imgurl_1 {
-       content:url("https://64.media.tumblr.com/bc4a0536102f4fb85895f25a6c9a6952/1fd64a36f6922453-83/s540x810/f9e15f50463d661fd4066ba4d12de3d0ee84d316.pnj");
+  content: url("https://64.media.tumblr.com/bc4a0536102f4fb85895f25a6c9a6952/1fd64a36f6922453-83/s540x810/f9e15f50463d661fd4066ba4d12de3d0ee84d316.pnj");
 }
 .imgurl_2 {
-       content:url("https://64.media.tumblr.com/af03afde31981a09d4027c89c0bec0ab/1fd64a36f6922453-d5/s500x750/3ab2ad1b36ed418c15868f5348bc86b608b47d25.pnj");
+  content: url("https://64.media.tumblr.com/af03afde31981a09d4027c89c0bec0ab/1fd64a36f6922453-d5/s500x750/3ab2ad1b36ed418c15868f5348bc86b608b47d25.pnj");
 }
 .container2 {
-    backdrop-filter:blur(1rem);
-    background: rgba(43,48,58, 1);
+  backdrop-filter: blur(1rem);
+  background: rgba(43, 48, 58, 1);
   border: 0.3rem double;
-  color:white;
+  color: white;
   padding: 1rem;
 }
