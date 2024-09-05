@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @keyframes char {
   0%,
@@ -18,6 +19,19 @@
   z-index: -2;
   opacity: 1;
 }
+.sub {
+  position:relative;
+  width:100%;
+  text-align:justify;
+  font-size:.9rem;
+  font-family: "Roboto Mono", monospace;
+}
+.sub::before {
+  content:'Select your scenario: ';
+  color:gray;
+
+}
+
 .container1 {
   backdrop-filter: blur(1rem);
   background: rgba(0, 0, 0, 0.8)
