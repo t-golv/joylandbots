@@ -1,8 +1,6 @@
 body {
     background-color: red;
 }
-.red {
-    color:red;
-    background-color: red;
-    /*  */
+.bg-dark {
+    background: #333333;
 }
