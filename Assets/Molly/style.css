@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
+
 @keyframes bgcolor {
   0%,
   100% {
@@ -42,3 +43,22 @@
 .subtitle {
   color: #ff0;
 }
+.note {
+    width: 120px;
+    height: 120px;
+    font-family: Handlee, cursive;
+    margin: 2rem auto;
+    background: #ff0;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    transform: perspective(750px) translate3d(0, 0, -250px) rotateX(60deg)
+        scale(0.9, 0.9);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+}
+.note:hover {
+    transform: translate3d(0px, 0px, -100px); 
+}
+  
