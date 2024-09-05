@@ -28,7 +28,7 @@
   backdrop-filter: blur(1rem) brightness(80%);
   color: white;
   padding: 20px;
-  border-top: 4px groove #ff0;
+  border-top: 5px groove #ff0;
 }
 .h2 {
   text-align: center;
