@@ -1,2 +1,2 @@
-# joylandbots
-html, css and js for joyland messages
+# Joyland.AI Bots Assets
+HTML, CSS and JS for Joyland messages
