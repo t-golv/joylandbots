@@ -27,16 +27,15 @@
   }
 }
 .bg-messages {
-  background:rgba(43, 48, 58, .1) url(https://64.media.tumblr.com/f53d778f329d541ec4c4898d8d47836f/b40f733411448fb1-16/s500x750/959ebef0bb1d0d3854ce4d9d44f796e87073ab5d.gifv) no-repeat;
+   background:url(https://64.media.tumblr.com/3c4c2cd08f17fe49b2a41792ea3a5748/3791248934721603-11/s2048x3072/e73a40f360341eb1cf07dbe971600f4082255ebc.pnj) no-repeat;
   background-size:cover; 
   position: absolute;
-  background-blend-mode:  difference;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: .1;
+  opacity: .2;
 }
 .sub {
   position:relative;
