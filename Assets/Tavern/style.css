@@ -10,23 +10,33 @@
 }
 @keyframes fade-out {
   0% {
-    z-index:2;
-    background: #ffff;
+    opacity:0;
   }
-  80% {
-  z-index:2;
-    background: #fff0;  
+  100% {
+    opacity:1;  
+  }
+}
+@keyframes from-bottom {
+  0% {
+    transform:translateY(10rem);
+    opacity:0;
+  }
+  100% {
+    transform:translateY(0);
+    opacity:1;  
   }
 }
 .bg-messages {
+  background:rgba(43, 48, 58, .1) url(https://64.media.tumblr.com/f53d778f329d541ec4c4898d8d47836f/b40f733411448fb1-16/s500x750/959ebef0bb1d0d3854ce4d9d44f796e87073ab5d.gifv) no-repeat;
+  background-size:cover; 
   position: absolute;
+  background-blend-mode:  difference;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 1;
-  animation: fade-out 2s ease-in-out 1;
+  opacity: .1;
 }
 .sub {
   position:relative;
@@ -34,9 +44,10 @@
   text-align:justify;
   font-size:.9rem;
   font-family: "Roboto Mono", monospace;
+  animation: fade-out 5s ease-in 1;
 }
 .sub::before {
-  content:'Select your scenario: ';
+  content:'Choose Your Scene: ';
   color:gray;
 
 }
@@ -54,6 +65,7 @@
   z-index: -1;
   box-shadow: 0.2rem 0 0.3rem rgba(0,0,0,0.2);
   overflow: hidden;
+  animation: fade-out 2s cubic-bezier(.63,-0.33,0,1.02) 1;
 }
 .container1 > h3 {
   font-family: "Roboto Mono", monospace;
@@ -98,7 +110,7 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  animation: char 2s 2 ease-in-out;
+  animation: char 2s 5 ease-in-out;
   z-index: -1;
   background: linear-gradient(to top, white 0%, transparent 50%);
   border-radius:50% ;
@@ -115,5 +127,6 @@
   background: rgba(43, 48, 58, 1);
   border: 0.3rem double;
   color: white;
+  animation: from-bottom 1s cubic-bezier(.63,-0.33,0,1.02) 1; 
   padding: 1rem;
 }
