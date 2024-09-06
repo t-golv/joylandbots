@@ -7,14 +7,15 @@
 }
 
 .bg {
-  /* background-size: cover;
+  background-image: url(https://64.media.tumblr.com/43cad9a75cb16df615d96f93e915ad38/c55042c5a42028ae-24/s2048x3072/bfaa807805d7c784da05c77770bfb47bf0404580.pnj);
+  background-size: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
-  opacity: 1; */
+  opacity: .8;
 }
 .container1 {
   border: 0.3rem solid #c1292e;
