@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.container-msg-greeting {
+  background: rgba(0,0,0,0.5) url(https://gifdb.com/images/high/blue-ocean-waves-animation-5r41wxyagfhlfttl.gif) no-repeat;
+  background-size: cover;
+  padding: 20px;
+  background-blend-mode:multiply;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.msg-title {
+ font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #2b303a;
+  animation: glow 2s ease-in-out infinite;
+  text-align: center;
+  text-transform:uppercase;
+  color: white;
+}
+.msg-subtitle {
+  color: #fff;
+  text-align: center;
+}
+.msg-picture {
+  border: 10px solid white;
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: url(https://64.media.tumblr.com/8cfc82cf5762cca8caa6f96cfaa725ae/06880a35218e0ea9-4f/s1280x1920/80ccfc8e7c5870134cb503cfd77156c6f36e5d40.pnj)
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-align: center;
+  transform: perspective(750px) translate3d(0px, 0px, -200px) rotateX(70deg)
+    scale(0.8, 1);
+  box-shadow: 0 0 40px -20px white;
+  transition: 0.4s ease-in-out transform;
+}
+.msg-picture:hover {
+  transform:translate3d(0px, 0px, -100px) scale(1.5);
+}
