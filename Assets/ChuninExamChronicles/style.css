@@ -88,7 +88,8 @@
 .img-container > div {
   position:relative;
 } 
-.img-container span {
+.img-container > div::after {
+  content:'';
   font-family: "Roboto Mono", monospace;
   position:absolute;
   bottom:0;
@@ -101,9 +102,7 @@
   border-radius:1rem 0;
   z-index: 1;
 }
-.img_char#sakura:hover {
-  content:url(https://64.media.tumblr.com/b3d90804c38347d81ddee8f4fd638ea7/43d18b6195bed18c-3c/s250x400/421b5e9ba7b5433c8a52c384ef8cb67202697c79.pnj);
-}
+
 .img_char {
   width: 15vw;
   max-width: 150px;
@@ -135,19 +134,36 @@
 #naruto {
   content: url('https://imgur.com/l3J8y24.png');
 }
+.img-container > div:has(>#naruto)::after {
+  content:'Naruto';
+}
 #sasuke {
   content: url('https://imgur.com/kWlSHAN.png');
-  
+}
+.img-container > div:has(>#sasuke)::after {
+  content:'Sasuke';
 }
 #sakura {
   content: url('https://imgur.com/RjjI00M.png');
-  
+}
+.img-container > div:has(>#sakura)::after {
+  content:'Sakura';
+}
+#sakura:hover {
+  content:url(https://64.media.tumblr.com/b3d90804c38347d81ddee8f4fd638ea7/43d18b6195bed18c-3c/s250x400/421b5e9ba7b5433c8a52c384ef8cb67202697c79.pnj);
+}
+.img-container > div:has(>#sakura:hover)::after {
+  content:'Forehead lol';
 }
 #hinata {
   content: url('https://i.imgur.com/UizrmfR.png');
-  
+}
+.img-container > div:has(>#hinata)::after {
+  content:'Hinata';
 }
 #kakashi {
   content: url('https://imgur.com/ZRMXlpU.png');
-  
+}
+.img-container > div:has(>#kakashi)::after {
+  content:'Kakashi';
 }
