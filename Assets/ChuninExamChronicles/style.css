@@ -85,6 +85,7 @@
   gap:1%;
   justify-content: center;
   align-items: flex-end;
+  flex-wrap:wrap;
   background-blend-mode: multiply;
 }
 .img-container > span {
@@ -99,6 +100,7 @@
   color: white;
   padding-right: 2rem;
   color: rgb(43, 48, 58);
+  font-size: 80%;
   padding: 0.2rem 0.5rem;
   background: white;
   border-radius:1rem 0;
@@ -106,9 +108,12 @@
 }
 
 .img_char {
+  min-width:100px;
   width: 15vw;
-  max-width: 150px;
-  height:150px;
+  max-width: 200px;
+  min-height:100px;
+  height:15vw;
+  max-height: 200px;
   object-fit:cover;
   user-drag: none;
   user-select: none;
