@@ -1,11 +1,14 @@
-.iframe-sibling::after {
+.iframe-parent::after {
   opacity: 0;
   word-break: break-all;
   height: calc(50vh);
   max-height: 600px;
   box-sizing: content-box;
   min-height: 300px;
-  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" !important;
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" !important;
+}
+.iframe-parent > p {
+  opacity: 0;
 }
 .iframe-greeting {
   position: absolute;
@@ -14,6 +17,7 @@
   left: 0;
   z-index: 2;
   right: 0;
+  min-height:300px;
   height: 100%;
   bottom: 0;
 }
