@@ -1,19 +1,70 @@
-.iframe-sibling::after {
-  opacity: 0;
-  word-break: break-all;
-  height: calc(50vh);
-  max-height: 600px;
-  box-sizing: content-box;
-  min-height: 300px;
-  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" !important;
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  color: white;
 }
-.iframe-greeting {
+html,body {
+  width:100vw;
+  height:100vh;
+  background:gray;
+}
+.carousel {
+  --current-slide: 0;
+  /* we set position relative so absolute position works properly for the buttons */
+  position: relative;
+  overflow: hidden;
+  height:100vh;
+  width:100vw;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.carousel-button {
+  /* vertically centering the buttons */
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  right: 0;
-  height: 100%;
-  bottom: 0;
+  z-index: 1;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  /* basic styling */
+  padding: 0;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.1s;
 }
+.material-symbols-outlined {
+    color:white;
+}
+.carousel-button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+  /* The "next slide button" will be at the right */
+  right: 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    padding:1rem;
+    flex: 0 0 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height:100vh;
+    overflow-y: scroll;
+}
+
+
