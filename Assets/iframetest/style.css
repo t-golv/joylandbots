@@ -66,5 +66,23 @@ html,body {
     height:100vh;
     overflow-y: scroll;
 }
-
+.iframe-sibling::after {
+  opacity: 0;
+  word-break: break-all;
+  height: calc(50vh);
+  max-height: 600px;
+  box-sizing: content-box;
+  min-height: 300px;
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" !important;
+}
+.iframe-greeting {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+}
 
