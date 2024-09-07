@@ -82,8 +82,7 @@
 .img-container {
   width: 100%;
   position: relative;
-  margin-top: -5%;
-  gap: .5rem;
+  margin-top: -1%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -101,6 +100,9 @@
   background: white;
   z-index: 1;
 }
+.img_char#sakura:hover {
+  content:url(https://64.media.tumblr.com/b3d90804c38347d81ddee8f4fd638ea7/43d18b6195bed18c-3c/s250x400/421b5e9ba7b5433c8a52c384ef8cb67202697c79.pnj);
+}
 .img_char {
   width: 150px;
   height:150px;
@@ -114,7 +116,6 @@
   animation: char 2s 5 ease-in-out;
   z-index: -1;
   background: linear-gradient(to top, white 0%, transparent 50%);
-  border-radius:50% ;
   transform: translateY(0.5rem);
 }
 
