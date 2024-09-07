@@ -1,135 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Guerrilla&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-@keyframes char {
-  0%,
-  100% {
-    background-position: center center;
+@keyframes scal {
+  0%,100% {
+    background-position: top;
   }
   50% {
-    background-position: center bottom;
+    background-position: bottom;
   }
 }
-@keyframes fade-out {
-  0% {
-    opacity:0;
+@keyframes fade-in-out {
+  0%, 100%{
+    opacity:.7;
   }
-  100% {
-    opacity:1;  
-  }
-}
-@keyframes from-bottom {
-  0% {
-    transform:translateY(10rem);
-    opacity:0;
-  }
-  100% {
-    transform:translateY(0);
-    opacity:1;  
+  50% {
+    opacity:.3;
   }
 }
-.bg-messages {
-   background:url(https://64.media.tumblr.com/3c4c2cd08f17fe49b2a41792ea3a5748/3791248934721603-11/s2048x3072/e73a40f360341eb1cf07dbe971600f4082255ebc.pnj) no-repeat;
-  background-size:cover; 
+
+.bg-message {
   position: absolute;
-  bottom: 0;
   left: 0;
+  top: 0;
+  background: url(https://64.media.tumblr.com/d2b47102e6007788a9516efcdb819736/621546534a23d323-d3/s540x810/fbc7dc6294dcaabcb80aa66003e5b8998bbff5ba.jpg)
+    no-repeat;
+  background-size:cover;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: .2;
 }
-.sub {
-  position:relative;
+.container-msg-greeting::before {
+content:'';
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;
-  text-align:justify;
-  font-size:.9rem;
-  font-family: "Roboto Mono", monospace;
-  animation: fade-out 5s ease-in 1;
+  height:100%;
+  z-index:-1;
+  background: url(https://64.media.tumblr.com/4b46c422fa1441c1b522e9c2f7603394/0b309683aa48bd8c-5a/s500x750/8971439ea94fe5d5b4b8a441755f8593faf1cbd0.gifv)
+    no-repeat;
+  background-size:cover;
+  animation: fade-in-out 2s ease-in-out infinite;
+  opacity: 0;
 }
-.sub::before {
-  content:'Choose Your Scene: ';
-  color:gray;
-
-}
-
-.container1 {
-  backdrop-filter: blur(1rem);
-  background: rgba(0, 0, 0, 0.8)
-    url(https://imgur.com/w3B4Ej7.png)
-    no-repeat center bottom;
-  background-size: cover;
-  background-blend-mode: multiply;
-  padding: 2rem 2rem 0;
-  border-radius: 1rem;
-  margin: 1rem auto -2.25rem;
-  z-index: -1;
-  box-shadow: 0.2rem 0 0.3rem rgba(0,0,0,0.2);
-  overflow: hidden;
-  animation: fade-out 2s cubic-bezier(.63,-0.33,0,1.02) 1;
-}
-.container1 > h3 {
-  font-family: "Roboto Mono", monospace;
+.container-msg-greeting {
+  background: rgba(43, 48, 58, 0.7);
+  border-radius: 5px;
   color: white;
-  text-transform: uppercase;
-  margin: 0.5rem 0;
-  font-size: 2rem;
-}
-.container1 > p {
-  font-family: "Roboto Mono", monospace;
-  color: #aaa;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-.img-container {
-  width: 100%;
-  position: relative;
-  margin-top: -1%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-blend-mode: multiply;
-}
-.img-container span {
-  content: "";
-  font-family: "Roboto Mono", monospace;
-  margin: 0 -100px 0 0;
-  width: 100px;
-  color: white;
-  padding-right: 2rem;
-  color: rgb(43, 48, 58);
-  padding: 0.2rem 0.5rem;
-  background: white;
-  border-radius:1rem 0;
-  z-index: 1;
-}
-.img_char#sakura:hover {
-  content:url(https://64.media.tumblr.com/b3d90804c38347d81ddee8f4fd638ea7/43d18b6195bed18c-3c/s250x400/421b5e9ba7b5433c8a52c384ef8cb67202697c79.pnj);
-}
-.img_char {
-  width: 150px;
-  height:150px;
-  object-fit:contain;
-  user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  animation: char 2s 5 ease-in-out;
-  border-radius:50% 0;
+  position:relative;
+  backdrop-filter: blur(0.5rem) brightness(100%);
+  padding: 1.5rem;  
   overflow:hidden;
-  z-index: -1;
-  background: linear-gradient(to top, white 0%, transparent 50%);
-  background-size: 100% 300px;
-  transform: translateY(0.5rem);
-    background-position: center center;
+  box-shadow: inset 0rem 6rem 3rem -4rem #cc000042;
 }
-
-.container2 {
-  backdrop-filter: blur(1rem);
-  background: rgba(43, 48, 58, 1);
-  border: 0.3rem double;
-  color: white;
-  animation: from-bottom 1s cubic-bezier(.63,-0.33,0,1.02) 1; 
-  padding: 1rem;
+.container-msg-greeting hr {
+  border-color: #faa !important;
 }
+.container-msg-greeting strong,
+.container-msg-greeting i {
+  color: #faa !important;
+}
+.title-message {
+  background:  linear-gradient(to bottom, #faa 0%, white 100%) no-repeat;
+  background-position:center top;
+  background-clip:text;
+  background-size: 100% 200px;
+  animation: scal 2s ease-in-out infinite;
+  text-align: center;
+  color: transparent !important;  
+  font-family: "Protest Guerrilla", sans-serif;
