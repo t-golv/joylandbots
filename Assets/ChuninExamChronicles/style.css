@@ -38,15 +38,12 @@
   z-index: -1;
   opacity: .2;
 }
-.sub {
-  position:relative;
-  width:100%;
-  text-align:justify;
-  font-size:.9rem;
+.container1 > p::after {
+  content:'(1) for Act 1 - (2) For Act 2 - (3) for Act 3';
   font-family: "Roboto Mono", monospace;
-  animation: fade-out 5s ease-in 1;
+  text-transform:uppercase;
+  z-index:20;
 }
-
 .container1 {
   backdrop-filter: blur(1rem);
   background: rgba(0, 0, 0, 0.5)
