@@ -1,9 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@keyframes to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 *{
   padding:0;
   margin:0;
   box-sizing:border-box;
-  color: white;
+  color: white;  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+}
+h1 {
+    font-size: calc(1rem + 3vw);
+    /* animation: to-top 1s ease-out; */
+}
+h2 {
+    font-size: calc(.9rem + 2.8vw);
+}
+h3 {
+    font-size: calc(.8rem + 2.6vw);
+}
+h4 {
+    font-size: calc(.7rem + 2.4vw);
+}
+h5 {
+    font-size: calc(.6rem + 2.3vw);
+}
+h6{
+      font-size: calc(.6rem + 2vw);
+}
+p {
+    font-size: calc(.5rem + 2vw);
+  font-weight: 400;
+
 }
 html,body {
   width:100vw;
@@ -55,9 +93,12 @@ html,body {
 }
 
 .slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
-    padding:1rem;
+    padding:1rem 2rem;
     flex: 0 0 100%;
     display:flex;
     align-items:center;
@@ -67,3 +108,33 @@ html,body {
     overflow-y: scroll;
 }
 
+.card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+/* Credits Section */
+
+
+.credits-img {
+  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.credits-link {
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  text-decoration: none;
+}
+.credits-link p {
+  margin-bottom: .5rem;
+}
+.credits-link em {
+  text-transform: uppercase;
+  color: gray;
+}
