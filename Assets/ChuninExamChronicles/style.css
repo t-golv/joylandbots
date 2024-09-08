@@ -109,10 +109,10 @@
 
 .img_char {
   min-width:100px;
-  width: 15vw;
+  width: 10vw;
   max-width: 200px;
   min-height:100px;
-  height:15vw;
+  height:10vw;
   max-height: 200px;
   object-fit:cover;
   user-drag: none;
