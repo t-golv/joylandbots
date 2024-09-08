@@ -7,9 +7,6 @@
     content: "---------------------------------------------------------------------------------------------------------------------" !important;
     display: block;
 }
-.iframe-parent .msg-dialogue {  
-margin-top: 24px;
-}
 .iframe-greeting {
   position: absolute;
 display:block;
@@ -21,4 +18,21 @@ display:block;
 height:calc(30vh + 24px);
 max-height:500px;
 border-radius: 0 .5rem 0 0;
+}
+.iframe-parent .msg-dialogue {  
+margin-top: 24px;
+  background-color:rgba(43,48,58,.7);
+  background-image: linear-gradient(to top,rgba(44,48,58,1), rgba(43,48,58,.5));
+  color:white;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,.2);
+  padding:1rem;
+  border:.5rem double rgba(255,255,255,0.5);
+}
+.iframe-parent .msg-dialogue h1,
+.iframe-parent .msg-dialogue h2,
+.iframe-parent .msg-dialogue h3,
+.iframe-parent .msg-dialogue h4, 
+.iframe-parent .msg-dialogue hr {
+  color:white;
+  border-color:white;
 }
