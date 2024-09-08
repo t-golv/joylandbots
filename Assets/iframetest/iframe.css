@@ -1,23 +1,24 @@
-.iframe-parent::after {
-  opacity: 0;
-  word-break: break-all;
-  height: calc(50vh);
-  max-height: 600px;
-  box-sizing: content-box;
-  min-height: 300px;
-  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" !important;
+.iframe-parent::before {
+    opacity: 0;
+    word-break: auto-phrase;
+    min-height: 138px;
+    height: 30vh;
+    max-height: 488px;
+    content: "---------------------------------------------------------------------------------------------------------------------" !important;
+    display: block;
 }
-.iframe-parent > p {
-  opacity: 0;
+.iframe-parent .msg-dialogue {  
+margin-top: 24px;
 }
 .iframe-greeting {
   position: absolute;
+display:block;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
-  right: 0;
-  min-height:300px;
-  height: 100%;
-  bottom: 0;
+  z-index: -1;
+    min-height: 150px;
+height:calc(30vh + 24px);
+max-height:500px;
+border-radius: 0 .5rem 0 0;
 }
