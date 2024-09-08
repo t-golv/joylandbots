@@ -55,7 +55,7 @@ sub {
 }
 html,body {
   width:100vw;
-    background-color: #151515;
+    background-color: #222;
   height:100vh;
 }
 .carousel {
