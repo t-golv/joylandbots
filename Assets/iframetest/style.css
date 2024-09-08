@@ -20,28 +20,37 @@
 
 }
 h1 {
-    font-size: calc(1rem + 3vw);
+    font-size: calc(1rem + 2vw);
     animation: to-top 1s ease-out;
+    text-align: center;
 }
 h2 {
-    font-size: calc(.9rem + 2.8vw);
+    font-size: calc(.9rem + 1.8vw);
+    text-align: center;
 }
 h3 {
-    font-size: calc(.8rem + 2.6vw);
+    font-size: calc(.8rem + 1.6vw);
+    text-align: center;
 }
 h4 {
-    font-size: calc(.7rem + 2.4vw);
+    font-size: calc(.7rem + 1.4vw);
+    text-align: center;
 }
 h5 {
-    font-size: calc(.6rem + 2.3vw);
+    font-size: calc(.6rem + 1.3vw);
+    text-align: center;
 }
 h6{
-      font-size: calc(.6rem + 2vw);
+      font-size: calc(.6rem + 1vw);
+    text-align: center;
 }
 p {
-    font-size: calc(.5rem + 2vw);
+    font-size: calc(.5rem + .8vw);
   font-weight: 400;
+}
+em {
 
+    font-size: calc(.4rem + .6vw);
 }
 html,body {
   width:100vw;
@@ -118,20 +127,22 @@ html,body {
 
 .credits-img {
   content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
-  width: 100px;
-  height: 100px;
+  width: 15vw;
+  height: 15vw;
   border: 2px solid #8019f6;
   border-radius: 50%;
   object-fit: cover;
+  max-width: 100px;
+  max-height: 100px;
 }
 .credits-link {
   display: flex;
-  gap:1rem;
+  gap: .5rem;
   align-items: center;
   text-decoration: none;
   position: relative;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
 }
 .credits-link em {
   text-transform: uppercase;
