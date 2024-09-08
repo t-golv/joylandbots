@@ -21,7 +21,7 @@
 }
 h1 {
     font-size: calc(1rem + 3vw);
-    /* animation: to-top 1s ease-out; */
+    animation: to-top 1s ease-out;
 }
 h2 {
     font-size: calc(.9rem + 2.8vw);
@@ -110,9 +110,7 @@ html,body {
 
 .card {
   background-color: rgba(255, 255, 255, 0.03);
-  border-radius: 1rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  padding: 2rem;
 }
 
 /* Credits Section */
@@ -122,6 +120,7 @@ html,body {
   content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
   width: 100px;
   height: 100px;
+  border: 2px solid #8019f6;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -130,11 +129,37 @@ html,body {
   gap:1rem;
   align-items: center;
   text-decoration: none;
-}
-.credits-link p {
-  margin-bottom: .5rem;
+  position: relative;
+  flex-direction: column;
+  padding: 2rem;
 }
 .credits-link em {
   text-transform: uppercase;
   color: gray;
+}
+
+.credits-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shape {
+  stroke-dasharray: 100% 100%; 
+  stroke-dashoffset: 220%;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: #8019f6;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.shape:hover {
+  stroke-width: 5px;
+  stroke-dashoffset: -50%;
+  stroke-dasharray: 100%;
+}
+.credits-link:hover h6 {
+  color: #8019f6;
+}
+.credits-link:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2rem 0 rgba(128, 25, 246, 0.5);
 }
