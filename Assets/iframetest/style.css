@@ -40,7 +40,7 @@ h5 {
     text-align: center;
 }
 h6{
-      font-size: calc(.6rem + 1vw);
+      font-size: calc(.5rem + .9vw);
     text-align: center;
 }
 p {
@@ -48,8 +48,10 @@ p {
   font-weight: 400;
 }
 em {
-
-    font-size: calc(.4rem + .6vw);
+  font-size: calc(.45rem + .6vw);
+}
+sub {
+  font-size: calc(.4rem + .55vw);
 }
 html,body {
   width:100vw;
