@@ -53,8 +53,8 @@ em {
 }
 html,body {
   width:100vw;
+    background-color: #151515;
   height:100vh;
-  background:gray;
 }
 .carousel {
   --current-slide: 0;
@@ -72,10 +72,9 @@ html,body {
   position: absolute;
   z-index: 1;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 
   /* basic styling */
-  padding: 0 .5rem;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
@@ -84,9 +83,6 @@ html,body {
 }
 .material-symbols-outlined {
     color:white;
-}
-.carousel-button:hover {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-button_next {
@@ -104,7 +100,6 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
     padding:1rem 2rem;
     flex: 0 0 100%;
