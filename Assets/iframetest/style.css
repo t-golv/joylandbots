@@ -170,3 +170,53 @@ html,body {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2rem 0 rgba(128, 25, 246, 0.5);
 }
+
+.text {
+  letter-spacing: 5px;  
+  position: relative;
+z-index: 2;
+}
+
+.text::before, .text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  height: 100%;
+  z-index: -1;
+}
+
+.text::before {
+  color: #ff00c1;
+  animation: glitch-effect 3s infinite;
+}
+
+.text::after {
+  color: #3498db;
+  animation: glitch-effect 4s infinite;
+}
+
+@keyframes glitch-effect {
+  0% {
+    left: -2px;
+    top: -2px;
+  }
+  25% {
+    left: 2px;
+    top: 0px;
+  }
+  50% {
+    left: -1px;
+    top: 2px;
+  }
+  75% {
+    left: 1px;
+    top: -1px;
+  }
+  100% {
+    left: 0px;
+    top: -2px;
+  }
+}
