@@ -38,7 +38,7 @@
   z-index: -1;
   opacity: .2;
 }
-.container1 > h4::after {
+.container1 > h4::before {
   content:'(1) Act 1 -  (2) Act 2 - (3) Act 3';
   width:100%;
   display:block;
@@ -78,7 +78,8 @@ text-align: center;
   font-family: "Roboto Mono", monospace;
   color: #aaa;
   font-weight: 600;
-      font-size: calc(.5rem + .9vw);
+      font-size: calc(.5rem + .7vw);
+      text-align: justify;
   text-transform: capitalize;
 }
 .img-container {
