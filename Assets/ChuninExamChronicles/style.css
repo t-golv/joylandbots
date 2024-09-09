@@ -47,7 +47,6 @@
   z-index:20;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
   padding: .5rem;
-  font-size: calc(.5rem + .9vw);
   text-align: center;
   margin: 1rem 0;
 }
@@ -71,14 +70,14 @@
   color: white;
   text-transform: uppercase;
   margin: 0.5rem;
-font-size: calc(1rem + 2vw);
+font-size: calc(1rem + 1vw);
 text-align: center;
 }
 .container1 > h4 {
   font-family: "Roboto Mono", monospace;
   color: #aaa;
   font-weight: 600;
-      font-size: calc(.5rem + .7vw);
+      font-size: calc(.5rem + .5vw)
       text-align: justify;
   text-transform: capitalize;
 }
@@ -112,11 +111,9 @@ text-align: center;
 }
 
 .img_char { 
-  min-width:70px;
   max-width: 200px;
-  width: calc(20vw - 3rem);
-  height: calc(20vw - 3rem);
-  min-height:70px;
+  width: 8vw;
+  height: 8vw;
   max-height: 200px;
   object-fit:cover;
   user-drag: none;
