@@ -175,7 +175,7 @@ html,body {
   box-shadow: 0 0 2rem 0 rgba(128, 25, 246, 0.5);
 }
 
-.text {
+.text { 
   position: relative;
 z-index: 2;
 }
