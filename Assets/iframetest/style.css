@@ -139,7 +139,7 @@ html,body {
   text-decoration: none;
   position: relative;
   flex-direction: column;
-  padding: 5rem;
+  padding: 2rem;
 }
 .credits-link em {
   text-transform: uppercase;
