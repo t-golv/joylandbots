@@ -45,9 +45,11 @@
   font-family: "Roboto Mono", monospace;
   text-transform:uppercase;
   z-index:20;
-  font-size: 1rem;
-  color: #de2a;
-  text-shadow:0 0 5px #eee5;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+  padding: .5rem;
+  font-size: calc(.5rem + .9vw);
+  text-align: center;
+  margin: 1rem 0;
 }
 .container1 {
   backdrop-filter: blur(1rem);
@@ -68,13 +70,15 @@
   font-family: "Roboto Mono", monospace;
   color: white;
   text-transform: uppercase;
-  margin: 0.5rem 0;
-  font-size: 2rem;
+  margin: 0.5rem;
+font-size: calc(1rem + 2vw);
+text-align: center;
 }
 .container1 > h4 {
   font-family: "Roboto Mono", monospace;
   color: #aaa;
   font-weight: 600;
+      font-size: calc(.5rem + .9vw);
   text-transform: capitalize;
 }
 .img-container {
@@ -82,10 +86,8 @@
   position: relative;
   margin-top: -1%;
   display: flex;
-  gap:1%;
   justify-content: center;
   align-items: flex-end;
-  flex-wrap:wrap;
   background-blend-mode: multiply;
 }
 .img-container > span {
@@ -93,26 +95,27 @@
 } 
 .img-container > span::after {
   content:'';
+  text-transform: uppercase;
   font-family: "Roboto Mono", monospace;
   position:absolute;
   bottom:0;
   left:0;
-  color: white;
   padding-right: 2rem;
-  color: rgb(43, 48, 58);
-  font-size: 80%;
+  color: white;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 70%;
   padding: 0.2rem 0.5rem;
-  background: white;
   border-radius:1rem 0;
   z-index: 2;
 }
 
-.img_char {
-  min-width:100px;
-  width: 10vw;
+.img_char { 
+  min-width:70px;
   max-width: 200px;
-  min-height:100px;
-  height:10vw;
+  width: calc(20vw - 3rem);
+  height: calc(20vw - 3rem);
+  min-height:70px;
   max-height: 200px;
   object-fit:cover;
   user-drag: none;
@@ -120,10 +123,10 @@
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none;  
   animation: char 2s 5 ease-in-out;
-  z-index: -1;
-  background: linear-gradient(to top, white 0%, transparent 50%);
+  z-index: -1; 
+  background: linear-gradient(to top, rgb(77, 104, 200) 0%, transparent 50%);
   background-size: 100% 300px;
   transform: translateY(0.5rem);
     background-position: center center;
