@@ -59,7 +59,7 @@ html,body {
   height:100vh;
 }
 .carousel {
-  --current-slide: 0;
+  --current-slide: 2;
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
@@ -134,11 +134,12 @@ html,body {
 .credits-link {
   display: flex;
   gap: .5rem;
+  border-radius: 1rem;
   align-items: center;
   text-decoration: none;
   position: relative;
   flex-direction: column;
-  padding: 1rem;
+  padding: 5rem;
 }
 .credits-link em {
   text-transform: uppercase;
@@ -149,22 +150,25 @@ html,body {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 1rem;
+  border: 1px solid #8019f655;
+  z-index: 10;
 }
 .shape {
   stroke-dasharray: 100% 100%; 
-  stroke-dashoffset: 220%;
-  stroke-width: 2px;
+  stroke-dashoffset: 250%;
+  stroke-width: 6px;
   fill: transparent;
   stroke: #8019f6;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .shape:hover {
-  stroke-width: 5px;
+  stroke-width: 8px;
   stroke-dashoffset: -50%;
-  stroke-dasharray: 100%;
+  stroke-dasharray: -250%;
 }
 .credits-link:hover h6 {
-  color: #8019f6;
+  color: #c490ff;
 }
 .credits-link:active {
   background-color: rgba(0, 0, 0, 0.5);
@@ -172,7 +176,6 @@ html,body {
 }
 
 .text {
-  letter-spacing: 5px;  
   position: relative;
 z-index: 2;
 }
