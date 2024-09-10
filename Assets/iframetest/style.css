@@ -24,34 +24,34 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-size: calc(.9rem + 1.8vw);
+    font-size: calc(.9rem + 1.85vw);
     text-align: center;
 }
 h3 {
-    font-size: calc(.8rem + 1.6vw);
+    font-size: calc(.8rem + 1.65vw);
     text-align: center;
 }
 h4 {
-    font-size: calc(.7rem + 1.4vw);
+    font-size: calc(.7rem + 1.45vw);
     text-align: center;
 }
 h5 {
-    font-size: calc(.6rem + 1.3vw);
+    font-size: calc(.6rem + 1.25vw);
     text-align: center;
 }
 h6{
-      font-size: calc(.5rem + .9vw);
+    font-size: calc(.5rem + 1.05vw);
     text-align: center;
 }
 p {
-    font-size: calc(.5rem + .8vw);
+    font-size: calc(.5rem + 1vw);
   font-weight: 400;
 }
 em {
-  font-size: calc(.45rem + .6vw);
+  font-size: calc(.45rem + .8vw);
 }
 sub {
-  font-size: calc(.4rem + .55vw);
+  font-size: calc(.4rem + .6vw);
 }
 html,body {
   width:100vw;
