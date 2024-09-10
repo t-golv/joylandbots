@@ -1,225 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@keyframes to-top {
-  0% {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.iframe-parent::before {
+      opacity: 0;
+    word-break: auto-phrase;
+    min-height: 188px;
+    height: 30vh;
+    max-height: 488px;
+    content: "---------------------------------------------------------------------------------------------------------------------" !important;
+    display: block;
 }
-
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-  color: white;  font-family: "Roboto", sans-serif;
-  font-style: normal;
-
-}
-h1 {
-    font-size: calc(1rem + 2vw);
-    text-align: center;
-}
-h2 {
-    font-size: calc(.9rem + 1.85vw);
-    text-align: center;
-}
-h3 {
-    font-size: calc(.8rem + 1.65vw);
-    text-align: center;
-}
-h4 {
-    font-size: calc(.7rem + 1.45vw);
-    text-align: center;
-}
-h5 {
-    font-size: calc(.6rem + 1.25vw);
-    text-align: center;
-}
-h6{
-    font-size: calc(.5rem + 1.05vw);
-    text-align: center;
-}
-p {
-    font-size: calc(.5rem + 1vw);
-  font-weight: 400;
-}
-em {
-  font-size: calc(.45rem + .8vw);
-}
-sub {
-  font-size: calc(.4rem + .6vw);
-}
-html,body {
-  width:100vw;
-    background-color: #222;
-  height:100vh;
-}
-.carousel {
-  --current-slide: 0;
-  /* we set position relative so absolute position works properly for the buttons */
-  position: relative;
-  overflow: hidden;
-  height:100vh;
-  width:100vw;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-.carousel-button {
-  /* vertically centering the buttons */
-  position: absolute;
-  z-index: 1;
-  height: 100vh;
-  background-color: transparent;
-
-  /* basic styling */
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-
-  transition: color 0.1s;
-}
-.material-symbols-outlined {
-    color:white;
-}
-
-.carousel-button_next {
-  /* The "next slide button" will be at the right */
-  right: 0;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s;
-  transform: translateX(calc(-100% * var(--current-slide)));
-}
-
-.slide {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-blend-mode: multiply;
-    padding:1rem 2rem;
-    flex: 0 0 100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    height:100vh;
-    overflow-y: scroll;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.03);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Credits Section */
-
-
-.credits-img {
-  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
-  width: 15vw;
-  height: 15vw;
-  border: 2px solid #8019f6;
-  border-radius: 50%;
-  object-fit: cover;
-  max-width: 100px;
-  max-height: 100px;
-}
-.credits-link {
-  display: flex;
-  gap: .5rem;
-  border-radius: 1rem;
-  align-items: center;
-  text-decoration: none;
-  position: relative;
-  flex-direction: column;
-  padding: 2rem;
-}
-.credits-link em {
-  text-transform: uppercase;
-  color: gray;
-}
-
-.credits-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-  border: 1px solid #8019f655;
-  z-index: 10;
-}
-.shape {
-  stroke-dasharray: 100% 100%; 
-  stroke-dashoffset: 250%;
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: #8019f6;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-.shape:hover {
-  stroke-width: 8px;
-  stroke-dashoffset: -50%;
-  stroke-dasharray: -250%;
-}
-.credits-link:hover h6 {
-  color: #c490ff;
-}
-.credits-link:active {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 2rem 0 rgba(128, 25, 246, 0.5);
-}
-
-.text { 
-  position: relative;
-z-index: 2;
-}
-
-.text::before, .text::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
+.iframe-greeting {
+   position: absolute;
+display:block;
   width: 100%;
-  opacity: .5;
-  height: 100%;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+    min-height: 200px;
+height:calc(30vh + 24px);
+max-height:500px;
+border-radius: 0 .5rem 0 0;
 }
-
-.text::before {
-  color: #ff00c1;
-  animation: glitch-effect 3s infinite;
+.iframe-parent::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #222;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    border-radius: 2px 8px 8px;
+    left: 0;
+    z-index: -1;
+    background-blend-mode:multiply;
 }
+.iframe-parent .msg-dialogue {  
+    margin-top: 1.5rem;
 
-.text::after {
-  color: #3498db;
-  animation: glitch-effect 4s infinite;
+  position:relative;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .2);
+    padding: 1rem;
+    backdrop-filter: blur(1rem);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
 }
-
-@keyframes glitch-effect {
-  0% {
-    left: -2px;
-    top: -2px;
-  }
-  25% {
-    left: 2px;
-    top: 0px;
-  }
-  50% {
-    left: -1px;
-    top: 2px;
-  }
-  75% {
-    left: 1px;
-    top: -1px;
-  }
-  100% {
-    left: 0px;
-    top: -2px;
-  }
+.iframe-parent .msg-dialogue h1,
+.iframe-parent .msg-dialogue h2,
+.iframe-parent .msg-dialogue h3,
+.iframe-parent .msg-dialogue h4, 
+.iframe-parent .msg-dialogue hr {
+  text-align: center;
+    text-transform: uppercase;
+  color:white;
+  border-color:white;
+  color: gray;
 }
