@@ -1,7 +1,7 @@
 .iframe-parent::before {
     opacity: 0;
     word-break: auto-phrase;
-    min-height: 250px;
+    min-height: 300px;
     height: 30vh;
     max-height: 488px;
     content: "----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" !important;
@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    min-height: 274px;
+    min-height: 324px;
     height: calc(30vh + 24px);
     max-height: 500px;
     overflow: hidden;
