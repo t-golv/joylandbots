@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
 --color1: #00D0FF;
 --font-1: "Irish Grover", system-ui;
-;
+
 --font-2: "Jim Nightshade", cursive;
-;
+
+--font-3:  "Roboto Mono", monospace;;
+
 }
+ @keyframes arrowAnim{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes fade-in {
 0%{
   opacity: 0;
@@ -160,23 +163,25 @@ color: #42739c;
 }
 /* slide section */
 .slide-section {
-position: absolute;
 top: 0%;
-margin-top: 1rem;
-padding: 3rem; 
-background-image: url(https://imgur.com/6ilvEgm.png);
+padding: 2rem; 
+background-image: url(https://64.media.tumblr.com/7eb9131087edecb9e6e639d50fa92873/38e9eb17ba99fb55-40/s2048x3072/d4341681d0c50e45f7bcba69a3872b3660ad22cb.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 overflow-y: scroll;
+min-height: 200px;
 height: 100vh;
+max-height: 500px;
 width: 80vw;
+max-width: 800px;
+background-clip: padding-box;
 }
 
 .slide-section h5,
 .slide-section h3 {
 font-weight: 400;
-padding: .5rem 0;
-font-family: var(--font-1);
+padding-bottom: .5rem;
+font-family: var(--font-2);
 color: black !important;
 }
 
@@ -200,7 +205,7 @@ position: absolute;
 }
 .novel-section .novel-images img {
   opacity: .5;
-  width: 20vw;
+  width: 15vw;
     user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -224,19 +229,32 @@ position: relative;
 min-width: 100%;
 height: 100px;
 }
+.novel-dialogues p {
+  font-family: var(--font-3);
+  
+}
 .novel-dialogues::after {
 content: '...';
 top: -1.5rem;
 position: absolute;
 left: 0;
 padding: .2rem .5rem;
+font-size: 100%;
 background-color: var(--color1);
-color: black;
+color: black; font-family: var(--font-3);
 border-radius: .5rem;
 }
 
 /* Credits Section */
-
+.credits-hat {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  object-fit: contain;
+  top: -20%;
+  right: -10%;
+  transform: rotate(30deg);
+}
 .credits-img {
 content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
 width: 15vw;
