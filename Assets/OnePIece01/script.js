@@ -17,7 +17,6 @@ function setUpCarousel(carousel) {
   function handleNext() {
     currentSlide = modulo(currentSlide + 1, numSlides);
     changeSlide(currentSlide);
-    console.log('oi')
   }
 
   function handlePrevious() {
@@ -27,6 +26,8 @@ function setUpCarousel(carousel) {
 
   function changeSlide(slideNumber) {
     console.log(slideNumber,  slides)
+    currentDialogueIndex = 0
+    nextDialogue()
     animate(slides[slideNumber], slides)
     carousel.style.setProperty('--current-slide', slideNumber);
   }
@@ -47,6 +48,32 @@ function setUpCarousel(carousel) {
   buttonsNext.forEach( buttonNext => buttonNext.addEventListener('click', handleNext))
   console.log(buttonsNext)
   
+ // Array of dialogues
+const dialogues = [
+    {name:"Hinata Hyuga", id: "hinata", dialogue: "aaaaaaaaaaaaaaaaaa"},
+
+    {name:"Hinata Hyuga", id: "hinata", dialogue: "aaaaaaBBBa"},
+];
+
+// Function to change dialogue
+let currentDialogueIndex = 0;
+function nextDialogue() {
+    if (currentDialogueIndex < dialogues.length) {
+        console.log(dialogues)
+        document.querySelector('.novel-section').removeAttribute('id');
+
+        document.querySelector('.novel-section').id = dialogues[currentDialogueIndex].id
+
+        let pEl = document.querySelector('.novel-dialogues p').innerText = dialogues[currentDialogueIndex].dialogue;
+        console.log(pEl)
+        currentDialogueIndex++;
+    } else {
+        handleNext()
+    }
+}
+const novelDialogues = document.querySelector('.novel-dialogues')
+
+novelDialogues.addEventListener('click', nextDialogue)
 }
 
 const carousels = document.querySelectorAll('[data-carousel]');
