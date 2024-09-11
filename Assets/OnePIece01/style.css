@@ -96,10 +96,12 @@ display: none;
 
 .carousel-button {
 /* vertically centering the buttons */
-z-index: 1;
+z-index: 22;
 background-color: transparent;
 /* basic styling */
 border: none;
+padding: .2rem 1rem;
+text-align: center;
 font-size: 1.5rem;
 cursor: pointer;
 transition: color 0.1s;
@@ -160,15 +162,12 @@ color: #42739c;
 .slide-section {
 position: absolute;
 top: 10%;
-
+margin-top: 1rem;
 padding: 3rem; 
 background-image: url(https://imgur.com/6ilvEgm.png);
 background-size: 100% 100%;
 background-repeat: no-repeat;
-/* min-height: 120vh; */
-/* min-width: 500px; */
 overflow-y: scroll;
-/* max-width: 100%; */
 height: 100vh;
 width: 80vw;
 }
@@ -188,17 +187,29 @@ flex-direction: column;
 align-items: center;
 justify-content: end;
 position: absolute;
-width: 100%;
+width: 100vw;
 height: 100vh;
 }
 .novel-images {
 width: 100vw;
-top: 10%;
-height: 70vh;
+bottom: 100px;
 display: flex;
-justify-content: center;
+justify-content: start;
 align-items: flex-end;
 position: absolute;
+}
+.novel-section .novel-images img {
+  opacity: .5;
+  width: 20vw;
+    user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.novel-section.hinata .novel-images #hinata {
+  opacity: 1 !important;
 }
 .novel-dialogues {
 padding: .5rem 1rem;
