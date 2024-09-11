@@ -82,7 +82,7 @@ height: 100vh;
 }
 
 .carousel {
---current-slide: 0;
+--current-slide: 3;
 /* we set position relative so absolute position works properly for the buttons */
 position: relative;
 overflow: hidden;
@@ -161,7 +161,7 @@ color: #42739c;
 /* slide section */
 .slide-section {
 position: absolute;
-top: 10%;
+top: 0%;
 margin-top: 1rem;
 padding: 3rem; 
 background-image: url(https://imgur.com/6ilvEgm.png);
@@ -208,19 +208,24 @@ position: absolute;
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-.novel-section.hinata .novel-images #hinata {
+.novel-section#hinata .novel-images #hinata {
   opacity: 1 !important;
+} 
+.novel-section#hinata .novel-dialogues::after {
+  content: 'Hinata Chan';
 }
 .novel-dialogues {
+  cursor: pointer;
 padding: .5rem 1rem;
 background-color: #143448;
 border-radius: 1rem;
 border: 2px solid var(--color1);
 position: relative;
+min-width: 100%;
 height: 100px;
 }
 .novel-dialogues::after {
-content: 'HIna chan';
+content: '...';
 top: -1.5rem;
 position: absolute;
 left: 0;
@@ -236,22 +241,42 @@ border-radius: .5rem;
 content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
 width: 15vw;
 height: 15vw;
-border: 2px solid #8019f6;
+border: 3px solid var(--color1);
 border-radius: 50%;
 object-fit: cover;
-max-width: 100px;
-max-height: 100px;
+max-width: 150px;
+max-height: 150px;
 }
-
+.card-credits {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+width: 100%;
+  align-items: center;
+padding: 1rem;
+gap: 1rem;
+}
+.card-credits h6 {
+  margin-top: -2.5rem;
+  color: transparent;
+  position: absolute;
+  top: 95%;
+  background-image: linear-gradient(to top, var(--color1), white) ;
+  background-clip:text;
+  font-size: 3rem;
+  z-index: 100;
+  font-family: var(--font-2);
+}
 .credits-link {
 display: flex;
 gap: .5rem;
-border-radius: 1rem;
+border-radius: 50%;
 align-items: center;
 text-decoration: none;
 position: relative;
+max-width: 200px;
+max-height: 200px;
 flex-direction: column;
-padding: 2rem;
 }
 
 .credits-link em {
@@ -263,9 +288,7 @@ color: gray;
 position: absolute;
 top: 0;
 left: 0;
-border-radius: 1rem;
-border: 1px solid #8019f655;
-z-index: 10;
+z-index: -0;
 }
 
 .shape {
@@ -273,7 +296,7 @@ stroke-dasharray: 100% 100%;
 stroke-dashoffset: 250%;
 stroke-width: 6px;
 fill: transparent;
-stroke: #8019f6;
+stroke: var(--color1);
 transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 
@@ -284,14 +307,14 @@ stroke-dasharray: -250%;
 }
 
 .credits-link:hover h6 {
-color: #c490ff;
+color: #8eeaff;
 }
 
 .credits-link:active {
 background-color: rgba(0, 0, 0, 0.5);
-box-shadow: 0 0 2rem 0 rgba(128, 25, 246, 0.5);
+box-shadow: 0 0 2rem 0 var(--color1);
 }
-
+ 
 .text {
 position: relative;
 z-index: 2;
