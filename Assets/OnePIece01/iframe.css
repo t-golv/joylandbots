@@ -35,7 +35,7 @@
 }
 .iframe-parent .msg-dialogue {  
     margin-top: 1.5rem;
-
+display:none;
   position:relative;
     background-color: rgba(255, 255, 255, 0.03);
     color: white;
