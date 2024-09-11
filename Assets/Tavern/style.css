@@ -157,8 +157,8 @@
   background: rgba(43, 48, 58, 1);
   border: 0.3rem double;
   color: white;
-      margin: 2rem 2%;
-    border-radius: 1rem;
+  margin: 2rem 2% !important;
+   border-radius: 1rem;
   animation: from-bottom 1s cubic-bezier(.63,-0.33,0,1.02) 1; 
   padding: 1rem;
 }
