@@ -17,8 +17,9 @@
           Straw Hats</h1>
         <h2
           style="color:var(--color1); margin-top:-1.5rem;font-family:var(--font-2);font-size: calc(1.8rem + 2vw);;word-break:keep-all;font-weight:500;">
-          And The Marine Spy</h2>
-        <button
+          And The Marine's Spy</h2>
+        <button 
+        onclick='audio=document.getElementById("myaudio2"),audio.volume=.4,audio.play()'
           class="carousel-button carousel-button_next"
         data-carousel-button-next
         style="bottom:15%;height: 5vw; width: auto;left:0%;"
@@ -27,6 +28,17 @@
             double_arrow
           </span>  
         </button>
+        <button   onclick='audio=document.getElementById("myaudio"),audio.volume=.2,audio.play()' class="carousel-button carousel-btn-music">
+          <span class="material-symbols-outlined">
+          music_note
+          </span>
+        </button>
+      <audio id="myaudio">
+         <source src="https://t-golv.github.io/joylandbots/Assets/OnePIece01/One_Piece_OST_Overtaken.mp3" type="audio/mpeg" />
+    </audio>
+     <audio id="myaudio2">
+         <source src="https://t-golv.github.io/joylandbots/Assets/OnePIece01/one_piece_ringtone_free_ringtones_for_cell_phones.mp3" type="audio/mpeg" />
+    </audio>
       </div>
       <div class="slide"
         style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, #305778 -100%, black 100%), url(https://imgur.com/DaCTAYB.png);display: flex;align-items:center">
@@ -108,9 +120,11 @@
      
         </header>
         <div class="card-credits">
-
+      <audio id="myaudio3">
+         <source src="https://t-golv.github.io/joylandbots/Assets/OnePIece01/the-one-piece-is-real-can-we-get-much-higher.mp3" type="audio/mpeg" />
+    </audio>
             <sub>Credits:</sub>
-          <a href="https://www.joyland.ai/profile?userId=8Ad2r" class="credits-link" target="_blank">
+          <a onclick='audio=document.getElementById("myaudio3"),audio.volume=.5,audio.play()' href="https://www.joyland.ai/profile?userId=8Ad2r" class="credits-link" target="_blank">
             <img class="credits-img" />
             <svg height="100%" width="100%" class="credits-svg" xmlns="http://www.w3.org/2000/svg">
               <circle r="47%" cx="50%" cy="50%" class="shape" height="100%" width="100%" />
