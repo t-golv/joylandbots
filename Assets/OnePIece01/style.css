@@ -85,7 +85,7 @@ height: 100vh;
 }
 
 .carousel {
---current-slide: 3;
+--current-slide: 0;
 /* we set position relative so absolute position works properly for the buttons */
 position: relative;
 overflow: hidden;
@@ -109,7 +109,18 @@ font-size: 1.5rem;
 cursor: pointer;
 transition: color 0.1s;
 }
-
+.carousel-btn-music {
+  position: absolute;
+  top: 5%;
+  background-color: #143448;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 5%;
+}
 .material-symbols-outlined {
 color: white;
 }
