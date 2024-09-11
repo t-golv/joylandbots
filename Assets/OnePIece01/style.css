@@ -82,7 +82,7 @@ height: 100vh;
 }
 
 .carousel {
---current-slide: 0;
+--current-slide: 2;
 /* we set position relative so absolute position works properly for the buttons */
 position: relative;
 overflow: hidden;
@@ -148,7 +148,6 @@ width: 100vw;
 text-align: center;
 justify-content: space-between;
 align-items: center; 
-background-color: #1434482b;
 position: absolute;
 left: 0%;
 top: 0%;
@@ -195,28 +194,29 @@ height: 100vh;
 .novel-images {
 width: 100vw;
 top: 10%;
-height: 60vh;
+height: 70vh;
 display: flex;
 justify-content: center;
 align-items: flex-end;
 position: absolute;
 }
 .novel-dialogues {
-padding: 1rem;
+padding: .5rem 1rem;
 background-color: #143448;
-border-radius: 2rem;
-border: 3px solid var(--color1);
+border-radius: 1rem;
+border: 2px solid var(--color1);
 position: relative;
+height: 100px;
 }
 .novel-dialogues::after {
 content: 'HIna chan';
-top: -1rem;
+top: -1.5rem;
 position: absolute;
 left: 0;
 padding: .2rem .5rem;
 background-color: var(--color1);
 color: black;
-border-radius: 1rem;
+border-radius: .5rem;
 }
 
 /* Credits Section */
