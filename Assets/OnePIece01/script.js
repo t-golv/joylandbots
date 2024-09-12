@@ -79,7 +79,7 @@ function setUpCarousel(carousel) {
       handleNext()
     }
   }
-  const novelDialogues = document.querySelector('.novel-dialogues')
+  const novelDialogues = document.querySelector('.novel-dialogues .dialogues-arrow')
 
   novelDialogues.addEventListener('click', nextDialogue)
 }
