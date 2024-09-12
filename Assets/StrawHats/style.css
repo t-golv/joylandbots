@@ -518,3 +518,20 @@ body {
 .novel-section#usopp .novel-dialogues::after {
   content: 'Sogeking "God" Usopp';
 }
+.novel-section#brook .novel-images #brook {
+  opacity: 1 !important;
+  transform: scale(100%) translateY(0);
+  content: url(https://imgur.com/HHRFhOp.png);
+}
+
+.novel-section#brook .novel-dialogues::after {
+  content: 'Brook';
+}
+.novel-section#robin .novel-images #robin {
+  opacity: 1 !important;
+  transform: scale(100%) translateY(0);
+}
+
+.novel-section#robin .novel-dialogues::after {
+  content: 'Nico Robin';
+}
