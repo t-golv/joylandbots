@@ -259,7 +259,7 @@ body {
   width: 20vw;
   max-width: 500px;
   max-height: 600px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: 50% 100%;
   user-drag: none;
   transform: scale(0.90) translateY(2rem);
@@ -272,7 +272,7 @@ body {
 }
 
 .novel-dialogues {
-  padding: .5rem 1rem;
+  padding: .5rem;
   background-color: #143448;
   border-radius: 12px;
   border: 3px double var(--color1);
@@ -290,6 +290,8 @@ body {
 
 .novel-dialogues p {
   font-family: var(--font-3);
+  overflow-y: scroll;
+  height: 100%;
 
 }
 
