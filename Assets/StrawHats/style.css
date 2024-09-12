@@ -255,12 +255,12 @@ body {
   opacity: .3;
   /* min-height: 70px;
   min-width: 70px; */
-  height: 50vh;
-  width: 20vw;
+  height: calc(15vw + 15vh);
+  width: calc(15vw + 15vh);
   max-width: 500px;
   max-height: 600px;
-  object-fit: cover;
-  object-position: 50% 100%;
+  object-fit: contain;
+  object-position: 90% 50%;
   user-drag: none;
   transform: scale(0.90) translateY(2rem);
   user-select: none;
@@ -292,6 +292,7 @@ body {
   font-family: var(--font-3);
   overflow-y: scroll;
   height: 100%;
+  padding: 0 .5rem 1rem;
 
 }
 
