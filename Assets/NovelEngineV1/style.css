@@ -1,1 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+:root {
+  --color1: #00D0FF;
+  --font-1: "Irish Grover", system-ui;
+
+  --font-2: "Jim Nightshade", cursive;
+
+  --font-3: "Roboto Mono", monospace;
+  ;
+
+}
+
+@keyframes arrowAnim {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-10px)
+  }
+}
+@keyframes jumpImg {
+
+  0% {
+    transform: scale(.5) translateY(10rem);
+  }
+  50% {
+
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes to-top {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+}
+
+h1 {
+  font-size: calc(1rem + 2vw);
+}
+
+h2 {
+  font-size: calc(.9rem + 1.85vw);
+}
+
+h3 {
+  font-size: calc(.8rem + 1.65vw);
+}
+
+h4 {
+  font-size: calc(.7rem + 1.45vw);
+}
+
+h5 {
+  font-size: calc(.6rem + 1.25vw);
+}
+
+h6 {
+  font-size: calc(.5rem + 1.05vw);
+}
+
+p {
+  font-size: calc(.5rem + 1vw);
+  font-weight: 400;
+}
+
+em {
+  font-size: calc(.45rem + .8vw);
+}
+
+sub {
+  font-size: calc(.4rem + .6vw);
+}
+
+html,
+body {
+  width: 100vw;
+  background-color: #222;
+  height: 100vh;
+}
+
+.carousel {
+  --current-slide: 2;
+  /* we set position relative so absolute position works properly for the buttons */
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-button {
+  /* vertically centering the buttons */
+  z-index: 22;
+  background-color: transparent;
+  /* basic styling */
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.carousel-btn-music {
+  position: absolute;
+  top: 5%;
+  background-color: #143448;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 5%;
+}
+
+.material-symbols-outlined {
+  color: white;
+}
+
+.carousel-button_next {
+  /* The "next slide button" will be at the right */
+  right: 0;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  position: relative;
+  transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* slide header */
+.slide-header {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 50;
+}
+
+.slide-header h5 {
+  color: #42739c;
+}
+
+/* slide section */
+.slide-section {
+  top: 0%;
+  padding: 2rem;
+  background-image: url(https://64.media.tumblr.com/7eb9131087edecb9e6e639d50fa92873/38e9eb17ba99fb55-40/s2048x3072/d4341681d0c50e45f7bcba69a3872b3660ad22cb.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  min-height: 200px;
+  height: 100vh;
+  max-height: 500px;
+  width: 80vw;
+  max-width: 800px;
+  background-clip: padding-box;
+  font-family: var(--font-3) !important;
+}
+
+.slide-section h5,
+.slide-section p,
+.slide-section bold {
+  font-weight: 400;
+  padding-bottom: .5rem;
+  font-family: var(--font-3) !important;
+  color: black !important;
+}
+
+.slide-section bold {
+  font-weight: 600;
+  font-family: var(--font-3) !important;
+}
+
+.slide-section mark {
+  color: black;
+  font-family: var(--font-3);
+  background-color: var(--color1);
+}
+
+/* Novel Section */
+.novel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.novel-images {
+  width: 100vw;
+  height: 75vh;
+  padding: 1rem 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 200%);
+}
+
+.novel-section .novel-images .novel-img {
+  opacity: .8;
+  object-fit: contain;
+  width: 20%;
+  object-position: 90% 50%;
+  user-drag: none;
+  transform: scale(.95) translateY(2rem);
+  user-select: none;
+  -moz-user-select: none;
+  mix-blend-mode: multiply;
+  max-width: 50vh; 
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  transition: transform ease-in-out .5s, background 2s ease;
+  -ms-user-select: none;
+  z-index: 1;
+}
+
+.novel-dialogues {
+  background-color: #222;
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  z-index: 5;
+  min-height: 90px;
+}
+
+.novel-dialogues bold {
+  font-weight: 600;
+  font-style: italic;
+  font-family: var(--font-3);
+  color: var(--color1);
+}
+
+.novel-dialogues p {
+  font-family: var(--font-3);
+  overflow-y: scroll;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+  padding: .5rem .5rem 1.5rem;
+
+}
+
+.novel-dialogues .dialogues-arrow-container {
+  position: absolute;
+  bottom: 0;
+  opacity: .5;
+  right: 0;
+  width: 10vw;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  cursor: pointer;
+  
+}
+.novel-dialogues .dialogues-arrow {
+  font-size: 3rem;
+  animation: arrowAnim 2s infinite;
+}
+.novel-dialogues::after {
+  content: 'Narrator:';
+  top: -1.7rem;
+  position: absolute;
+  left: 0;
+  padding: .2rem .5rem;
+  font-size: 100%;
+  background-color: gray;
+  color: black;
+  font-family: var(--font-3);
+}
+
+/* Credits Section */
+.credits-hat {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  object-fit: contain;
+  top: -20%;
+  right: -20%;
+  max-width: 90px;
+  max-height: 90px;
+  transform: rotate(30deg);
+}
+
+.credits-img {
+  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
+  width: 15vw;
+  height: 15vw;
+  border: 3px solid var(--color1);
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 150px;
+  min-width: 80px;
+  min-height: 80px;
+  max-height: 150px;
+}
+
+.card-credits {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card-credits h6 {
+  margin-top: -2.5rem;
+  color: transparent;
+  position: absolute;
+  top: 95%;
+  background-image: linear-gradient(to top, var(--color1), white);
+  background-clip: text;
+  font-size: 3rem;
+  z-index: 100;
+  font-family: var(--font-2);
+}
+
+.credits-link {
+  display: flex;
+  gap: .5rem;
+  border-radius: 50%;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  max-width: 200px;
+  max-height: 200px;
+  flex-direction: column;
+}
+
+.credits-link em {
+  text-transform: uppercase;
+  color: gray;
+}
+
+.credits-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -0;
+}
+
+.shape {
+  stroke-dasharray: 100% 100%;
+  stroke-dashoffset: 250%;
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: var(--color1);
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.shape:hover {
+  stroke-width: 8px;
+  stroke-dashoffset: -50%;
+  stroke-dasharray: -250%;
+}
+
+.credits-link:hover h6 {
+  color: #8eeaff;
+}
+
+.credits-link:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2rem 0 var(--color1);
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+}
+
+.text::before,
+.text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: .5;
+  height: 100%;
+  z-index: -1;
+}
+
+.text::before {
+  color: #ff00c1;
+  animation: glitch-effect 3s infinite;
+}
+
+.text::after {
+  color: #3498db;
+  animation: glitch-effect 4s infinite;
+}
+
+@keyframes glitch-effect {
+  0% {
+    left: -2px;
+    top: -2px;
+  }
+
+  25% {
+    left: 2px;
+    top: 0px;
+  }
+
+  50% {
+    left: -1px;
+    top: 2px;
+  }
+
+  75% {
+    left: 1px;
+    top: -1px;
+  }
+
+  100% {
+    left: 0px;
+    top: -2px;
+  }
+}
+@keyframes pulse{
+  from {
+    background-size:80% 80%;
+  }
+  to {
+    background-size:100% 100%;
+  }
+}
+.novel-section .novel-img.active {
+  opacity: 1 !important;
+  transform: scale(100%) translateY(0);   background: radial-gradient(farthest-side,rgba(255, 255, 255, 0.5), transparent) center no-repeat;
+  mix-blend-mode: normal;
+  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),pulse .5s linear infinite alternate;
+  z-index: 2;
+}
+
+.novel-section#luffy .novel-dialogues::after {
+  content: 'Monkey D. Luffy';
+}
+
+.novel-section#zoro .novel-dialogues::after {
+  content: 'Roronoa Zoro';
+}
+
+.novel-section#sanji .novel-dialogues::after {
+  content: 'Vinsmoke Sanji';
+}
+
+.novel-section#nami .novel-dialogues::after {
+  content: 'Nami';
+}
+
+.novel-section#usopp .novel-dialogues::after {
+  content: 'Sogeking "God" Usopp';
+}
+
+
+.novel-section#brook .novel-dialogues::after {
+  content: 'Brook';
+}
+
+.novel-section#robin .novel-dialogues::after {
+  content: 'Nico Robin';
+}
