@@ -69,14 +69,15 @@ function setUpCarousel(carousel) {
         let audioEl = document.querySelector('#voice')
         let characterActive = charactersContent[currentDialogue.id]
         activeIMG = document.querySelector(`#img${currentDialogue.pos || 1}`)
+        activeIMG.src = ""
         activeIMG.src = characterActive[currentDialogue.type || 'defaultLink']
-        activeIMG.classList.add('active')
         console.log(characterActive)
         if (characterActive?.audio?.length > 0) {
           audioEl.src = characterActive.audio[0]
           audioEl.volume = 0.4
           audioEl.play()
         }
+        activeIMG.classList.add('active')
       }
       document.querySelector('.novel-section').removeAttribute('id');
       document.querySelector('.novel-section').id = dialogues[currentDialogueElement][currentDialogueIndex].id
