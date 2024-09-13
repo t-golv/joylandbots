@@ -2,10 +2,10 @@
 
 :root {
   --color-1: #ffe100;
-  --color-2:#0CCE6B;
-  --color-3:#EF2D56;
-  --color-4:#AF4D98;
-  --color-5:#363537;
+  --color-2: #0CCE6B;
+  --color-3: #EF2D56;
+  --color-4: #AF4D98;
+  --color-5: #363537;
   --font-1: "Roboto Mono", monospace;
   ;
 
@@ -116,7 +116,7 @@ body {
 }
 
 .carousel {
-  --current-slide: 0;
+  --current-slide: 2;
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
@@ -153,9 +153,11 @@ body {
   border-radius: 50%;
   left: 5%;
 }
+
 .carousel-btn-music .material-symbols-outlined {
-  color:var(--color-1)!important;
+  color: var(--color-1) !important;
 }
+
 .material-symbols-outlined {
   color: white;
 }
@@ -214,7 +216,9 @@ body {
 .slide-section {
   top: 0%;
   padding: 2rem;
-  background-image: url(https://64.media.tumblr.com/7eb9131087edecb9e6e639d50fa92873/38e9eb17ba99fb55-40/s2048x3072/d4341681d0c50e45f7bcba69a3872b3660ad22cb.jpg);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F758%2F042%2Foriginal%2Fgrunge-border-texture-background-abstract-frame-overlay-graphic-illustration-with-transparent-background-png.png&f=1&nofb=1&ipt=c0aa8d98a7a0d84bc28cefb38279e90ac8a748583d6f99a96fa6436917581e51&ipo=images);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-y: scroll;
@@ -233,7 +237,7 @@ body {
   font-weight: 400;
   padding-bottom: .5rem;
   font-family: var(--font-1) !important;
-  color: black !important;
+  color: rgb(255, 255, 184);
 }
 
 .slide-section bold {
@@ -288,11 +292,15 @@ body {
 }
 
 .novel-dialogues {
-  background-color: #222;
+  background-color: #29210f;
   position: relative;
   width: 100vw;
   height: 30vh;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffc03.deviantart.net%2Ffs71%2Fi%2F2014%2F022%2F2%2F4%2Fgrunge_texture_overlay_png_by_fictionchick-d73ass0.png&f=1&nofb=1&ipt=796af503aefb89885cc27bfcad88b5bb7755887acd8a91304011c4dc7cf20d8f&ipo=images);
+    background-repeat: no-repeat;
+    background-size: cover;
   max-height: 200px;
+  background-blend-mode: overlay;
   z-index: 5;
   min-height: 90px;
 }
@@ -412,7 +420,7 @@ a {
   /* opacity: 0; */
   position: absolute;
   left: -25%;
-  top:  50%;
+  top: 50%;
   padding: 0 1rem;
   background-color: black;
   z-index: -5;
@@ -434,15 +442,17 @@ a {
   left: -10%;
   z-index: 0;
 }
+
 .card-credits:hover .credits-svg {
-    mix-blend-mode: saturation;
+  mix-blend-mode: saturation;
 }
+
 .shape {
   stroke-dasharray: 100% 100%;
   stroke-dashoffset: 250%;
   stroke-width: 6px;
   fill: transparent;
-  animation: rotate 5s ease-in-out infinite alternate-reverse ;
+  animation: rotate 5s ease-in-out infinite alternate-reverse;
   stroke: var(--color-1);
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
@@ -452,14 +462,19 @@ a {
   stroke-dashoffset: -50%;
   /* stroke-dasharray: -200%; */
 }
+
 @keyframes rotate {
-  0%, 100% {
+
+  0%,
+  100% {
     stroke-dashoffset: 5%;
   }
-  50%{
-  stroke-dashoffset: -405%;
+
+  50% {
+    stroke-dashoffset: -405%;
   }
 }
+
 .card-credits:hover h5 {
   color: var(--color-1);
 }
@@ -563,11 +578,18 @@ a {
   content: 'Tenya Iida';
 }
 
-
-.novel-section#brook .novel-dialogues::after {
-  content: 'Brook';
+.novel-section#aizawa .novel-dialogues::after {
+  content: 'Mr. Aizawa';
 }
-
-.novel-section#robin .novel-dialogues::after {
-  content: 'Nico Robin';
+.novel-section#jiro .novel-dialogues::after {
+  content: 'Kyoka Jiro';
+}
+.novel-section#kirishima .novel-dialogues::after {
+  content: 'Eijiro Kirishima';
+}
+.novel-section#mina .novel-dialogues::after {
+  content: 'Mina Ashido';
+}
+.novel-section#tsuyu .novel-dialogues::after {
+  content: 'Tsuyu Asui';
 }
