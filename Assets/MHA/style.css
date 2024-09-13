@@ -276,17 +276,17 @@ body {
   object-fit: contain;
   width: 20%;
   object-position: 90% 50%;
-  user-drag: none;
   transform: scale(.95) translateY(2rem);
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   mix-blend-mode: multiply;
   max-width: 50vh;
   -webkit-user-drag: none;
   object-fit: contain;
   -webkit-user-select: none;
   transition: transform ease-in-out .5s, background 2s ease;
-  -ms-user-select: none;
   max-height: 70vh;
   z-index: 1;
 }
@@ -338,6 +338,10 @@ body {
 
 .novel-dialogues .dialogues-arrow {
   font-size: 3rem;
+    user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   animation: arrowAnim 2s infinite;
 }
 
