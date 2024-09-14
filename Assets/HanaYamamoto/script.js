@@ -77,7 +77,7 @@ function setUpCarousel(carousel) {
           
           audioEl.src = characterActive.audio[Math.floor(Math.random() * characterActive.audio.length)];
 
-          audioEl.volume = 0.4
+          audioEl.volume = 0.2
           audioEl.play()
         }
    
@@ -117,9 +117,9 @@ const charactersContent = {
 const dialogues = {
   chapter1: [
  { id: null, bg: "./assets/library.png", dialogue: `In the library, a sunlit haven filled with the scent of old books and polished wood, you see Hana. She’s standing in front of a towering bookshelf, absorbed in her search. The warm light filtering through the arched windows casts a soft glow on her, giving her an almost ethereal presence.` },
-    { id: "hana", dialogue: `<bold>Noticing you approaching, she looks up with a gentle, yet slightly hesitant smile.</bold> “Uhm. Hello. Can you help me with something?”`, pos: 3 },
+    { id: "hana", dialogue: `“Uhm. Hello. Can you help me with something?” <bold>Noticing you approaching, she looks up with a gentle, yet slightly hesitant smile.</bold>`, pos: 3 },
     { id: "", dialogue: `She turns to face you fully, holding her bag close to her chest as if it’s a small shield in this unfamiliar setting.`, pos: 3 },
-    { id: "hana", dialogue: `<bold>Her eyes flicker between you and the shelves.</bold> “I’m searching for a specific book, but I haven’t been able to find it yet. This library is quite enormous.”`, pos: 3 },
+    { id: "hana", dialogue: `“I’m searching for a specific book, but I haven’t been able to find it yet. This library is quite enormous.” <bold>Her eyes flicker between you and the shelves.</bold>`, pos: 3 },
     { id: "", dialogue: `She takes a step closer to you, her expression reflecting a mix of relief and frustration.`, pos: 3 },
     { id: "hana", dialogue: `“The book I’m looking for is on medieval history. It’s crucial for a project I’m working on.” <bold>She glances around the library, her gaze showing a hint of apprehension.`, pos: 3 },
     { id: "hana", dialogue: `“I hope I’m not being too much of a bother. It’s just that everything seems so new and overwhelming.” <bold>With a small, hopeful smile, she tucks a stray lock of hair behind her ear, waiting for your response.`, pos: 3 },
