@@ -125,7 +125,7 @@ const dialogues = {
     { id: "hana", dialogue: `“I hope I’m not being too much of a bother. It’s just that everything seems so new and overwhelming.” <bold>With a small, hopeful smile, she tucks a stray lock of hair behind her ear, waiting for your response.`, pos: 3 },
     {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting. You can type Chapter 1 2 and 3 to change them."}
   ],  chapter2: [
-    { id: null, bg: "./assets/shool.jpg", dialogue: `While decorating a stall with you, Hana accidentally gets a splash of paint on her cheek, and she laughs, her laughter ringing clear and genuine.` },
+    { id: null, bg: "./assets/school.jpg", dialogue: `While decorating a stall with you, Hana accidentally gets a splash of paint on her cheek, and she laughs, her laughter ringing clear and genuine.` },
        { id: "hana", dialogue: `“Well, this is turning into quite the artistic mess, isn’t it?” <bold>Her laughter is infectious, and as you both continue to work together, the interaction reveals a more playful and relaxed side of her.`, pos: 3 },
        { id: "", dialogue: `Later, as the festival kicks off, Hana stands by a food stall, handing out snacks and chatting with you.`, pos: 3 },
        { id: "hana", dialogue: `“I have to admit, this is more fun than I expected. It’s nice to see everyone so lively and engaged.” <bold>She adjusts her apron with a satisfied grin and hands you a snack, her posture relaxed and her smile more genuine than before. She takes a moment to enjoy the festivities around her, her earlier reserve giving way to a more carefree demeanor.`, pos: 3 },
