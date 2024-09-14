@@ -31,7 +31,7 @@ function setUpCarousel(carousel) {
     currentDialogueIndex = 0
     if (currentSlide + 1 == slides.length) {
       let creditsAudio = document.querySelector("#credits-audio")
-      creditsAudio.volume = 0.25
+      creditsAudio.volume = 0.3
       creditsAudio.play()
     }
     nextDialogue()
@@ -200,4 +200,3 @@ function bgOst() {
   }
 }
 // { id: "", dialogue: ``, pos: 0 },
-
