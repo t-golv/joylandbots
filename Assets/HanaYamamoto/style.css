@@ -200,11 +200,11 @@ body {
 .slide-header {
   display: flex;
   width: 100vw;
-  text-align: center;
   justify-content: space-between;
   align-items: center;
   position: absolute;
   left: 0%;
+  padding: 0 1vw;
   top: 0%;
   z-index: 50;
 }
@@ -212,7 +212,9 @@ body {
 .slide-header h5 {
   color: var(--color-1);
 }
-
+.slide-header em {
+  color:gray;
+}
 /* slide section */
 .slide-section {
   top: 0%;
@@ -277,7 +279,7 @@ body {
 .novel-section .novel-images .novel-img {
   opacity: .8;
   object-fit: contain;
-  width: 40%;
+  width: 50%;
   object-position: 90% 50%;
   transform: scale(.95) translateY(2rem);
   user-drag: none;
@@ -354,14 +356,13 @@ body {
   top: -15%;
   position: absolute;
   left: 0;
-  padding: .2rem 1rem;
+  padding: .5rem 1rem;
     font-size: calc(.45rem + .8vw);
   background-color: #111;
   text-transform: uppercase;
   opacity: 0;
   color: var(--color-1);
   font-family: var(--font-1);
-  border: 1px solid white;
 }
 
 /* Credits Section */
