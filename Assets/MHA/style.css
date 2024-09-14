@@ -217,8 +217,8 @@ body {
   top: 0%;
   padding: 2rem;
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F021%2F758%2F042%2Foriginal%2Fgrunge-border-texture-background-abstract-frame-overlay-graphic-illustration-with-transparent-background-png.png&f=1&nofb=1&ipt=c0aa8d98a7a0d84bc28cefb38279e90ac8a748583d6f99a96fa6436917581e51&ipo=images);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid white;
+  background-color: rgba(0, 0, 0, .6); 
+  border: 1px solid white;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow-y: scroll;
@@ -309,7 +309,7 @@ body {
   font-weight: 600;
   font-style: italic;
   font-family: var(--font-1);
-  color: var(--color-1);
+  color: var(--color-2);
 }
 
 .novel-dialogues p {
