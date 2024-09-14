@@ -107,50 +107,50 @@ carousels.forEach(setUpCarousel);
 
 const charactersContent = {
   deku: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/deku.png",
-    heroLink: "https://t-golv.github.io/joylandbots/Assets/MHA/deku-hero.png",
+    defaultLink: "./assets/deku.png",
+    heroLink: "./assets/deku-hero.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/44/104680-44-127.mp4']
   },
   bakugo: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/bakugo.png",
-    heroLink: "https://t-golv.github.io/joylandbots/Assets/MHA/bakugo-hero.png",
+    defaultLink: "./assets/bakugo.png",
+    heroLink: "./assets/bakugo-hero.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/58/104680-58-140.mp4']
   },
   todoroki: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/todoroki.png",
-    heroLink: "https://t-golv.github.io/joylandbots/Assets/MHA/todoroki-hero.png",
+    defaultLink: "./assets/todoroki.png",
+    heroLink: "./assets/todoroki-hero.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/58/104680-58-292.mp4', "https://ami.animecharactersdatabase.com/audio/104680/31/104680-31-217.mp4"]
   },
   ochaco: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/ochaco.png",
-    heroLink: "https://t-golv.github.io/joylandbots/Assets/MHA/ochaco-hero.png",
+    defaultLink: "./assets/ochaco.png",
+    heroLink: "./assets/ochaco-hero.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/34/104680-34-389.mp4']
 
   },
   tenya: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/tenya.png",
-    heroLink: "https://t-golv.github.io/joylandbots/Assets/MHA/tenya-hero.png",
+    defaultLink: "./assets/tenya.png",
+    heroLink: "./assets/tenya-hero.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/31/104680-31-39.mp4']
   },
 
   aizawa: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/aizawa.png",   audio: ['https://ami.animecharactersdatabase.com/audio/104680/38/104680-38-86.mp4']
+    defaultLink: "./assets/aizawa.png",   audio: ['https://ami.animecharactersdatabase.com/audio/104680/38/104680-38-86.mp4']
   },
 
   jiro: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/jiro.png",
+    defaultLink: "./assets/jiro.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/39/104680-39-139.mp4']
   },
   tsuyu: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/tsuyu.png",
+    defaultLink: "./assets/tsuyu.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/32/104680-32-137.mp4']
   },
   mina: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/mina.png",
+    defaultLink: "./assets/mina.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/34/104680-34-186.mp4']
   },
   kirishima: {
-    defaultLink: "https://t-golv.github.io/joylandbots/Assets/MHA/kirishima.png",
+    defaultLink: "./assets/kirishima.png",
     audio: ['https://ami.animecharactersdatabase.com/audio/104680/47/104680-47-389.mp4'] 
   },
 

@@ -96,7 +96,7 @@ h6 {
 }
 
 p {
-  font-size: calc(.5rem + 1vw);
+  font-size: calc(.5rem + .8vw);
   font-weight: 400;
 }
 
@@ -292,7 +292,7 @@ body {
 }
 
 .novel-dialogues {
-  background-color: #323110;
+  background-color: var(--color-5);
   position: relative;
   width: 100vw;
   height: 30vh;
@@ -441,15 +441,15 @@ a {
 .credits-svg {
   position: absolute;
   top: -10%;
-  background-color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: multiply;
+  background-color: rgba(137, 20, 255, 0.1); 
+  mix-blend-mode: color-dodge;  
   border-radius: 50%;
   left: -10%;
   z-index: 0;
-}
+} 
 
 .card-credits:hover .credits-svg {
-  mix-blend-mode: saturation;
+  mix-blend-mode: darken;
 }
 
 .shape {
