@@ -123,7 +123,7 @@ const dialogues = {
     { id: "", dialogue: `She takes a step closer to you, her expression reflecting a mix of relief and frustration.`, pos: 3 },
     { id: "hana", dialogue: `“The book I’m looking for is on medieval history. It’s crucial for a project I’m working on.” <bold>She glances around the library, her gaze showing a hint of apprehension.`, pos: 3 },
     { id: "hana", dialogue: `“I hope I’m not being too much of a bother. It’s just that everything seems so new and overwhelming.” <bold>With a small, hopeful smile, she tucks a stray lock of hair behind her ear, waiting for your response.`, pos: 3 },
-    {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting."}
+    {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting. You can type Chapter 1 2 and 3 to change them."}
   ],  chapter2: [
     { id: null, bg: "./assets/shool.jpg", dialogue: `While decorating a stall with you, Hana accidentally gets a splash of paint on her cheek, and she laughs, her laughter ringing clear and genuine.` },
        { id: "hana", dialogue: `“Well, this is turning into quite the artistic mess, isn’t it?” <bold>Her laughter is infectious, and as you both continue to work together, the interaction reveals a more playful and relaxed side of her.`, pos: 3 },
@@ -132,7 +132,7 @@ const dialogues = {
        { id: "", dialogue: `Throughout the festival, Hana’s interactions become increasingly relaxed. She enjoys the event with a newfound enthusiasm, her usual aloofness giving way to a more approachable demeanor. At one point, you both find yourselves taking a break, sitting on a nearby bench.`, pos: 3 },
        { id: "hana", dialogue: `“I’m really glad we got to do this together. It’s been a while since I felt this comfortable with someone.” <bold>Hana leans back on the bench, her shoulders relaxed and her gaze soft as she looks at you.`, pos: 3 },
        { id: "", dialogue: `Her words are sincere, and she looks at you with a soft smile, her eyes reflecting the joy of the day. As the festival begins to wind down and the lights start to dim, you and Hana share a quiet moment, reflecting on the fun and chaos of the day. The connection between you deepens, marking the beginning of a meaningful bond.`, pos: 3 },
-       {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting."}
+       {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting. You can type Chapter 1 2 and 3 to change them."}
      ], chapter3: [
       { id: null, bg: "./assets/library.png", dialogue: `One afternoon, while working on the project, you’re in a quiet corner of the library, surrounded by scattered notes and textbooks. Hana, normally reserved, begins to show a more vulnerable side as the pressure mounts.` },
          { id: "hana", dialogue: `<bold>Rubbing her eyes tiredly and glancing at the stacks of books and papers around her.</bold> “I didn’t realize how much work this project would involve. It’s starting to feel a bit overwhelming.”`, pos: 3 },
@@ -142,7 +142,7 @@ const dialogues = {
          {id:"",dialogue: "As you walk, she takes a deep breath and looks around at the peaceful scenery."},
          { id: "hana", dialogue: `"This is exactly what I needed. Sometimes it’s hard to remember that there’s more to life than just deadlines and grades.” <bold>She seems to relax and becomes more open, sharing thoughts about her life outside of school, her family, and her hopes for the future. You listen attentively, appreciating the trust she places in you.`, pos: 3 },
          { id: "", dialogue: `By the time you return to the library, Hana appears rejuvenated and more focused. The conversation and the break have clearly made a difference, and she approaches the project with renewed energy.`, pos: 3 },
-         {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting."}
+         {id:"", dialogue: "<bold>Continue the story below to see how this encounter unfolds and what new developments arise from this unexpected meeting. You can type Chapter 1 2 and 3 to change them."}
        ]
 };
 function bgOst() {
