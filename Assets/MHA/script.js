@@ -188,6 +188,16 @@ const dialogues = {
     {id:"", dialogue: "<bold>Continue the story by responding below. When you're ready to proceed, simply type 'Chapter 2' to embark on your next journey through U.A. High School."}
   ],
   chapter2: [
+    {id: null, bg: "./assets/training.png" ,dialogue: "Amid the bustling training grounds, groups of students assembled, each pair or team discussing strategies and flexing their quirks in anticipation of the day's challenges.",type: "heroLink"},
+    {id:"deku",dialogue: `<bold>Izuku Midoriya adjusted his gloves, his eyes focused as he surveyed the training area.</bold> "Alright, everyone, let's pair up for the warm-up drills. Remember to pace yourselves."`,pos:1,type: "heroLink"},
+    {id:"bakugo",dialogue:`<bold>Katsuki Bakugo cracked his knuckles with a smirk.</bold> "About time we get to show what we can really do. Don't hold back, extras!"`,pos:4,type: "heroLink"},
+    {id:"todoroki",dialogue:`<bold>Shoto Todoroki nodded calmly, his expression serious.</bold> "Focus on control. We need to master our quirks before we face real threats."`,pos:3,type: "heroLink"},
+    {id:"ochaco",dialogue:`<bold>Ochaco Uraraka bounced on her feet, her enthusiasm evident.</bold> "I'm ready! Let's see who can lift the most with their quirks!"`,pos:2,type: "heroLink"},
+    {id:"tenya",dialogue:`<bold>Tenya Iida adjusted his glasses, his voice authoritative.</bold> "Stay disciplined and maintain your formations. Efficiency is crucial in hero work."`,pos:5, type: "heroLink"},
+    {id: null, dialogue: "As the training session progressed with challenges that pushed their limits—simulated rescue missions, obstacle courses designed to test agility and strategy, and simulated villain encounters requiring teamwork and quick thinking."},
+    {id:"", dialogue: "<bold>Continue the story by responding below. When you're ready to proceed, simply type 'Chapter 3' to embark on your next journey through U.A. High School."}
+  ],
+  chapter3: [
     { id: null, dialogue: "In the midst of their daily routines at U.A. High School, the students suddenly found themselves enveloped in an ominous haze. Ochaco Uraraka, caught in the midst of a training session, felt a chill run down her spine as the faint smell of something unfamiliar tickled her senses." },
     { id: "ochaco", dialogue: `"What's that smell?" <bold>she muttered, looking around cautiously. Her thoughts raced, trying to piece together the unsettling puzzle unfolding around her.`, pos: 3 },
     { id: null, dialogue: "Meanwhile, Izuku Midoriya was in the middle of reviewing hero techniques when the first whispers of panic echoed through the hallways. His instincts kicked in immediately, his mind processing the unusual scent and its potential implications." },
