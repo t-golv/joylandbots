@@ -172,6 +172,21 @@ const dialogues = {
     { id: "tsuyu", dialogue: `<bold>Tsuyu Asui nods calmly, her words measured and observant.</bold> "Ribbit. I'm Tsuyu. Nice to meet ya. If you need help navigating the school, just ask."`, pos: 1 },
         {id:"", dialogue: "<bold>Continue the story by responding below, introducing yourself to your classmates. When you're ready to proceed, simply type 'Chapter 1' to embark on your journey at U.A. High School."}
   ],
+  chapter1: [
+    {id: null, bg: "./assets/bg-1.png" ,dialogue: "After class, the students of U.A. High School eagerly took their new classmate on a tour of the expansive campus. Led by Izuku Midoriya, they strolled through the bustling halls, pointing out the training rooms and the impressive library."},
+    {id:"deku",dialogue: `<bold>Izuku gestured excitedly towards the training rooms as they passed by, explaining.</bold> "And over here is the training room where we practice our quirks. It's pretty cool, right?"`,pos:1},
+    {id:"todoroki",dialogue:`<bold>Shoto nodded, adding calmly</bold> "Yeah, you'll get used to the schedule. We have morning and afternoon sessions. Helps keep us sharp."`,pos:3},
+    {id:"ochaco",dialogue:`<bold>Ochaco chimed in cheerfully</bold> "Oh, and don't forget about lunchtime! The cafeteria's over there."`,pos:2},
+    {id:"ochaco",dialogue:`<bold>She pointed towards a set of double doors.</bold> "It can get pretty busy, but the food's not bad!"`,pos:2},
+    {id:"bakugo",dialogue:`<bold>Katsuki crossed his arms with a confident smirk, scoffing</bold> "Hmph, food's not the point. The training grounds are where it's at. You'll see when we spar."`,pos:4},
+    {id:"tenya",dialogue:`<bold>Tenya, ever the responsible guide, led the group towards the administrative offices, briskly walking ahead to point out</bold> "Of course, we also have the administrative offices this way. It's important to know where to go for information or if you need assistance."`,pos:5},
+    {id:"deku",dialogue:`<bold>Izuku nodded enthusiastically, adding:</bold> "And the hero costume preparation rooms! You'll get your own locker soon enough." <bold>He gestured towards a row of lockers filled with colorful costumes.`,pos:1},
+    {id: null, dialogue: "Ochaco Uraraka twirled in front of the mirror, her new hero costume sparkling under the bright lights of the preparation room..."},
+    {id:"ochaco",dialogue:`<bold>She grinned at her friends, adjusting the utility belt around her waist.</bold> "What do you think? I feel like I could float through anything in this!"`,pos:2, type: 'heroLink' },
+    {id:"deku",dialogue:`<bold>Izuku nodded enthusiastically, admiring the sleek design.</bold> "It suits you perfectly, Ochaco! The colors are vibrant, just like your spirit."`,pos:1},
+    {id: null, dialogue: "Throughout the tour, they answered questions and shared stories, making sure their new friend felt welcomed and informed about life at U.A. High School."},
+    {id:"", dialogue: "<bold>Continue the story by responding below. When you're ready to proceed, simply type 'Chapter 2' to embark on your next journey through U.A. High School."}
+  ],
   chapter2: [
     { id: null, dialogue: "In the midst of their daily routines at U.A. High School, the students suddenly found themselves enveloped in an ominous haze. Ochaco Uraraka, caught in the midst of a training session, felt a chill run down her spine as the faint smell of something unfamiliar tickled her senses." },
     { id: "ochaco", dialogue: `"What's that smell?" <bold>she muttered, looking around cautiously. Her thoughts raced, trying to piece together the unsettling puzzle unfolding around her.`, pos: 3 },
