@@ -111,7 +111,7 @@ sub {
 html,
 body {
   width: 100vw;
-  background-color: #222;
+  background-color: #000000;
   height: 100vh;
 }
 
@@ -292,11 +292,11 @@ body {
 }
 
 .novel-dialogues {
-  background-color: #29210f;
+  background-color: #323110;
   position: relative;
   width: 100vw;
   height: 30vh;
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffc03.deviantart.net%2Ffs71%2Fi%2F2014%2F022%2F2%2F4%2Fgrunge_texture_overlay_png_by_fictionchick-d73ass0.png&f=1&nofb=1&ipt=796af503aefb89885cc27bfcad88b5bb7755887acd8a91304011c4dc7cf20d8f&ipo=images);
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F022%2F467%2F217%2Foriginal%2Frustic-cracked-texture-with-many-cracks-and-scratches-abstract-background-graphic-illustration-with-transparent-background-png.png&f=1&nofb=1&ipt=c7ce2f74880a43ab828b009d42fbe17ad632eded53a8d7db719c6eb891dccd2f&ipo=images);
     background-repeat: no-repeat;
     background-size: cover;
   max-height: 200px;
@@ -317,7 +317,7 @@ body {
   overflow-y: scroll;
   height: 100%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
-  padding: 1rem 1rem 1.5rem;
+  padding: 1.5vw 2vw 1.5rem;
 
 }
 
@@ -347,13 +347,14 @@ body {
 
 .novel-dialogues::after {
   content: '⠀';
-  top: -1.7rem;
+  top: -15%;
   position: absolute;
   left: 0;
   padding: .2rem 1rem;
-  font-size: 100%;
+    font-size: calc(.45rem + .8vw);
   background-color: #111;
   text-transform: uppercase;
+  opacity: 0;
   color: var(--color-1);
   font-family: var(--font-1);
   border: 1px solid white;
@@ -561,39 +562,48 @@ a {
   animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1), pulse .5s linear infinite alternate;
   z-index: 2;
 }
-
 .novel-section#deku .novel-dialogues::after {
   content: 'Izuku Midoriya (Deku)';
+  opacity: 1;
 }
 
 .novel-section#bakugo .novel-dialogues::after {
   content: 'Katsuki Bakugo';
+  opacity: 1;
 }
 
 .novel-section#todoroki .novel-dialogues::after {
   content: 'Shoto Todoroki';
+  opacity: 1;
 }
 
 .novel-section#ochaco .novel-dialogues::after {
   content: 'Ochaco Uraraka';
+  opacity: 1;
 }
 
 .novel-section#tenya .novel-dialogues::after {
   content: 'Tenya Iida';
+  opacity: 1;
 }
 
 .novel-section#aizawa .novel-dialogues::after {
   content: 'Mr. Aizawa';
+  opacity: 1;
 }
 .novel-section#jiro .novel-dialogues::after {
   content: 'Kyoka Jiro';
+  opacity: 1;
 }
 .novel-section#kirishima .novel-dialogues::after {
   content: 'Eijiro Kirishima';
+  opacity: 1;
 }
 .novel-section#mina .novel-dialogues::after {
   content: 'Mina Ashido';
+  opacity: 1;
 }
 .novel-section#tsuyu .novel-dialogues::after {
   content: 'Tsuyu Asui';
+  opacity: 1;
 }
