@@ -83,8 +83,7 @@ function setUpCarousel(carousel) {
    
         activeIMG.classList.add('active')
       }
-      console.log()
-        if (currentDialogue?.bg) {
+      if (currentDialogue?.bg) {
       console.log(slides[currentSlide].style)
       slides[currentSlide].style.backgroundImage = `url(${currentDialogue.bg})`;
     }

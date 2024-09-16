@@ -1,23 +1,31 @@
 {
   "characters": {
     "seraphina": {
-      "defaultLink": "./assets/seraphina.png"
+      "defaultLink": "./assets/seraphina.png",
+    "audio":["https://ami.animecharactersdatabase.com/audio/104680/34/104680-34-85.mp4", "","https://ami.animecharactersdatabase.com/audio/105169/1/105169-1-41.mp4","https://ami.animecharactersdatabase.com/audio/109284/1/109284-1-116.mp4","",""]
+
     },
     "isabelle": {
       "defaultLink": "./assets/isabelle.png",
-      "kid":"./assets/isabellekid.png"
+      "kid":"./assets/isabellekid.png",
+      "audio": ["https://ami.animecharactersdatabase.com/audio/104802/13/104802-13-323.mp4","https://ami.animecharactersdatabase.com/audio/104802/5/104802-5-372.mp4","https://ami.animecharactersdatabase.com/audio/104802/8/104802-8-143.mp4"]
     },
     "eliza": {
-      "defaultLink": "./assets/eliza.png"
+      "defaultLink": "./assets/eliza.png",
+      "audio": ["https://ami.animecharactersdatabase.com/audio/108277/8/108277-8-118.mp4","https://ami.animecharactersdatabase.com/audio/108277/7/108277-7-286.mp4","https://ami.animecharactersdatabase.com/audio/108277/12/108277-12-88.mp4","https://ami.animecharactersdatabase.com/audio/108277/2/108277-2-85.mp4"]
     },
+
     "eleanor": {
-      "defaultLink": "./assets/eleanor.png"
+      "defaultLink": "./assets/eleanor.png",
+      "audio":["https://ami.animecharactersdatabase.com/audio/106220/21/106220-21-53.mp4","https://ami.animecharactersdatabase.com/audio/106220/21/106220-21-324.mp4"]
     },
     "cedric": {
-      "defaultLink": "./assets/cedric.png"
+      "defaultLink": "./assets/cedric.png",
+      "audio": ["https://ami.animecharactersdatabase.com/audio/107886/1/107886-1-226.mp4", "https://ami.animecharactersdatabase.com/audio/107886/1/107886-1-250.mp4"]
     },
     "marcus": {
-      "defaultLink": "./assets/marcus.png"
+      "defaultLink": "./assets/marcus.png",
+      "audio": ["https://ami.animecharactersdatabase.com/audio/108305/7/108305-7-319.mp4","https://ami.animecharactersdatabase.com/audio/108305/5/108305-5-156.mp4"]
     }
   },
   "story": {
@@ -33,15 +41,15 @@
         { "id": null, "title":"A Rainy Twilight","subtitle":"The Sudden End", "bg": "https://wallpapers.com/images/hd/1920-x-1080-night-city-bokeh-wet-pavement-wsw26zu93c0847v4.jpg", "dialogue": "As you trudge wearily back from your monotonous day at work, the rain drizzles relentlessly, soaking through your coat and drumming against the pavement." },
         { "id": null, "dialogue": "A peculiar sense of unease begins to creep over you. The evening sky, normally a tranquil expanse of muted colors, darkens abruptly with an eerie, otherworldly glow." },
         { "id": null,"overlay":"https://i.gifer.com/7dDt.gif",  "dialogue": "Fatigue clouds your thoughts, and you barely notice the approaching truck until it’s too late-" },
-        { "id": null, "bg":"#", "dialogue": "The collision is sudden and harsh, and in an instant, your world goes dark…" },
-        { "id": null, "bg":"https://external-content.duckduckgo.com/iu/?u=http://th05.deviantart.net/fs71/PRE/f/2012/274/7/a/celestial_background_47_by_frostbo-d5ghwmv.png&f=1&nofb=1&ipt=5452ebf204c76b83610ed19eb6572cb588637a1439b3f44d58e4e51143c323e8&ipo=images", "dialogue": "When you regain consciousness, you find yourself enveloped in a blinding light. As your vision gradually clears, you are greeted by a serene, celestial realm." },
+        { "id": null,"overlay":"https://i.gifer.com/7dDt.gif", "bg":"#", "dialogue": "The collision is sudden and harsh, and in an instant, your world goes dark…" },
+        { "id": null, "bg":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4eqW5SQVYdCzASU6xQOczJiwlp00e2QSn9g&s", "dialogue": "When you regain consciousness, you find yourself enveloped in a blinding light. As your vision gradually clears, you are greeted by a serene, celestial realm." },
         { "id": null, "dialogue": "An ethereal figure, a radiant goddess, gazes upon you with a blend of sorrow and regret." },
         { "id": "seraphina", "dialogue": "“Oh dear~” <bold>she begins, her voice soft and laden with remorse.", "pos": 3 },
         { "id": "seraphina","dialogue": "“It appears I’ve made an unfortunate mistake. I never intended for your life to end so suddenly. It was a miscalculation on my part.”", "pos": 3 },
         { "id": "seraphina","dialogue": "<bold>With a gentle sigh, she continues:</bold> “I am Seraphina, the Keeper of Worlds. It seems my oversight has led to your untimely demise. I am responsible for overseeing the delicate balance of souls, ensuring the harmonious flow of life and death. Regrettably, a lapse in my calculations has caused this unintended outcome.\"", "pos": 3 },
         { "id": "seraphina","dialogue": "<bold>Her eyes, filled with sincere apology, meet yours.</bold> “To make amends, I would like to offer you a unique opportunity. While returning you to your previous world is not permissible due to certain divine rules, I can send you to a different realm.”", "pos":3},
         { "id": "seraphina","dialogue": "<bold>A glimmer of hope shines in her gaze.</bold> “I understand that this may be daunting, so to ease your transition, I will bestow upon you extraordinary abilities, far beyond what is typical for any being in that world.”", "pos":3},
-        { "id": "seraphina","dialogue": "<bold>Seraphina's radiant smile illuminates the celestial realm, her divine aura pulsing with both celestial remorse and ethereal hope.</bold> \"This is my divine offering to rectify the cosmic imbalance I have caused. Now, blessed soul, it is time for you to transcend into your new existence, imbued with the power of the heavens.\"", "pos":3},
+        { "id": "seraphina","overlay": "https://i.gifer.com/Ozb.gif","dialogue": "<bold>Seraphina's radiant smile illuminates the celestial realm, her divine aura pulsing with both celestial remorse and ethereal hope.</bold> \"This is my divine offering to rectify the cosmic imbalance I have caused. Now, blessed soul, it is time for you to transcend into your new existence, imbued with the power of the heavens.\"", "pos":3},
         { "id": "null", "type":"#","overlay": "https://i.gifer.com/Ozb.gif", "bg":"#","dialogue": "With a final, gentle wave, Seraphina bids you farewell. As her hand moves through the air, the vibrant light of her celestial realm begins to dim."},
         { "id": "", "bg":"#","title":"A New Beginning","subtitle":"Welcomed by Nobility", "dialogue": "In the next moment, you awaken to the soft, comforting warmth of a cradle. The world around you is a blend of plush fabrics and gentle, soothing colors."},
         { "id": "", "bg":"https://t4.ftcdn.net/jpg/07/95/11/79/360_F_795117917_PHszcOu6dFinZL49VVfIyAbeam2SvIhy.jpg", "dialogue": "As you open your eyes, you find yourself in a grand, opulently decorated nursery, surrounded by the soft murmurs and coos of a family of distinguished nobility."},

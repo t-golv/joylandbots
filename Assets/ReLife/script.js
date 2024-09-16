@@ -80,34 +80,21 @@ async function main() {
           let currentDialogue = RPG.story[chapter].dialogues[currentDialogueIndex];
           let characterActive = RPG.characters[currentDialogue.id];
           document.querySelectorAll('.novel-img').forEach(novelImg => novelImg.classList.remove('active'));
-          // se tiver id
           if (currentDialogue.id) {
             let audioEl = document.querySelector('#voice');
             activeIMG = document.querySelector(`#img${currentDialogue.pos || 1}`);
-            switch (currentDialogue.type) {
-              case '#':
-            
-                break;
-              case null:
-           
-                break;
-     
-            }
+            activeIMG.src = "";
+            activeIMG.style.display = 'block'
             if (currentDialogue.type === '#') {
               console.log('#')
               document.querySelectorAll('.novel-img').forEach(img => img.style.display = 'none')
             }  else if (typeof currentDialogue.type === 'string' && currentDialogue.type !== '#' && currentDialogue.type !== undefined ) {
-              activeIMG.src = "";
-              activeIMG.style.display = 'block'
               activeIMG.src = characterActive[currentDialogue.type]
               console.log('The string is not "#" but is a valid string.');
             } else { 
-              activeIMG.src = "";
-              activeIMG.style.display = 'block'
               activeIMG.src = characterActive['defaultLink']
               console.log('defat.');
             }
-            console.log(currentDialogue.type)
             if (characterActive?.audio?.length > 0) {
               audioEl.src = characterActive.audio[Math.floor(Math.random() * characterActive.audio.length)];
               audioEl.volume = 0.2;
