@@ -1,0 +1,83 @@
+{
+  "characters": {
+    "seraphina": {
+      "defaultLink": "./assets/seraphina.png"
+    },
+    "isabelle": {
+      "defaultLink": "./assets/isabelle.png",
+      "kid":"./assets/isabellekid.png"
+    },
+    "eliza": {
+      "defaultLink": "./assets/eliza.png"
+    },
+    "eleanor": {
+      "defaultLink": "./assets/eleanor.png"
+    },
+    "cedric": {
+      "defaultLink": "./assets/cedric.png"
+    },
+    "marcus": {
+      "defaultLink": "./assets/marcus.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Re/Life",
+      "subtitle": "Starting Life in Another World",
+      "about": {
+        "title": "Re/Life - Starting Life in Another World",
+        "paragraph": "In this RPG, you are given the chance to start a new chapter in a different realm, where your journey unfolds with unexpected twists and opportunities. Continue the story below after the following scene.",
+        "image": ""
+      },
+      "dialogues": [
+        { "id": null, "title":"A Rainy Twilight","subtitle":"The Sudden End", "bg": "https://wallpapers.com/images/hd/1920-x-1080-night-city-bokeh-wet-pavement-wsw26zu93c0847v4.jpg", "dialogue": "As you trudge wearily back from your monotonous day at work, the rain drizzles relentlessly, soaking through your coat and drumming against the pavement." },
+        { "id": null, "dialogue": "A peculiar sense of unease begins to creep over you. The evening sky, normally a tranquil expanse of muted colors, darkens abruptly with an eerie, otherworldly glow." },
+        { "id": null,"overlay":"https://i.gifer.com/7dDt.gif",  "dialogue": "Fatigue clouds your thoughts, and you barely notice the approaching truck until it’s too late-" },
+        { "id": null, "bg":"#", "dialogue": "The collision is sudden and harsh, and in an instant, your world goes dark…" },
+        { "id": null, "bg":"https://external-content.duckduckgo.com/iu/?u=http://th05.deviantart.net/fs71/PRE/f/2012/274/7/a/celestial_background_47_by_frostbo-d5ghwmv.png&f=1&nofb=1&ipt=5452ebf204c76b83610ed19eb6572cb588637a1439b3f44d58e4e51143c323e8&ipo=images", "dialogue": "When you regain consciousness, you find yourself enveloped in a blinding light. As your vision gradually clears, you are greeted by a serene, celestial realm." },
+        { "id": null, "dialogue": "An ethereal figure, a radiant goddess, gazes upon you with a blend of sorrow and regret." },
+        { "id": "seraphina", "dialogue": "“Oh dear~” <bold>she begins, her voice soft and laden with remorse.", "pos": 3 },
+        { "id": "seraphina","dialogue": "“It appears I’ve made an unfortunate mistake. I never intended for your life to end so suddenly. It was a miscalculation on my part.”", "pos": 3 },
+        { "id": "seraphina","dialogue": "<bold>With a gentle sigh, she continues:</bold> “I am Seraphina, the Keeper of Worlds. It seems my oversight has led to your untimely demise. I am responsible for overseeing the delicate balance of souls, ensuring the harmonious flow of life and death. Regrettably, a lapse in my calculations has caused this unintended outcome.\"", "pos": 3 },
+        { "id": "seraphina","dialogue": "<bold>Her eyes, filled with sincere apology, meet yours.</bold> “To make amends, I would like to offer you a unique opportunity. While returning you to your previous world is not permissible due to certain divine rules, I can send you to a different realm.”", "pos":3},
+        { "id": "seraphina","dialogue": "<bold>A glimmer of hope shines in her gaze.</bold> “I understand that this may be daunting, so to ease your transition, I will bestow upon you extraordinary abilities, far beyond what is typical for any being in that world.”", "pos":3},
+        { "id": "seraphina","dialogue": "<bold>Seraphina's radiant smile illuminates the celestial realm, her divine aura pulsing with both celestial remorse and ethereal hope.</bold> \"This is my divine offering to rectify the cosmic imbalance I have caused. Now, blessed soul, it is time for you to transcend into your new existence, imbued with the power of the heavens.\"", "pos":3},
+        { "id": "null", "type":"#","overlay": "https://i.gifer.com/Ozb.gif", "bg":"#","dialogue": "With a final, gentle wave, Seraphina bids you farewell. As her hand moves through the air, the vibrant light of her celestial realm begins to dim."},
+        { "id": "", "bg":"#","title":"A New Beginning","subtitle":"Welcomed by Nobility", "dialogue": "In the next moment, you awaken to the soft, comforting warmth of a cradle. The world around you is a blend of plush fabrics and gentle, soothing colors."},
+        { "id": "", "bg":"https://t4.ftcdn.net/jpg/07/95/11/79/360_F_795117917_PHszcOu6dFinZL49VVfIyAbeam2SvIhy.jpg", "dialogue": "As you open your eyes, you find yourself in a grand, opulently decorated nursery, surrounded by the soft murmurs and coos of a family of distinguished nobility."},
+        { "id": "eliza", "dialogue": "<bold>The kind-faced nurse, named Eliza, looks down with a warm smile.</bold> “Welcome to the world, little one~”", "pos":3} ,
+        { "id": "eliza", "dialogue": "<bold>she says softly.</bold> “You are a precious addition to the House of Eldridge.”","pos":3},
+        { "id": "eleanor", "dialogue": "<bold>The mother, Lady Eleanor, her tone filled with joy and wonder, approaches the cradle.</bold> “Look at our beautiful baby,”","pos":4},
+    { "id": "eleanor", "dialogue": "<bold>she says, eyes shining.</bold> “Absolutely perfect.“","pos":4},
+    { "id": "marcus", "dialogue": "<bold>The father, Lord Marcus, standing beside Eleanor, adds with pride</bold> “Indeed. I’m eager to see what remarkable things our child will accomplish.”","pos":5},
+    { "id": "cedric", "dialogue": "<bold>Nearby, an elderly relative, Lord Cedric, who has a wise and affectionate demeanor, remarks:</bold> “This child has the look of someone destined for greatness. They will bring much honor to our family.”","pos":1},
+    { "id": "eliza", "dialogue": "<bold>The maid, Eliza, attending to the nursery, offers a comforting presence, saying</bold> “I’ll make sure everything is perfect for the little master. Every need will be met.”","pos":3},
+    { "id": "isabelle","type":"kid", "dialogue": "<bold>An older sister, Lady Isabelle, around eight years old, peers into the cradle with a beaming smile.</bold> “Oh, so tiny and adorable! I can’t wait to play and be the best big sister ever!”","pos":2},
+    { "id": null, "dialogue": "<bold>The warm and loving environment surrounds you, the promise of a new life full of potential and opportunity beginning to unfold..."},
+    { "id": "null","type":"#","bg":"#","title":"A Toddler's World", "subtitle":"Growing Up in the House of Eldridge", "dialogue": "Two years have passed since your rebirth into the House of Eldridge. The nursery has transformed into a charming, child-friendly playroom, filled with toys, colorful books, and plush animals."},
+    {"id":null, "dialogue":"The house is bustling with activity, and you are now a lively toddler, exploring and learning with boundless curiosity."},
+    {"id":null,"bg":"https://t4.ftcdn.net/jpg/05/84/80/93/360_F_584809305_5xONp2JaS9rrXRXg9KrVFHCYBDacl4Q4.jpg", "dialogue":"In the grand family room, Lady Eleanor sits by the fireplace, her gaze following you with a mixture of affection and pride."},
+    {"id":"eleanor", "dialogue":"“Look at how quickly our little one is growing!” <bold>she remarks to Lord Marcus, who is seated beside her, a content smile on his face.", "pos":3},
+    {"id":"marcus", "dialogue":"<bold>Lord Marcus nods, his eyes twinkling.</bold> “Yes, every day is a new adventure. It’s wonderful to see how curious and bright our child is becoming.”","pos":4},
+    {"id":"cedric", "dialogue":"<bold>Lord Cedric, who has come for a visit, watches you with a thoughtful expression.</bold> “You know, I see a lot of potential in this young one. The intelligence and charm are evident even at this early age.”","pos":5},
+    {"id":"eliza", "dialogue":"<bold>Eliza, the maid, is busy tidying up and ensuring everything is in order, occasionally glancing at you and your sister with a warm smile.</bold> “They’ve taken their first steps just like a pro! It’s amazing to watch their progress.”","pos":2},
+    {"id":"isabelle", "type":"kid", "dialogue":"<bold>Lady Isabelle, now ten years old, is playing with you on the floor, her laughter filling the room.</bold> “Come on, let’s build a castle together!”","pos":1},
+    {"id":"isabelle", "type":"kid", "dialogue":"<bold>She encourages.</bold> “I’m going to teach you all my secret tricks!” <bold>She winks and smiles happily as she leads you toward the center of the room.","pos":1},
+    {"id":null, "dialogue":"The room is filled with the sounds of laughter and lively conversation, the loving environment a testament to the family’s deep affection and excitement for the future."},
+    {"id":"null", "bg":"#","type":"#", "title":"Eldridge's Legacy", "subtitle":"Embracing the Legacy Magic and Responsibility", "dialogue":"10 years have passed, and you are now 12 years old, your world brimming with magic and wonder."},
+    {"id":null, "dialogue":"Your innate abilities, bestowed by Seraphina, have begun to show themselves more vividly. Despite your young age, your skills far exceed those of any typical child."},
+    {"id":null, "bg":"https://t3.ftcdn.net/jpg/05/59/19/98/360_F_559199852_VAwCMp9cfNkyuwAWhYeJ08OCqMEDUKXY.jpg", "dialogue":"Today, Lord Marcus and Lord Cedric have gathered in the study to introduce you to the nuances of magic and discuss the family's role in the empire. You sit attentively, eager to learn more about the legacy and responsibilities that come with your extraordinary powers."},
+    {"id":"marcus", "dialogue":"<bold>Lord Marcus, beaming with pride, starts</bold> “As you know, magic is a fundamental part of our family’s heritage. You’ve shown remarkable talent even at your age as a true prodigy. Today, we want to guide you in understanding the deeper aspects of our magical responsibilities.”","pos":3},
+    {"id":"marcus", "dialogue":"<bold>He waves his hand, and a complex spell forms a shimmering shield around you.</bold> “Magic, especially at your level, is not just for personal gain but for the greater good. Our role as nobles is to use our abilities to protect and guide our people.”","pos":3},
+    {"id":"cedric","pos":1, "dialogue":"<bold>Lord Cedric, his demeanor wise and contemplative, adds</bold> “Indeed. Your powers are exceptional, and with them come significant responsibilities. It’s essential to understand that with great strength comes the duty to use it wisely. Our family has always upheld justice and harmony, and you must continue this tradition.”"},
+    {"id":"cedric","pos":1, "dialogue":"<bold>He demonstrates a more advanced spell, manipulating multiple elements at once.</bold> “Your natural prowess makes it easier for you to grasp advanced techniques. However, it’s crucial to balance power with compassion.”"},
+    {"id":"eleanor","pos":2, "dialogue":"<bold>Lady Eleanor, joining with a supportive smile, says</bold> “We’re incredibly proud of how you’re growing into your abilities. Embracing both your extraordinary gifts and your noble duties will be key to your future.”"},
+    {"id":"isabelle","pos":4, "dialogue":"<bold>Lady Isabelle, watching with a grin, adds</bold> “And remember, even though you’re incredibly powerful, we’ll always be here to support you!”"},
+    {"id":"eliza","pos":5, "dialogue":"<bold>Eliza, the maid, observes with admiration, ensuring everything is perfectly arranged for your lessons.</bold> “It’s amazing to see your progress. We’re all here to help you.”"},
+    {"id":null,"dialogue":"The room is filled with a sense of pride and anticipation as you delve deeper into your magical education and the responsibilities that come with your immense power."},
+    {"id":"null", "type":"#","dialogue":"<bold>Continue the story below..."}
+    ]
+    }
+  }
+
+}

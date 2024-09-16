@@ -4,18 +4,17 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <title>Re/Life</title>
   </head>
   
-  <body>
+  <body class="chapter1">
     <div class="carousel" data-carousel>
       <div class="slides" data-carousel-slides-container>
-        <div class="slide"
-          style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(./assets/hana2.png) ;">
-          <h1 style="color:var(--color-2);animation:to-top 2s 1s ease-in forwards; opacity:0;" data-text="Transferred student" class="text" >Transferred student</h1>
-          <h6 style="color:var(--color-3);animation:to-top 2s 2s ease-in forwards; opacity:0;">Chapter 2: Unexpected Encounters</h6>
+        <div class="slide slide-main">
+          <h1 class="title title-main"></h1>
+          <h6 class="subtitle subtitle-main"></h6>
           <button 
-          onclick='audio=document.getElementById("myaudio2"),audio.volume=.4,audio.play()'
-            class="carousel-button carousel-button_next"
+          class="carousel-button carousel-button_next"
           data-carousel-button-next 
           style="bottom:15%;height: 5vw; width: auto;left:0%;"
           >
@@ -23,10 +22,17 @@
               play_circle
             </span>  
           </button>
+          <button  class="carousel-button carousel-btn-music">
+            <span class="material-symbols-outlined">
+            music_note
+            </span>
+          </button>
+          <audio id="bg-ost-sound">
+            <source src="../StrawHats/One_Piece_OST_Overtaken.mp3" type="audio/mpeg" />
+          </audio>
         </div>
-        <div class="slide"
-          style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(./assets/library.png);display: flex;align-items:center">
-  
+
+        <div class="slide slide-main">
           <header class="slide-header">
             <button
                 class="carousel-button carousel-button_previous"
@@ -46,17 +52,12 @@
           </header>
   
           <section class="slide-section">
-            <h5 style="color:var(--color-1);text-transform:uppercase">Chapter 2: Unexpected Encounters</h3>
-              <p>As the days go by, you start to notice Hana more around college. It turns out she shares your enthusiasm for a particular subject or hobby, whether it’s a love for classic literature, a fascination with astronomy, or a passion for art. This shared interest sparks a series of interactions that allow you to see a different side of Hana—one that is more animated and open than the reserved demeanor she initially presented.<br/><br/>
-
-                The annual college festival approaches, transforming the campus into a vibrant spectacle of colors and sounds. You find Hana deeply involved in the preparations, whether she’s helping set up booths, organizing activities, or participating in a performance. The festival grounds are alive with the buzz of students, food stalls, and various attractions.<br/>                
-            </p>
+            <h5 class="title title-about"></h3>
+            <p class="about"></p>
           </section>
-  
         </div>
-  
-        <div class="slide"
-          style="background-color: rgba(0,0,0,0.5);background-blend-mode:color;">
+
+        <div class="slide slide-main">
           <header class="slide-header">
             <button
                 class="carousel-button carousel-button_previous"
@@ -67,14 +68,15 @@
         </span>
               </button>
             <div>
-              <h6>Chapter 2: Unexpected Encounters</h6>
-              <em>Location: Decorating a stall</em>
+              <h6 class="title title-header"></h6>
+              <em class="subtitle subtitle-header"></em>
             </div>
           </header>
           <section class="novel-section">
             <audio id="voice">
               <source src="" type="audio/mpeg" />
             </audio>
+            <img id="novel-overlay" class="novel-overlay" />
             <div class="novel-images">
               <img src="" id="img1"  class="novel-img"/>
               <img src="" id="img2"  class="novel-img"/>
@@ -82,8 +84,8 @@
               <img src="" id="img4" class="novel-img" />
               <img src="" id="img5" class="novel-img" />
             </div>
-            <div class="novel-dialogues chapter2">
-              <p>click in the arrow to go to "next"...</p>
+            <div class="novel-dialogues">
+              <p>...</p>
               <div class="dialogues-arrow-container"><span class="material-symbols-outlined dialogues-arrow">
   arrow_drop_down
   </span></div>
@@ -91,7 +93,7 @@
           </section>
         </div>
   
-        <div class="slide" style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(assets/hana2.png)">
+        <div class="slide slide-main">
           <!-- Credits -->
           <header class="slide-header">
             <button
@@ -107,12 +109,12 @@
           <audio id="credits-audio">
             <source src="https://cdn.pixabay.com/audio/2024/09/12/audio_c6540d8845.mp3" type="audio/mpeg" />
           </audio>
-          <em style="color:gray""> Credits:</em>
+          <em style="color:gray"> Credits:</em>
               <div class="container-credits">
           <a target="_blank" onclick='audiobg=document.getElementById("credits-audio"),audiobg.pause(), audio=document.getElementById("credits-audio"),audio.volume=.3,audio.play()' href="https://www.joyland.ai/profile?userId=8Ad2r"  class="card-credits">
               <h5 class="text" data-text="@Theodorus">@Theodorus</h5>
             <div class="credits-link" >
-              <img class="credits-img" src="https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp" />
+              <img class="credits-img" src="https://media.discordapp.net/attachments/1132902792999215135/1284975750092554401/basedlabs_12c4eb5d-09f5-4b69-b695-6c8afbb7af76-ezgif.com-censor_1.gif?ex=66e8966c&is=66e744ec&hm=f68964886e50f4bcac193b97c21619fc56d601142812e499e458e7517799d7cb&=&width=427&height=427" />
               <svg height="120%"  width="120%" class="credits-svg" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape" rx="50%" ry="50%" x="2.5%" y="2.5%" height="95%" width="95%" />
               </svg>
@@ -123,6 +125,6 @@
     </div>
     </div>
     </div>
-    <script src="./script.js"></script>
+    <script  type="module" src="./script.js"></script>
   </body>
   
