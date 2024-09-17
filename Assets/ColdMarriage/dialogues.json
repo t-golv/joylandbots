@@ -1,0 +1,56 @@
+{
+    "characters": {
+      "sophia": {
+        "defaultLink": "./assets/sophia.png",
+      "audio":["https://ami.animecharactersdatabase.com/audio/104169/12/104169-12-225.mp4", "","https://ami.animecharactersdatabase.com/audio/104169/1/104169-1-354.mp4","https://ami.animecharactersdatabase.com/audio/104169/12/104169-12-285.mp4"]
+  
+      },
+
+      "liliane": {
+        "defaultLink": "./assets/liliane.png",
+        "audio": ["https://ami.animecharactersdatabase.com/audio/108277/8/108277-8-118.mp4","","https://ami.animecharactersdatabase.com/audio/108277/12/108277-12-88.mp4","https://ami.animecharactersdatabase.com/audio/108277/2/108277-2-85.mp4", ""]
+      },
+  
+      "helena": {
+        "defaultLink": "./assets/helena.png",
+        "audio":["https://ami.animecharactersdatabase.com/audio/106220/21/106220-21-53.mp4","https://ami.animecharactersdatabase.com/audio/106220/21/106220-21-324.mp4"]
+      }
+    },
+    "story": {
+      "chapter1": {
+        "title": "Cold Marriage",
+        "subtitle": "Secrets and Schemes in the Gilded Cage",
+        "about": {
+          "title": "Secrets and Schemes in the Gilded Cage",
+          "paragraph": "In the world of high society, <mark>Cold Marriage</mark> delves into the unraveling of your arranged marriage to Helena, a successful yet aloof woman. Living in a lavish penthouse, your relationship is marked by emotional distance and mounting frustration. Helena’s old friend, Sophia, who once was her closest confidante and shared many intimate moments, now harbors a secret crush on you. As Helena prepares for a prestigious charity gala, Sophia’s jealousy drives her to subtly sabotage your marriage with cunning schemes. With the loyal maid Liliane observing the drama unfold, you must navigate a web of deceit to uncover the truth behind Helena’s cold demeanor and Sophia’s treacherous designs, all while grappling with the future of your fractured relationship.",
+          "image": "https://media.discordapp.net/attachments/1285650916296360037/1285650924362010808/ddde8c77-b38a-41dc-a1be-9cd180bf73c4.png?ex=66eb0b3a&is=66e9b9ba&hm=b7552191633d30c37826d65888b48bc30f07315395ae3f7c7939f168a599badd&=&format=webp&quality=lossless&width=563&height=563"
+        },
+        "dialogues": [
+          { "id": null, "title":"Special Event","subtitle":"Secrets and Schemes in the Gilded Cage", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fbeautiful-rich-modern-luxury-interior-neural-network-ai-generated_76080-23124.jpg&f=1&nofb=1&ipt=8c630126539b321ed44ce62561d85bcf6439d55f701c29c05e6aac543aef9033&ipo=images", "dialogue": "You enters the living room, exhausted. The wife scrutinizes a guest list while Sophia lounges on the sofa, her eyes following the you with a glimmer of interest." },
+          { "id": null, "dialogue": "The tension between you and your wife is palpable due to your strained marriage. Helena’s arrogance and high standards are evident in her demeanor and interactions." },
+          { "id": "helena",  "dialogue": "\"Oh, you’re finally home.\"","pos": 3  },
+          { "id": null,"overlay":"https://i.gifer.com/7dDt.gif", "dialogue": "<bold>She glances up with a cool, detached expression." },
+          { "id": "helena", "dialogue": "\"I was beginning to think you’d decided to stay at the office all night.\"","pos": 3  },
+          { "id": "helena", "dialogue": "\"Sophia, I was just telling him about the gala. Do you remember how you were complaining about the guest list earlier?\"", "pos": 3 },
+          { "id": null,"dialogue": "<bold>She hands the list to Sophia with a dismissive wave.", "pos": 3 },
+          { "id": "helena","dialogue": "\"Would you mind giving it another look? Perhaps you can spot any discrepancies that I missed.\"", "pos": 3 },
+          { "id": null, "dialogue": "<bold>Now she turns and addresses you", "pos":3},
+          { "id": "helena","dialogue": "“And please, try to remember that we are hosting one of the most important charity events of the season. I expect you to act accordingly. No more of your... casual behavior.”", "pos":3},
+          { "id": null,"dialogue": "<bold>Her eyes narrow slightly and her tone sharpens, reflecting her frustration as she looks at you.", "pos":3},
+          { "id": "helena", "dialogue": "\"No mistakes tonight.\"","pos":3},
+          { "id": "sophia", "dialogue": "\"You know him, I’m sure you’ll be just fine. You always manage to surprise us, don’t you?\"", "pos":2},
+          { "id": null, "dialogue": "<bold>She flashes a practiced, sweet smile yet with a hint of something secret."},
+          { "id": "sophia", "dialogue": "\"But do try to impress. We wouldn’t want to see you embarrass yourself.\"", "pos":2} ,
+          { "id": "helena", "dialogue": "\"I’ve arranged for a stylist to come by later to help with your suit. I don’t trust you to handle such details on your own.\"","pos":3},
+          { "id": null, "dialogue": "<bold>Her voice is laced with condescension."},
+      { "id": "helena", "dialogue": "\"And you’ll need to be on your best behavior.\"","pos":3},
+      { "id": null, "dialogue": "<bold>Liliane approaches you with a polite, professional smile."},
+      { "id": "liliane", "dialogue": "\"If you need any assistance with your attire or anything else for the evening, please let me know. I’ll be around to help.\"","pos":4},
+      { "id": "sophia", "dialogue": "\"I’m sure you’ll be perfect tonight. Just remember, if you need any advice or... support, I’m always here.\"","pos":2},
+      { "id": null, "dialogue": "<bold>She gives you a lingering, almost affectionate smile."},
+      { "id": null, "dialogue": "The tense and intriguing environment surrounds you <bold>Continue the story below..."}
+      ]
+      }
+    }
+  
+  }  
