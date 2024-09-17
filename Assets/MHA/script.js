@@ -199,18 +199,18 @@ const dialogues = {
     {id:"", dialogue: "<bold>Continue the story by responding below. When you're ready to proceed, simply type 'Chapter 3' to embark on your next journey through U.A. High School."}
   ],
   chapter3: [
-    { id: null, dialogue: "In the midst of their daily routines at U.A. High School, the students suddenly found themselves enveloped in an ominous haze. Ochaco Uraraka, caught in the midst of a training session, felt a chill run down her spine as the faint smell of something unfamiliar tickled her senses." },
-    { id: "ochaco", dialogue: `"What's that smell?" <bold>she muttered, looking around cautiously. Her thoughts raced, trying to piece together the unsettling puzzle unfolding around her.`, pos: 3 },
+    { id: null,  bg: "./assets/training2.webp" ,dialogue: "Suddenly, the tranquility shattered. A deafening explosion rocked the campus, sending shockwaves through the air. Smoke billowed ominously, carrying with it the acrid scent of danger. Panic erupted among the students as they realized that the school was under attack." },
+    { id: "ochaco", dialogue: `"We can't let them harm anyone. Let's work together and defend our school!" <bold>Ochaco Uraraka’s expression shifted from shock to resolve.`, pos: 3,type: "heroLink" },
     { id: null, dialogue: "Meanwhile, Izuku Midoriya was in the middle of reviewing hero techniques when the first whispers of panic echoed through the hallways. His instincts kicked in immediately, his mind processing the unusual scent and its potential implications." },
     {
-      id: "deku", dialogue: `Gas? <bold>he questioned aloud, a knot forming in his stomach. His thoughts turned to his classmates, wondering if they were safe amidst the growing confusion.`, pos: 1
-    }, { id: null, dialogue: "Katsuki Bakugo, always alert and ready for action, sensed the change in the air before the gas alarms blared. His eyes narrowed as he recognized the threat" },
-    { id: "bakugo", dialogue: `"Damn it," <bold>he growled, muscles tensing as he prepared to spring into action. His mind raced with strategies to protect those around him, his explosive quirk ready to be unleashed against any adversary.`, pos: 2 },
+    id: "deku", dialogue: `"Everyone, stay alert! Villains have breached the school grounds!" <bold>Izuku Midoriya’s eyes widened with alarm as he scanned the chaos unfolding around them.</bold>`, pos: 1, type: "heroLink"}, 
+    { id: null, dialogue: "Katsuki Bakugo, always alert and ready for action, sensed the change in the air before the gas alarms blared. His eyes narrowed as he recognized the threat" },
+    { id: "bakugo", dialogue: `"They picked the wrong day to mess with us. Let's show them what real heroes are made of!" <bold>Katsuki Bakugo's usual smirk disappeared, replaced by a fierce scowl.`, pos: 2 ,type: "heroLink"},
     { id: null, dialogue: "Shoto Todoroki, calm and composed as ever, felt the temperature drop unnaturally around him. His instincts told him something was wrong, and the sudden chill in the air was a stark contrast to the warmth of the school day" },
-    { id: "todoroki", dialogue: `"Ice and fire won't be enough if this spreads," <bold>he thought, already formulating a plan to assist in evacuations and contain the danger.`, pos: 4 },
-    { id: null, dialogue: `Tenya Iida, always vigilant in upholding order, heard the distant commotion and immediately sprang into action.` },
-    { id: "tenya", dialogue: `"Gas attack," <bold>he declared, voice carrying authority as he directed his classmates to safety. His mind raced with thoughts of securing the perimeter and ensuring that everyone remained calm and accounted for amidst the chaos.`, pos: 5 },
-    {id:"", dialogue: "Continue the story by responding below, introducing your  classmates. When you're ready to proceed, simply type 'Chapter 1' to embark on your journey at U.A. High School."}
+    { id: "todoroki", dialogue: `"We need to act swiftly and decisively. Protect the students and neutralize the threat." <bold>Shoto Todoroki's demeanor remained composed, his dual-colored eyes narrowing with determination.`, pos: 4 ,type: "heroLink"},
+    { id: "tenya", dialogue: `"Form teams and coordinate efforts! Our priority is the safety of our classmates and securing the perimeter." <bold>Tenya Iida’s voice cut through the chaos, authoritative and urgent.`, pos: 5 ,type: "heroLink"},
+    { id: null, dialogue: `Amid the confusion, a dense cloud of gas suddenly engulfed the training grounds, obscuring visibility and causing coughs and shouts from those caught within. The students realized the villains had deployed a tactical advantage to disorient and divide them..` },
+    {id:"", dialogue: "<bold>Continue the story by responding below, introducing your  classmates. When you're ready to proceed, simply type 'Chapter 1' to embark on your journey at U.A. High School."}
   ]
 };
 function bgOst() {
