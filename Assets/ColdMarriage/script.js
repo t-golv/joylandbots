@@ -162,3 +162,9 @@ async function loadDialogues() {
   
   main();
   
+// Prevent default Tab behavior
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Tab') {  
+      event.preventDefault(); // Prevent the default tab action
+  }
+});

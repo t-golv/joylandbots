@@ -157,3 +157,9 @@ function bgOst() {
   }
 }
 // { id: "", dialogue: ``, pos: 0 },
+// Prevent default Tab behavior
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Tab') {  
+      event.preventDefault(); // Prevent the default tab action
+  }
+});
