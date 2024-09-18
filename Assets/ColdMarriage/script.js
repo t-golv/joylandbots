@@ -150,7 +150,7 @@ async function loadDialogues() {
     function bgOst() {
       let audio = document.getElementById("bg-ost-sound");
       if(audio.currentTime == 0 || audio.paused) {
-        audio.volume=0.1;
+        audio.volume=0.25;
         audio.play();
         document.querySelector('.carousel-btn-music .material-symbols-outlined').innerHTML = "pause";
       } else {
