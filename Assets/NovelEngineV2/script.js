@@ -51,13 +51,12 @@ async function loadDialogues() {
   
       function changeSlide(slideNumber) {
         currentDialogueIndex = 0;
-        if (currentSlide + 1 == slides.length) {
-          let creditsAudio = document.querySelector("#credits-audio");
-          creditsAudio.volume = 0.3;
-          creditsAudio.play();
-        }
+        playSlideSound()
         activeSlide()
-        nextDialogue()
+        if(slideNumber == 2) {
+
+          nextDialogue()
+        }
         carousel.style.setProperty('--current-slide', slideNumber);
       }
   
@@ -75,7 +74,8 @@ async function loadDialogues() {
       function nextDialogue() {
         // pega o elemento dialogo
         if (currentDialogueIndex < RPG.story[chapter].dialogues.length) {
-          if(currentSlide == 2) {
+  
+            playDialogueSound()
             let activeIMG;
             let currentDialogue = RPG.story[chapter].dialogues[currentDialogueIndex];
             let characterActive = RPG.characters[currentDialogue.id];
@@ -112,7 +112,8 @@ async function loadDialogues() {
             if (currentDialogue?.subtitle) {
               document.querySelector('.subtitle-header').innerHTML = currentDialogue.subtitle
             }
-            const overlayElement = document.querySelector('.novel-overlay');
+            let overlayElement = document.querySelector('.novel-overlay');
+            let itemElement = document.querySelector('.novel-item');
             if (currentDialogue?.overlay) {
               overlayElement.src = currentDialogue.overlay;
               overlayElement.onload = () => {
@@ -126,12 +127,25 @@ async function loadDialogues() {
             } else {
               overlayElement.style.display = 'none';
             }     
+            if (currentDialogue?.item) {
+              itemElement.src = currentDialogue.item;
+              itemElement.onload = () => {
+                itemElement.style.display = 'block'; // Show only when loaded
+              };
+              itemElement.onerror = () => {
+                itemElement.style.display = 'none'; // Hide if there's an error loading
+              };
+              // Initially hide the image
+              itemElement.style.display = 'none';
+            } else {
+              itemElement.style.display = 'none';
+            }   
             document.querySelector('.novel-section').removeAttribute('id');
             document.querySelector('.novel-section').id = RPG.story[chapter].dialogues[currentDialogueIndex].id;
             let paragraphElement = document.querySelector(`.novel-dialogues p`);
             paragraphElement.innerHTML = RPG.story[chapter].dialogues[currentDialogueIndex].dialogue;
             currentDialogueIndex++;
-          }
+        
         } else {
           // quando os dialogos chegarem no maximo vai para proximo slide
           let imgs = document.querySelectorAll(".novel-img");
@@ -168,3 +182,13 @@ document.addEventListener('keydown', (event) => {
       event.preventDefault(); // Prevent the default tab action
   }
 });
+function playSlideSound() {
+  let transitionSound = document.querySelector("#transition-slide-audio");
+  transitionSound.volume = 0.2;
+  transitionSound.play();
+}
+function playDialogueSound() {
+  let transitionSound = document.querySelector("#transition-dialogue-audio");
+  transitionSound.volume = 0.2;
+  transitionSound.play();
+}

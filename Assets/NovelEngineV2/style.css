@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --color-1: #e2e2e2;
-  --color-2: #b3b3b3;
-  --color-3: #7a7a7a;
+  --color-1: #ac4343;
+  --color-2: #a73a3a;
+  --color-3: #cf7e7e;
   --color-4: #4b4b4b;
   --color-5: #1b1b1b;
   --font-1: "Roboto", sans-serif
@@ -274,7 +274,7 @@ body {
   justify-content: end;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 200%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent 200%);
 }
 .novel-overlay {
   width: 100vw;
@@ -286,41 +286,54 @@ body {
   mix-blend-mode: color-dodge;
   display: none;
 }
+.novel-item {
+  width: 40vh;
+  padding: 2rem;
+  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.5), transparent) center no-repeat;
+  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1), pulse .5s linear infinite alternate;
+  object-fit: cover;
+  height: 40vh;
+  position: absolute;
+  display: block;
+  mix-blend-mode: lighten;
+  object-fit: contain;
+  z-index: 4;
+  display: none;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
 .novel-images {
   width: 100vw;
-  height: 70vh;
-  padding: 1rem 2rem 0;
+  height: 100%;
   display: flex;
   overflow: hidden;
   justify-content: center;
   align-items: flex-end;
 }
-
 .novel-section .novel-images .novel-img {
   opacity: .8;
-  object-fit: contain;
+  object-fit: cover;
   width: 20%;
-  flex: 10 3 50%;
-  object-position: 90% 50%;
+  height: 100%;
+  flex: 1 1 100%;
   transform: scale(.95) translateY(2rem);
   display: none;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; 
   max-width: 50vh;
   -webkit-user-drag: none;
-  object-fit: contain;
   -webkit-user-select: none;
   transition: transform ease-in-out .5s, background 2s ease;
-  max-height: 80vh;
   z-index: 1;
 }
 
 .novel-dialogues {
     background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(1rem);
+    /* backdrop-filter: blur(1rem); */
     position: relative;
     width: 100vw;
     height: 30vh;
@@ -584,8 +597,8 @@ a {
 .novel-section .novel-img.active {
   opacity: 1 !important;
   transform: scale(100%) translateY(0);
-  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.5), transparent) center no-repeat;
   mix-blend-mode: normal;
+  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.5), transparent) center no-repeat;
   animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1), pulse .5s linear infinite alternate;
   z-index: 2;
 }

@@ -268,8 +268,7 @@ body {
 
 .novel-images {
   width: 100vw;
-  height: 70vh;
-  padding: 1rem 2rem 0;
+  height: 100%;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -278,21 +277,20 @@ body {
 
 .novel-section .novel-images .novel-img {
   opacity: .8;
-  object-fit: contain;
+  object-fit: cover;
   width: 50%;
-  object-position: 90% 50%;
+  height: 100%;
+  flex: 1 1 100%;
   transform: scale(.95) translateY(2rem);
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; 
   max-width: 50vh;
   -webkit-user-drag: none;
-  object-fit: contain;
   -webkit-user-select: none;
   transition: transform ease-in-out .5s, background 2s ease;
-  max-height: 70vh;
   z-index: 1;
 }
 
