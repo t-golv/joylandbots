@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Function to parse query parameters from URL
+        function getQueryParams() {
+            var params = {};
+            var queryString = window.location.search.substring(1);
+            var pairs = queryString.split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split('=');
+                var key = decodeURIComponent(pair[0]);
+                var value = decodeURIComponent(pair[1] || '');
+                params[key] = value;
+            }
+            return params;
+        }
+
+        // Get query parameters
+        var queryParams = getQueryParams();
+        var data = queryParams['data'];
+
+        // Display received data
+        var outputDiv = document.getElementById('output');
+        outputDiv.textContent = 'Received data: ' + data;
+    </script>
+</body>
+</html>
