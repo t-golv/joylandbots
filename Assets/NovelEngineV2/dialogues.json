@@ -27,7 +27,7 @@
         },
         "dialogues": [
           { "id": null, "title":"Special Event","subtitle":"Secrets and Schemes in the Gilded Cage", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fbeautiful-rich-modern-luxury-interior-neural-network-ai-generated_76080-23124.jpg&f=1&nofb=1&ipt=8c630126539b321ed44ce62561d85bcf6439d55f701c29c05e6aac543aef9033&ipo=images", "dialogue": "You enter the living room, exhausted. The wife scrutinizes a guest list while Sophia lounges on the sofa, her eyes following you with a glimmer of interest." },
-          { "id": null,"i":true, "dialogue": "The tension between you and your wife is palpable due to your strained marriage. Helena’s arrogance and high standards are evident in her demeanor and interactions." },
+          { "id": null,"i":true, "adialogue": "The tension between you and your wife is palpable due to your strained marriage. Helena’s arrogance and high standards are evident in her demeanor and interactions." },
           { "id": "helena",  "dialogue": "\"Oh, you’re finally home.\"","pos": 3  },
           { "id": null,"overlay":"https://i.gifer.com/7dDt.gif", "dialogue": "<bold>She glances up with a cool, detached expression." },
           { "id": "helena", "dialogue": "\"I was beginning to think you’d decided to stay at the office all night.\"","pos": 3  },

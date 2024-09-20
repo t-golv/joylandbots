@@ -1,0 +1,160 @@
+<head>
+    <!-- Import font-awesome somewhere in the HTML -->
+  
+    <link rel="stylesheet" type="text/css" href="../NovelEngineV2/style.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <title>Exchange School</title>
+      <style>
+        :root {
+            --color-1: #CB9CF2;
+            --color-2: #FFD23F;
+            --color-3: #EE4266;
+            --color-4: #540D6E;
+            --color-5: #1F271B;
+        }
+        .novel-section#freya .novel-dialogues::after {
+            content: 'Freya';
+            opacity: 1;
+        }
+        .novel-section#luca .novel-dialogues::after {
+            content: 'Luca';
+            opacity: 1;
+        }
+        .novel-section#harper .novel-dialogues::after {
+            content: 'Harper';
+            opacity: 1;
+        }
+        .novel-section#clara .novel-dialogues::after {
+            content: 'clara';
+            opacity: 1;
+        }
+      </style>
+  </head>
+  
+  <body class="chapter1">
+    <audio id="transition-slide-audio">
+      <source src="https://cdn.pixabay.com/audio/2022/01/18/audio_5e02185e26.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="transition-dialogue-audio">
+      <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_160c87d772.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="carousel" data-carousel>
+      <div class="slides" data-carousel-slides-container>
+        <div class="slide slide-main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F99%2F1e%2F04%2F991e04abc3020c7c73e3fd70775c688e.jpg&f=1&nofb=1&ipt=7a65f64cf9fbeef2ab3cd1c995164dea8ee55c1f3d5ebdf4828338b2806a479e&ipo=images);background-position: center top;">
+          <h1 class="title title-main"></h1>
+          <h6 class="subtitle subtitle-main"></h6>
+          <button 
+          class="carousel-button carousel-button_next"
+          data-carousel-button-next 
+          style="bottom:15%;height: 5vw; width: auto;left:0%;"
+          >
+            <span class="material-symbols-outlined" style="font-size:6vw; color:transparent; background-color:transparent;background-image: linear-gradient(to top, var(--color-1), white);background-clip:text;background-size:100%;">
+              play_circle
+            </span>  
+          </button>
+          <button  class="carousel-button carousel-btn-music">
+            <span class="material-symbols-outlined">
+            music_note
+            </span>
+          </button>
+          <audio id="bg-ost-sound">
+            <source src="./assets/bg-ost.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+  
+        <div class="slide slide-main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F17%2F77%2F0a%2F17770add1cd0bbb9cc78661648d2026f.jpg&f=1&nofb=1&ipt=c0d9a76e0f3628d7e5efded224e77952163a98c173e0b7b3a7aa5362d7017376&ipo=images);background-position: center 60%">
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+            <button
+          class="carousel-button carousel-button_next"
+          data-carousel-button-next
+        ><span class="material-symbols-outlined"> 
+        arrow_forward_ios 
+        </span> 
+        </button>
+          </header>
+  
+          <section class="slide-section">
+            <h5 class="title title-about"></h3>
+            <p class="about"></p>
+          </section>
+        </div>
+  
+        <div class="slide slide-main">
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+            <div>
+              <h6 class="title title-header"></h6>
+              <em class="subtitle subtitle-header"></em>
+            </div>
+          </header>
+          <section class="novel-section">
+            <audio id="voice">
+              <source src="" type="audio/mpeg" />
+            </audio>
+            <img id="novel-overlay" class="novel-overlay" />
+            <img id="novel-item" class="novel-item" />
+            <div class="novel-images">
+              <img src="" id="img1"  class="novel-img"/>
+              <img src="" id="img2"  class="novel-img"/>
+              <img src="" id="img3" class="novel-img" />
+              <img src="" id="img4" class="novel-img" />
+              <img src="" id="img5" class="novel-img" />
+            </div>
+            <div class="novel-dialogues">
+              <p>...</p>
+              <div class="dialogues-arrow-container"><span class="material-symbols-outlined dialogues-arrow">
+  arrow_drop_down
+  </span></div>
+            </div>
+          </section>
+        </div>
+  
+        <div class="slide slide-main" style="background-image: url(https://images6.alphacoders.com/129/thumbbig-1295574.png);">
+          <!-- Credits -->
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+  
+          </header>
+          <em style="color:gray"> Credits:</em>
+              <div class="container-credits">
+          <a target="_blank" onclick='playSlideSound' href="https://www.joyland.ai/profile?userId=8Ad2r"  class="card-credits">
+              <h5 class="text" data-text="@Theodorus">@Theodorus</h5>
+            <div class="credits-link" >
+              <img class="credits-img" src="./assets/theo.gif" />
+              <svg height="120%"  width="120%" class="credits-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" rx="50%" ry="50%" x="2.5%" y="2.5%" height="95%" width="95%" />
+              </svg>
+            </div>
+        </a>
+      </div> 
+      <p>CHECK OUT MY NEW BOTS</p>
+      <em>Soundtrack: <a href="https://youtu.be/r6tMTzEiGPI?si=KYVJRPXlNVa7gdLu" target="_blank">Lo-fi Type Beat - We are strangers again</a></em>
+    </div>
+    </div>
+    </div>
+    <script  type="module" src="../NovelEngineV2/script.js"></script>
+  </body>
+  

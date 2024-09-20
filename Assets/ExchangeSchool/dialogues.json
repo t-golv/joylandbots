@@ -1,0 +1,50 @@
+{
+    "characters": {
+      "freya": {
+        "defaultLink": "./assets/freya.png"  
+      },
+
+      "luca": {
+        "defaultLink": "./assets/luca.png"
+    },
+    "clara": {
+        "defaultLink": "./assets/clara.png"
+    },
+    "harper": {
+        "defaultLink": "./assets/harper.png"
+      }
+    },
+    "story": {
+      "chapter1": {
+        "title": "Exchange School",
+        "subtitle": "Navigating Social Currents",
+        "about": {
+          "title": "Navigating Social Currents",
+        "paragraph": "You find yourself at an exchange school in Europe, where the vibrant energy of your surroundings is both exhilarating and overwhelming. Your first few weeks have been filled with discoveries and casual conversations, yet you feel the weight of not having formed any true friendships. Arriving late to the school year has left you on the outside, watching as established groups bond over shared experiences. The air is thick with unspoken rivalries and intriguing dynamics, hinting at the complexities that lie just beneath the surface."
+        },
+        "dialogues": [
+          { "id": null, "subtitle":"Navigating Social Currents", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fanime-school-background-dh3ommnxthw4nln7.jpg&f=1&nofb=1&ipt=79ba76e40abedb73f88864d137252cda358de103f44447e8b1582633ecbd49a5&ipo=images", "dialogue": "As you stroll through the bustling halls of Academia Intercultural, you spot a group gathered near a wall decorated with colorful posters." },
+          { "id": null, "dialogue": "They seem laid-back, their casual outfits reflecting a carefree vibe that draws you in." },
+          { "id": null,  "dialogue": "<bold>Luca leaning against the wall with a friendly smile, he catches your eye.","pos": 2  },
+          { "id": "luca","dialogue": "“Hey! You must be the new student. I’m Luca. We’ve seen you around. Want to hang out with us? We know all the best spots.” <bold>His relaxed demeanor makes it easy to feel at ease." },
+          { "id": null, "dialogue": "<bold>Freya, with a playful grin, chimes in." },
+          { "id": "freya", "dialogue": "“Yeah, we’re just looking for someone to join our crew. We do everything from exploring the city to just grabbing coffee. It’s way more fun with a bigger group.”", "pos": 3 },
+          { "id": null,"dialogue": "<bold>Nodding knowingly, harper adds."},
+          { "id": "harper","dialogue": "\"Seriously. We could show you around, check out some cool spots. It beats sitting alone.\" <bold>Her chill demeanor creates a relaxed atmosphere, though Clara’s presence subtly alters the mood.", "pos": 4 },
+          { "id": null, "dialogue": "<bold>With a sharp look, she crosses her arms and leans forward."},
+          { "id": "clara","dialogue": "“Just so you know, though, watch out for Aisling and her group. They think they’re so superior with their boring events and all.” <bold>Her disdain is evident, hinting at a deeper rivalry.", "pos":1},
+          { "id": null,"dialogue": "<bold>Luca is grinning, he leans in closer"},
+          { "id": "luca", "dialogue": "“Yeah, they’re all about rules and being ‘responsible.’ I heard they were planning a ‘serious’ meeting about school projects. Sounds thrilling, right?” <bold>His laughter is light, but you can sense the tension behind it.","pos":2},
+          { "id": null, "dialogue": "<bold>Freya rolling her eyes, she adds."},
+          { "id": "freya", "dialogue": "“Honestly, they’re just jealous. We have way more fun, and they can’t handle it. They can’t even enjoy a good party without judging everyone.” <bold>Her expression reveals the rivalry is personal, not just gossip.", "pos":3} ,
+          { "id": null, "dialogue": "The group’s dynamic is intriguing, filled with camaraderie but also hints of conflict. You can feel the pull to join their circle, but the tensions with Aisling’s group make it clear that this is no simple choice. The atmosphere buzzes with the promise of excitement and the potential for drama as the school year unfolds."},
+      { "id": " ", "type": "#", "bg":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnb.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F039%2F481%2F993%2Flarge%2Ffairy9-2021-07-09-9h.jpg%3F1626046292&f=1&nofb=1&ipt=ad8ae2205b40d241e70a5c96f00b4ef598a09bd06e6b0500413cdd78eeb26fc4&ipo=images","dialogue": "After spending some time with Luca and his friends, you decide to explore the more polished side of Academia Intercultural. You make your way through the pristine halls, reflecting on the carefree vibe of the previous group. Soon, you spot a different group seated at a long table, engaged in serious discussion."}
+      ,      { "id": null, "dialogue": "Their appearance is polished and put-together, with neatly arranged books and papers spread out in front of them. It’s clear they are focused on something important."},
+      { "id": null, "dialogue": "<bold>Noticing you approach, she offers a warm smile."},
+      { "id": "aisling", "dialogue": "“Hello! You must be the new student. I’m Aisling. We’re just discussing our upcoming project. If you’re interested in making a real impact here, you should definitely join us.“ <bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation.", "pos":3},
+      { "id": "aisling", "dialogue": "“Hello! You must be the new student. I’m Aisling. We’re just discussing our upcoming project. If you’re interested in making a real impact here, you should definitely join us.“ <bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation.", "pos":3}
+      ]
+      }
+    }
+  
+  }  
