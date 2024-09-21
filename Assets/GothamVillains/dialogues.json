@@ -1,11 +1,11 @@
 {
     "characters": {
       "thief": {
-        "defaultLink": "https://media.discordapp.net/attachments/1286518446070300693/1286523723733798986/cefb0241-094e-4ae6-950a-449e1fb6d54d.png?ex=66ee3816&is=66ece696&hm=f85fe7a11c8bfd133e5d01de37a754b0b846817400aa4432fa77f5783881647f&=&format=webp&quality=lossless&width=563&height=563"  
+        "defaultLink": "./assets/thief.png"  
       },
 
       "batman": {
-        "defaultLink": "https://images-ext-1.discordapp.net/external/J74qGMINYBSM1tkX0Umhh7hwKkLGI6Q_iY0V9VWNzCA/%3Fu%3Dhttps%253A%252F%252Fimg.freepik.com%252Fpremium-vector%252Fposter-batman-dark-knight-bat-superhero-vector-illustration_819901-582.jpg%26f%3D1%26nofb%3D1%26ipt%3Dd977baf65a0cece6398ca4403ba57ec0b629e044ae5a4b44c8e597debf2ea014%26ipo%3Dimages/https/external-content.duckduckgo.com/iu/?format=webp&width=688&height=454"
+        "defaultLink": "./assets/batman.png"
       },
   
       "helena": {
@@ -23,7 +23,7 @@
           "image": "https://media.discordapp.net/attachments/1285650916296360037/1285650924362010808/ddde8c77-b38a-41dc-a1be-9cd180bf73c4.png?ex=66eb0b3a&is=66e9b9ba&hm=b7552191633d30c37826d65888b48bc30f07315395ae3f7c7939f168a599badd&=&format=webp&quality=lossless&width=563&height=563"
         },
         "dialogues": [
-          { "id": null, "title":"The Heist","bg": "https://media.discordapp.net/attachments/1286518446070300693/1286525047745544305/94bd3057-6a85-441a-9f54-9f92bdcde711.png?ex=66ee3951&is=66ece7d1&hm=cf06eeb49e102f18bbb2c55467f63339046176f8a6fed88722f0b08370ef232e&=&format=webp&quality=lossless&width=563&height=563", 
+          { "id": null, "title":"The Heist", "subtitle":"Location: Bank Exterior", "bg": "https://media.discordapp.net/attachments/1286518446070300693/1286525047745544305/94bd3057-6a85-441a-9f54-9f92bdcde711.png?ex=66ee3951&is=66ece7d1&hm=cf06eeb49e102f18bbb2c55467f63339046176f8a6fed88722f0b08370ef232e&=&format=webp&quality=lossless&width=563&height=563", 
           "dialogue": "You huddle in the shadows, your heart pounding. For too long, you’ve scraped by on the fringes, doing petty thefts to keep food on the table for your ailing grandmother. But tonight feels different—a gamble that could change everything." },
           { "id": null, "dialogue": "A figure slips into view, a wiry man with sharp eyes, radiating a restless energy." },
           { "id": "thief",  "dialogue": "\"You ready for the big score? Gotham City Bank is waiting for us, and I’m telling you, it’s a goldmine!\"","pos": 3  },
@@ -32,8 +32,8 @@
           { "id": null, "dialogue": "<bold>You swallow hard, the weight of your decision hanging in the air. You glance at the flickering streetlamp, then back at him. You and the thief wait in the shadows, watching as the last few customers trickle out." },
           { "id": null, "dialogue": "The minutes crawl by, and your nerves tighten like a coiled spring. You exchange glances with the thief as he checks his watch, the tension palpable in the air."},
           { "id": "thief","dialogue": "\"Now’s our chance. Stay close and stick to the plan\"", "pos":3},
-          { "id": null,"dialogue": "<bold>The moment arrives. You step forward, adrenaline coursing through your veins. As you enter the bank, the scent of polished marble and money fills the air. Your pulse quickens."},
-          { "id": null, "subtitle":"The vault door", "type":"#", "bg":"https://media.discordapp.net/attachments/1286518446070300693/1286526782996222063/80a9d50d-6394-4e45-83af-8a0aec7ff0d9.png?ex=66ee3aef&is=66ece96f&hm=a43f745187af6521eb282feaba76530c64a707716c1fee710f30f733d610b79b&=&format=webp&quality=lossless&width=385&height=385", "dialogue": "Inside, you can see the tellers preparing to close up. The thief gestures to the vault door, a heavy steel barrier standing ominously at the back"},
+          { "id": null, "subtitle":"Location: Bank Interior","dialogue": "<bold>The moment arrives. You step forward, adrenaline coursing through your veins. As you enter the bank, the scent of polished marble and money fills the air. Your pulse quickens."},
+          { "id": "null", "type":"#", "bg":"https://media.discordapp.net/attachments/1286518446070300693/1286526782996222063/80a9d50d-6394-4e45-83af-8a0aec7ff0d9.png?ex=66ee3aef&is=66ece96f&hm=a43f745187af6521eb282feaba76530c64a707716c1fee710f30f733d610b79b&=&format=webp&quality=lossless&width=385&height=385", "dialogue": "Inside, you can see the tellers preparing to close up. The thief gestures to the vault door, a heavy steel barrier standing ominously at the back"},
           { "id": "thief", "dialogue": "\"There it is. We just need a minute alone. Keep your eyes peeled for cameras\".", "pos":3},
           { "id": null, "dialogue": "You nod, scanning the room. Everything seems to be going smoothly as you approach the vault, the hum of the security system your only company."},
           { "id": null, "dialogue": "You kneel and start working on the lock, hands shaking with adrenaline. Every click and turn of the lock sends a jolt of hope through you. With a final satisfying click, the door swings open, revealing a treasure trove of cash and glittering jewels."} ,
@@ -49,7 +49,9 @@
       { "id": null, "dialogue": "<bold>Before you can respond, he lunges forward, and chaos erupts. The confrontation is swift and brutal. You fight back, instincts kicking in, but it’s like battling a force of nature. Every punch feels futile against his relentless assault. You hear the thief shouting, but it’s lost in the chaos as you struggle to regain your footing"},
       { "id": null, "dialogue": "You find yourself on the ground, outmatched and overwhelmed. The world blurs around you as Batman looms over you, cold and unyielding."},
       { "id": "batman", "dialogue": "\"This is the life you chose. Now face the consequences.\"", "pos":3},
-      { "id": null, "title":"The Police Car", "bg":"https://media.discordapp.net/attachments/1286518446070300693/1286640409279201300/93283511-c8b2-4ddc-8287-a38f51769cfe.png?ex=66eea4c2&is=66ed5342&hm=468ac582b9fdb7b17e895b6d7924fbc8f9bd6d552a1732f069cbb80afb379bfd&=&format=webp&quality=lossless&width=385&height=385","dialogue": "You sit in the back of the police car, the cold metal of the handcuffs biting into your wrists. The air is thick with the scent of sweat and despair. Outside, the Gotham skyline looms, dark and unforgiving. Your heart sinks as the reality of your situation settles in."}
+      { "id": "null","type":"#","title":"Downfall", "subtitle":"Location: Police Car", "bg":"https://media.discordapp.net/attachments/1286518446070300693/1286640409279201300/93283511-c8b2-4ddc-8287-a38f51769cfe.png?ex=66eea4c2&is=66ed5342&hm=468ac582b9fdb7b17e895b6d7924fbc8f9bd6d552a1732f069cbb80afb379bfd&=&format=webp&quality=lossless&width=385&height=385","dialogue": "You sit in the back of the police car, the cold metal of the handcuffs biting into your wrists. The air is thick with the scent of sweat and despair. Outside, the Gotham skyline looms, dark and unforgiving. Your heart sinks as the reality of your situation settles in."},
+      { "id": null, "dialogue": "<bold>The officer driving glances back at you through the rearview mirror, a mix of disdain and indifference in his eyes."}
+      
     ]
       }
     }

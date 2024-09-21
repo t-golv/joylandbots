@@ -12,6 +12,19 @@
     },
     "harper": {
         "defaultLink": "./assets/harper.png"
+      },
+      "aisling": {
+        "defaultLink": "./assets/aisling.png"  
+      },
+
+      "maria": {
+        "defaultLink": "./assets/maria.png"
+    },
+    "nicolette": {
+        "defaultLink": "./assets/nicolette.png"
+    },
+    "rebecca": {
+        "defaultLink": "./assets/rebecca.png"
       }
     },
     "story": {
@@ -38,11 +51,19 @@
           { "id": null, "dialogue": "<bold>Freya rolling her eyes, she adds."},
           { "id": "freya", "dialogue": "“Honestly, they’re just jealous. We have way more fun, and they can’t handle it. They can’t even enjoy a good party without judging everyone.” <bold>Her expression reveals the rivalry is personal, not just gossip.", "pos":3} ,
           { "id": null, "dialogue": "The group’s dynamic is intriguing, filled with camaraderie but also hints of conflict. You can feel the pull to join their circle, but the tensions with Aisling’s group make it clear that this is no simple choice. The atmosphere buzzes with the promise of excitement and the potential for drama as the school year unfolds."},
-      { "id": " ", "type": "#", "bg":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnb.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F039%2F481%2F993%2Flarge%2Ffairy9-2021-07-09-9h.jpg%3F1626046292&f=1&nofb=1&ipt=ad8ae2205b40d241e70a5c96f00b4ef598a09bd06e6b0500413cdd78eeb26fc4&ipo=images","dialogue": "After spending some time with Luca and his friends, you decide to explore the more polished side of Academia Intercultural. You make your way through the pristine halls, reflecting on the carefree vibe of the previous group. Soon, you spot a different group seated at a long table, engaged in serious discussion."}
-      ,      { "id": null, "dialogue": "Their appearance is polished and put-together, with neatly arranged books and papers spread out in front of them. It’s clear they are focused on something important."},
+      { "id": " ", "type": "#", "bg":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnb.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F039%2F481%2F993%2Flarge%2Ffairy9-2021-07-09-9h.jpg%3F1626046292&f=1&nofb=1&ipt=ad8ae2205b40d241e70a5c96f00b4ef598a09bd06e6b0500413cdd78eeb26fc4&ipo=images","dialogue": "After spending some time with Luca and his friends, you decide to explore the more polished side of Academia Intercultural. Walking through the pristine halls, you notice Ms. Ramirez, your teacher known for fostering student engagement, beckoning you towards a group of students deeply engaged in a serious discussion."}
+      ,      { "id": null, "dialogue": "They sit around a long table, books and papers meticulously organized before them, clearly focused on a meaningful project."},
+      { "id": null, "dialogue": "<bold>Ms. Ramirez smiles warmly and says."},
+      { "id": "maria", "dialogue": "\"Ah, there you are! I see you've met Aisling and her team. They're organizing an important initiative and could use someone with your enthusiasm. Why don't you join them?\"", "pos":3},
       { "id": null, "dialogue": "<bold>Noticing you approach, she offers a warm smile."},
       { "id": "aisling", "dialogue": "“Hello! You must be the new student. I’m Aisling. We’re just discussing our upcoming project. If you’re interested in making a real impact here, you should definitely join us.“ <bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation.", "pos":3},
-      { "id": "aisling", "dialogue": "“Hello! You must be the new student. I’m Aisling. We’re just discussing our upcoming project. If you’re interested in making a real impact here, you should definitely join us.“ <bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation.", "pos":3}
+      { "id": null, "dialogue": "<bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation. Beside her, Rebecca nods in agreement, adjusting her glasses."},
+      { "id": "rebecca", "dialogue": "“Yes, we aim to create meaningful change at this school. We’re organizing events to help the community and get everyone involved.”", "pos":3},
+      { "id": null, "dialogue": "<bold>Her earnestness is evident, suggesting that they truly care about their goals. With a thoughtful expression, Nicolette adds."},
+    { "id": "nicolette", "dialogue": "“We believe in teamwork and collaboration. If you’re looking to connect with others who are dedicated and focused, this is the place for you.”", "pos":3},
+    { "id": null, "dialogue": "<bold>Her calm demeanor creates an atmosphere of stability, making their group seem appealing in a different way."},
+    { "id": null, "dialogue": "As you engage with them, their organized approach feels refreshing but also somewhat intimidating. You can sense the depth of their ambition, and while their politeness is inviting, the pressure to conform to their structured lifestyle is palpable. You realize this group offers a different kind of challenge, one that contrasts sharply with the carefree vibe of Luca and his friends."}
+
       ]
       }
     }

@@ -184,7 +184,7 @@ body {
 
 .slide {
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   background-color: rgba(0,0,0,0.8);
   background-blend-mode:color;
