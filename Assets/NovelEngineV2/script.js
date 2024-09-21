@@ -1,3 +1,4 @@
+let user;
 async function loadDialogues() {
     try {
       const response = await fetch('./dialogues.json');
@@ -9,11 +10,10 @@ async function loadDialogues() {
       return {}; // Return an empty object or handle the error as needed
     }
   }
-  
   async function main() {
     const RPG = await loadDialogues();
     const chapter = document.body.classList[0]
-  
+    user = getReceivedData()
     const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
   
@@ -141,9 +141,18 @@ async function loadDialogues() {
               itemElement.style.display = 'none';
             }   
             document.querySelector('.novel-section').removeAttribute('id');
-            document.querySelector('.novel-section').id = RPG.story[chapter].dialogues[currentDialogueIndex].id;
+            document.querySelector('.novel-section').id = currentDialogue.id;
             let paragraphElement = document.querySelector(`.novel-dialogues p`);
-            paragraphElement.innerHTML = RPG.story[chapter].dialogues[currentDialogueIndex].dialogue;
+            if(currentDialogue.user) {
+              if (user) {
+                console.log(currentDialogue.dialogue.replace("{user}", user))
+              } else {
+                console.log(currentDialogue.dialogue.replace("{user}", 'you'))
+              }
+
+            } else {
+              paragraphElement.innerHTML = currentDialogue.dialogue;
+            }
             currentDialogueIndex++;
         
         } else {
@@ -192,3 +201,18 @@ function playDialogueSound() {
   transitionSound.volume = 0.2;
   transitionSound.play();
 }
+const getQueryParams = () => {
+  const params = {};
+  const queryString = window.location.search.substring(1);
+  const pairs = queryString.split('&');
+  pairs.forEach(pair => {
+      const [key, value] = pair.split('=');
+      params[decodeURIComponent(key)] = decodeURIComponent(value || '');
+  });
+  return params;
+};
+const getReceivedData = () => {
+  const queryParams = getQueryParams();
+  const data = queryParams['data'];
+  return data
+};
