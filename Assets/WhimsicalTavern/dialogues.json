@@ -30,26 +30,26 @@
           { "id": null, "dialogue": "<bold>Miriam leans in with a cheeky grin, clearly eager for attention." },
           { "id": "miriam", "dialogue": "\"Don’t listen to her! You want something exciting! How about joining me in a drink challenge? I promise I won’t let you down... much.”", "pos": 2},
           { "id": null,"dialogue": "<bold>Just then, Aiko bounces over, her eyes sparkling with excitement."},
-          { "id": "aiko","dialogue": "\"Ooh! How about we throw in some spicy wings for the challenge? They’re super hot! We could see who can handle it!\"", "pos": 4 },
+          { "id": "aiko","dialogue": "\"Ooh! How about you try some sweets? They're super tasty! And I just made some! Nya~\"", "pos": 4 },
           { "id": null, "dialogue": "<bold>Lirael raises an eyebrow, her tone dry."},
-          { "id": "lirael","dialogue": "\"Yes, because nothing says ‘adult tavern’ like spicy wings and drinking contests.\"", "pos":3},
+          { "id": "lirael","dialogue": "\"Yes, because nothing says ‘adult tavern’ like sweets and drinking contests.\"", "pos":3},
           { "id": null,"dialogue": "<bold>Miriam shoots her a playful glare."},
           { "id": "miriam", "dialogue": "“Hey, people love a good challenge! So, what’ll it be? Are you up for some wild drinks, or do you want to keep it simple like Lirael here?”","pos":2},
           { "id": null, "dialogue": "<bold>Aiko claps her hands, practically bouncing."},
-          { "id": "aiko", "dialogue": "\"Yeah! Choose something fun! I’ll make sure it’s the best!\"", "pos":4} ,
+          { "id": "aiko", "dialogue": "\"Yeah! Choose something fun! I’ll make sure it’s the best! Nya.\"", "pos":4} ,
           { "id": null, "dialogue": "With their contrasting energies swirling around you, the decision looms."},
           { "id": "null","type":"#", "dialogue": "After making your choice, you settle at a nearby table, the atmosphere buzzing with energy. Suddenly, Aiko, the cheerful cat girl, approaches with a big smile and a slice of cake in hand."},
-      { "id": "aiko", "dialogue": "\"Hey there! I thought you might like a little treat! Here’s a slice of cake—totally free! It’s my special recipe, and I just made it!\"", "pos":4},
+      { "id": "aiko", "dialogue": "\"Hey there! I thought you might like a little treat! Here’s a slice of cake—totally free! It’s my special recipe, and I just made it! Nya.\"", "pos":4},
       { "id": null,"item":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipart-library.com%2Fnewimages%2Fcake-clip-art-18.png&f=1&nofb=1&ipt=1bfc0f13868eb8a796d05fe7e09cb04506045e992eced848f62732371ac68942&ipo=images", "dialogue": "<bold>Without waiting, she places the piece of cake on your table."},
       { "id": null, "dialogue": "<bold>Miriam, the spirited human, saunters over, arms crossed with a playful smirk."},
       { "id": "miriam", "overlay":"https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif", "dialogue": "“And you know what pairs perfectly with that cake? My spicy wings! Seriously, you have to try them. They’re a total knockout!”", "pos":2},
       { "id": null, "dialogue": "<bold>Lirael, overhearing, rolls her eyes and crosses her arms."},
       { "id": "lirael", "dialogue": "\"Aiko, we can’t keep giving away free stuff to every new customer. This isn’t a charity. They’re supposed to order!\"", "pos":3},
-      { "id": "aiko", "dialogue": "“But it’s cake! Who can resist cake? It’ll make them love us! And happy customers tell all their friends!”", "pos":4},
+      { "id": "aiko", "dialogue": "“But it’s cake Nyaa! Who can resist cake? It’ll make them love us! And happy customers tell all their friends!”", "pos":4},
       { "id": "miriam", "dialogue": "“Exactly! Cake and wings together? It’s the ultimate combo! You’ll want to come back for more, trust me!”", "pos":2},
     { "id": null, "dialogue": "<bold>Lirael sighs, looking between them with a mix of annoyance and amusement."},
     { "id": "lirael", "dialogue": "“And unhappy barmaids have to clean up after all your ‘gifts.’ You really think everyone will come back just for a slice?”", "pos":3},
-    { "id": "aiko", "dialogue": "\"Of course! Cake is magical! Look at their face! They’ll be back for more, I promise!”", "pos":4},
+    { "id": "aiko", "dialogue": "\"Of course! Cake is magical! Look at their face! They’ll be back for more, I promise Nya!”", "pos":4},
     { "id": "miriam", "dialogue": "\"Plus, if they love the wings, it’s a win-win! Right?”", "pos":2},
     { "id": null, "dialogue": "<bold>Lirael shakes her head, a hint of a smile breaking through her annoyance."},
     { "id": "lirael", "dialogue": "\"You two are going to be the end of me. Just remember, cake and wings don’t pay the bills.”", "pos":3},
@@ -57,5 +57,4 @@
       ]
       }
     }
-  
   }  
