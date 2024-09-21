@@ -145,11 +145,10 @@ async function loadDialogues() {
             let paragraphElement = document.querySelector(`.novel-dialogues p`);
             if(currentDialogue.user) {
               if (user) {
-                console.log(currentDialogue.dialogue.replace("{user}", user))
+                paragraphElement.innerHTML = currentDialogue.dialogue.replace("{user}", user)
               } else {
-                console.log(currentDialogue.dialogue.replace("{user}", 'you'))
+                paragraphElement.innerHTML = currentDialogue.dialogue.replace("{user}", 'you')
               }
-
             } else {
               paragraphElement.innerHTML = currentDialogue.dialogue;
             }
