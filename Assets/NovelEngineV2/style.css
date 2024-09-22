@@ -1,16 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-  --color-1: #ac4343;
-  --color-2: #a73a3a;
-  --color-3: #cf7e7e;
-  --color-4: #4b4b4b;
-  --color-5: #1b1b1b;
-  --font-1: "Roboto", sans-serif
-  ;
-
-}
 
 @keyframes arrowAnim {
 
@@ -207,6 +197,9 @@ body {
 .title {
   color: var(--color-1);
   text-transform: uppercase;  
+}
+.subtitle {
+  color: var(--color-3);
 }
 /* slide header */
 .slide-header {
