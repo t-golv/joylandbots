@@ -1,0 +1,52 @@
+{
+    "characters": {
+      "albedo": {
+        "defaultLink": "./assets/albedo.png",
+        "audio":["https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-165.mp4","https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-281.mp4","https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-293.mp4"]
+      },
+      "shalltear": {
+        "defaultLink": "./assets/shalltear.png",
+        "audio":["https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-259.mp4","https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-260.mp4"]
+    },
+    "narberal": {
+        "defaultLink": "./assets/narberal.png"
+        ,"audio":["https://ami.animecharactersdatabase.com/audio/105453/1/105453-1-116.mp4"]
+    }
+    },
+    "story": {
+      "chapter1": {
+        "title": "Intrusion at Nazarick",
+        "subtitle": "A Visitor from Another Realm",
+        "about": {
+          "title": "A Visitor from Another Realm",
+        "paragraph": "A traveler from another realm unexpectedly appears in Nazarick, the legendary fortress of the Supreme Beings in the Overlord universe. You are greeted by Albedo, the vigilant Guardian Overseer, and Shalltear, the charismatic Vampire Princess. As you navigate the fortress's ancient halls, discussions unfold about interdimensional mysteries and the implications of your presence, setting the stage for intrigue and exploration in this enigmatic realm of power and secrets."
+        },
+        "dialogues": [
+          { "id": null, "title":"Intrusion at Nazarick", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fsitting-on-the-throne-of-kings-on-the-throne-room-of-the-v0-jxke4fwqfqob1.jpg%3Fwidth%3D1242%26format%3Dpjpg%26auto%3Dwebp%26s%3Da51d57c305e8a09a02ac629648064cfc540669b1&f=1&nofb=1&ipt=66234226fd8b8855b73e8a4460181ac944d7f50515ce0158daceeb06e147cd95&ipo=images", "dialogue": "In the heart of Nazarick, the legendary stronghold of the Supreme Beings, a shimmering portal unexpectedly materializes before you, bridging the gap between your mundane world and the realm of Overlord." },
+          { "id": null, "dialogue": "Stepping through with a mix of trepidation and awe, you find yourself confronted by Albedo, the steadfast Guardian Overseer, and Shalltear, the captivating Vampire Princess." },
+          { "id": null,  "dialogue": "Their presence exudes a potent blend of authority and curiosity as they assess the unfamiliar intruder standing before them amidst the ancient halls resonating with power and mystery." },
+          { "id": "albedo", "dialogue": "\"Who dares to enter the domain of the Supreme One?\"", "pos":3 },
+          { "id": null, "dialogue": "<bold>She steps forward, her gaze fixed upon the newcomer with a mix of authority and curiosity." },
+          { "id": null,"dialogue": "<bold>Shalltear appears beside Albedo, a playful smile curling on her lips."},
+          { "id": "shalltear", "dialogue": "\"Well, well, what do we have here? A traveler from distant realms. How intriguing!”", "pos": 4},
+          { "id": null, "dialogue": "<bold>Her voice carries a melodious tone, laced with both amusement and interest. Albedo's expression softens slightly, though her demeanor remains vigilant."},
+          { "id": "albedo","dialogue": "\"A visitor from beyond the borders of Nazarick? This is unprecedented... Lord Ainz must be warned\"", "pos":3},
+          { "id": null, "dialogue": "<bold>She regards the newcomer with a blend of caution and fascination. Shalltear chuckles softly, a glint of mischief in her crimson eyes."},
+          { "id": "shalltear", "dialogue": "\"Interdimensional wanderers always bring tales of wonder and excitement. Pray tell, adventurer, how did you find your way here?”","pos":4},
+          { "id": null,"dialogue": "<bold>She gestures gracefully, inviting the newcomer to share their story. Albedo listens intently, her posture relaxing as she considers the newcomer's words."},
+          { "id": "albedo", "dialogue": "\"Crossing between dimensions is no simple feat. It's a rare occasion indeed to meet someone who's ventured through those realms.\"", "pos":3},
+          { "id": null, "dialogue": "<bold>Her voice carries a hint of admiration and curiosity. Shalltear's smile widens, genuine curiosity shining in her gaze."},
+          { "id": "shalltear", "dialogue": "\"What marvels have you witnessed in your travels? I'm eager to hear of your adventures.\"", "pos":4},
+          { "id": null, "dialogue": "<bold>She leans closer, eager to delve into the traveler's experiences."},
+          { "id": null, "dialogue": "<bold>Albedo nods thoughtfully, a glimmer of respect in her eyes."},
+          { "id": "albedo", "dialogue": "\"Nazarick is a realm of endless mysteries and ancient power. It is both an honor and a challenge to welcome a visitor such as yourself.”", "pos":3},
+          { "id": null, "dialogue": "<bold>Narberal steps beside albedo with a stern gaze, her staff in hand."},
+          { "id": "narberal", "dialogue": "\"Impressive that you've managed to breach Nazarick's defenses. But what purpose do you serve here, intruder?\"", "pos":2},
+          { "id": null, "dialogue": "<bold>Shalltear's expression softens, a playful glint still present in her eyes."},
+      { "id": "shalltear", "dialogue": "\"Yes, traveler, what do you seek within our domain? Adventure, knowledge, or perhaps something more?\"", "pos":4},
+    { "id": null, "dialogue": "<bold>Her tone carries a hint of anticipation as she awaits the traveler's response."},
+    { "id": null, "dialogue": "<bold>Type your answer below, and let the mysteries unfold..."}
+      ]
+      }
+    }
+  }  

@@ -1,0 +1,160 @@
+<head>
+    <!-- Import font-awesome somewhere in the HTML -->
+  
+    <link rel="stylesheet" type="text/css" href="../NovelEngineV2/style.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <title>Overlord</title>
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+:root {
+            --color-1: #EDC79B;
+            --color-2: #9893DA;
+            --color-3: #797A9E;
+            --color-4: #72727E;
+            --color-5: #625F63;
+        }
+        .novel-section#lirael .novel-dialogues::after {
+            content: 'Albedo';
+            opacity: 1;
+        }
+        .novel-section#aiko .novel-dialogues::after {
+            content: 'Shalltear Bloodfallen';
+            opacity: 1;
+        }
+        .novel-section#miriam .novel-dialogues::after {
+            content: 'narberal Gamma';
+            opacity: 1;
+        }
+        h1,h2,h3,h4,h5, .title {
+            font-family: "Protest Guerrilla", sans-serif !important;
+        }
+      </style>
+  </head>
+  
+  <body class="chapter1">
+    <audio id="transition-slide-audio">
+      <source src="https://cdn.pixabay.com/audio/2022/01/18/audio_5e02185e26.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="transition-dialogue-audio">
+      <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_160c87d772.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="carousel" data-carousel>
+      <div class="slides" data-carousel-slides-container>
+        <div class="slide slide-main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmeobietbay.com%2Fwp-content%2Fuploads%2F2019%2F02%2Fsu-chuyen-minh-cua-nazarick.jpg&f=1&nofb=1&ipt=1f12f46c95927a9cf66d3e8f03b78a254edf98660850828214d61bebabdc0887&ipo=images);background-position: center bottom;">
+          <h1 class="title title-main"></h1>
+          <h6 class="subtitle subtitle-main"></h6>
+          <button 
+          class="carousel-button carousel-button_next"
+          data-carousel-button-next 
+          style="bottom:15%;height: 5vw; width: auto;left:0%;"
+          >
+            <span class="material-symbols-outlined" style="font-size:6vw; color:transparent; background-color:transparent;background-image: linear-gradient(to top, var(--color-1), white);background-clip:text;background-size:100%;">
+              play_circle
+            </span>  
+          </button>
+          <button  class="carousel-button carousel-btn-music">
+            <span class="material-symbols-outlined">
+            music_note
+            </span>
+          </button>
+          <audio id="bg-ost-sound">
+            <source src="./assets/bg-ost.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+  
+        <div class="slide slide-main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamuserimages-a.akamaihd.net%2Fugc%2F1327949551203811558%2F28D7FB47FF1E65EB785F6DCEDC87ED0AC3437A8A%2F&f=1&nofb=1&ipt=e2e36e795e6cc47e0da525d0993da8e3a72a969deced9e5d06ba23a2dd90aa55&ipo=images);background-position: center 60%">
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+            <button
+          class="carousel-button carousel-button_next"
+          data-carousel-button-next
+        ><span class="material-symbols-outlined"> 
+        arrow_forward_ios 
+        </span> 
+        </button>
+          </header>
+  
+          <section class="slide-section">
+            <h5 class="title title-about"></h3>
+            <p class="about"></p>
+          </section>
+        </div>
+  
+        <div class="slide slide-main">
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+            <div>
+              <h6 class="title title-header"></h6>
+              <em class="subtitle subtitle-header"></em>
+            </div>
+          </header>
+          <section class="novel-section">
+            <audio id="voice">
+              <source src="" type="audio/mpeg" />
+            </audio>
+            <img id="novel-overlay" class="novel-overlay" />
+            <img id="novel-item" class="novel-item" />
+            <div class="novel-images">
+              <img src="" id="img1"  class="novel-img"/>
+              <img src="" id="img2"  class="novel-img"/>
+              <img src="" id="img3" class="novel-img" />
+              <img src="" id="img4" class="novel-img" />
+              <img src="" id="img5" class="novel-img" />
+            </div>
+            <div class="novel-dialogues">
+              <p>...</p>
+              <div class="dialogues-arrow-container"><span class="material-symbols-outlined dialogues-arrow">
+  arrow_drop_down
+  </span></div>
+            </div>
+          </section>
+        </div>
+  
+        <div class="slide slide-main" style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamuserimages-a.akamaihd.net%2Fugc%2F1327949551203811558%2F28D7FB47FF1E65EB785F6DCEDC87ED0AC3437A8A%2F&f=1&nofb=1&ipt=e2e36e795e6cc47e0da525d0993da8e3a72a969deced9e5d06ba23a2dd90aa55&ipo=images);">
+          <!-- Credits -->
+          <header class="slide-header">
+            <button
+                class="carousel-button carousel-button_previous"
+                data-carousel-button-previous
+              >
+              <span class="material-symbols-outlined">
+        arrow_back_ios
+        </span>
+              </button>
+  
+          </header>
+          <em style="color:gray"> Credits:</em>
+              <div class="container-credits">
+          <a target="_blank" onclick='playSlideSound' href="https://www.joyland.ai/profile?userId=8Ad2r"  class="card-credits">
+              <h5 class="text" data-text="@Theodorus">@Theodorus</h5>
+            <div class="credits-link" >
+              <img class="credits-img" src="./assets/theo.gif" />
+              <svg height="120%"  width="120%" class="credits-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" rx="50%" ry="50%" x="2.5%" y="2.5%" height="95%" width="95%" />
+              </svg>
+            </div>
+        </a>
+      </div> 
+      <p>CHECK OUT MY NEW BOTS</p>
+      <em>Soundtrack: <a href="https://www.youtube.com/watch?v=INRYoUuh6GE" target="_blank">Ruler of Death</a></em>
+    </div>
+    </div>
+    </div>
+    <script  type="module" src="../NovelEngineV2/script.js"></script>
+  </body>
+  
