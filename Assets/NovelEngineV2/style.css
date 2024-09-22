@@ -198,9 +198,6 @@ body {
   color: var(--color-1);
   text-transform: uppercase;  
 }
-.subtitle {
-  color: var(--color-3);
-}
 /* slide header */
 .slide-header {
   display: flex;
