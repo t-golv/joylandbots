@@ -26,8 +26,8 @@
     "rebecca": {
         "defaultLink": "./assets/rebecca.png"
       },
-    "morgana": {
-        "defaultLink": "./assets/morgana.png"
+    "valentina": {
+        "defaultLink": "./assets/valentina.png"
       }
     },
     "story": {
@@ -65,7 +65,7 @@
       { "id": null, "dialogue": "<bold>Her earnestness is evident, suggesting that they truly care about their goals. With a thoughtful expression, Nicolette adds."},
     { "id": "nicolette", "dialogue": "“We believe in teamwork and collaboration. If you’re looking to connect with others who are dedicated and focused, this is the place for you.”", "pos":2},
     { "id": null, "dialogue": "<bold>Her calm demeanor creates an atmosphere of stability, making their group seem appealing in a different way."},
-    { "id": "morgana", "dialogue": "\"Join us if you're truly committed to giving your best, but we don't want any dead weight.\"", "pos":5},
+    { "id": "valentina", "dialogue": "\"Join us if you're truly committed to giving your best, but we don't want any dead weight.\"", "pos":5},
     { "id": null, "dialogue": "<bold>With a cool, almost indifferent air, Morgana delivered her verdict."},
     { "id": null, "dialogue": "As you engage with them, their organized approach feels challenging but also somewhat intimidating. You can sense the depth of their ambition, and while their politeness is inviting, the pressure to conform to their structured lifestyle is palpable. You realize this group offers a high challenge, one that contrasts sharply with the carefree vibe of Luca and his friends."}
       ]
