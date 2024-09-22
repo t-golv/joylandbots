@@ -17,8 +17,8 @@
         "defaultLink": "./assets/aisling.png"  
       },
 
-      "maria": {
-        "defaultLink": "./assets/maria.png"
+      "yuriko": {
+        "defaultLink": "./assets/yuriko.png"
     },
     "nicolette": {
         "defaultLink": "./assets/nicolette.png"
@@ -42,7 +42,7 @@
           { "id": null, "subtitle":"Navigating Social Currents", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fanime-school-background-dh3ommnxthw4nln7.jpg&f=1&nofb=1&ipt=79ba76e40abedb73f88864d137252cda358de103f44447e8b1582633ecbd49a5&ipo=images", "dialogue": "As you stroll through the bustling halls of Academia Intercultural, you spot a group gathered near a wall decorated with colorful posters." },
           { "id": null, "dialogue": "They seem laid-back, their casual outfits reflecting a carefree vibe that draws you in." },
           { "id": null,  "dialogue": "<bold>Luca leaning against the wall with a friendly smile, he catches your eye.","pos": 2  },
-          { "id": "luca","dialogue": "“Hey! You must be the new student. I’m Luca. We’ve seen you around. Want to hang out with us? We know all the best spots.” <bold>His relaxed demeanor makes it easy to feel at ease." },
+          { "id": "luca","dialogue": "“Hey! You must be the new student. I’m Luca. We’ve seen you around. Want to hang out with us? We know all the best spots.” <bold>His relaxed demeanor makes it easy to feel at ease.", "pos": 2 },
           { "id": null, "dialogue": "<bold>Freya, with a playful grin, chimes in." },
           { "id": "freya", "dialogue": "“Yeah, we’re just looking for someone to join our crew. We do everything from exploring the city to just grabbing coffee. It’s way more fun with a bigger group.”", "pos": 3 },
           { "id": null,"dialogue": "<bold>Nodding knowingly, harper adds."},
@@ -54,10 +54,10 @@
           { "id": null, "dialogue": "<bold>Freya rolling her eyes, she adds."},
           { "id": "freya", "dialogue": "“Honestly, they’re just jealous. We have way more fun, and they can’t handle it. They can’t even enjoy a good party without judging everyone.” <bold>Her expression reveals the rivalry is personal, not just gossip.", "pos":3} ,
           { "id": null, "dialogue": "The group’s dynamic is intriguing, filled with camaraderie but also hints of conflict. You can feel the pull to join their circle, but the tensions with Aisling’s group make it clear that this is no simple choice. The atmosphere buzzes with the promise of excitement and the potential for drama as the school year unfolds."},
-      { "id": " ", "type": "#", "bg":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnb.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F039%2F481%2F993%2Flarge%2Ffairy9-2021-07-09-9h.jpg%3F1626046292&f=1&nofb=1&ipt=ad8ae2205b40d241e70a5c96f00b4ef598a09bd06e6b0500413cdd78eeb26fc4&ipo=images","dialogue": "After spending some time with Luca and his friends, you decide to explore the more polished side of Academia Intercultural. Walking through the pristine halls, you notice Ms. Ramirez, your teacher known for fostering student engagement, beckoning you towards a group of students deeply engaged in a serious discussion."}
+      { "id": " ", "type": "#", "bg":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdnb.artstation.com%2Fp%2Fassets%2Fimages%2Fimages%2F039%2F481%2F993%2Flarge%2Ffairy9-2021-07-09-9h.jpg%3F1626046292&f=1&nofb=1&ipt=ad8ae2205b40d241e70a5c96f00b4ef598a09bd06e6b0500413cdd78eeb26fc4&ipo=images","dialogue": "After spending some time with Luca and his friends, you decide to explore the more polished side of Academia Intercultural. Walking through the pristine halls, you notice Ms. Tanaka, your teacher known for fostering student engagement, beckoning you towards a group of students deeply engaged in a serious discussion."}
       ,      { "id": null, "dialogue": "They sit around a long table, books and papers meticulously organized before them, clearly focused on a meaningful project."},
-      { "id": null, "dialogue": "<bold>Ms. Ramirez smiles warmly and says."},
-      { "id": "maria", "dialogue": "\"Ah, there you are! Right when i needed. Aisling and her classmates are organizing an important initiative, they could use someone with your enthusiasm. Why don't you join them?\"", "pos":1},
+      { "id": null, "dialogue": "<bold>Ms. Tanaka smiles warmly and says."},
+      { "id": "yuriko", "dialogue": "\"Ah, there you are! Right when i needed. Aisling and her classmates are organizing an important initiative, they could use someone with your enthusiasm. Why don't you join them?\"", "pos":1},
       { "id": null, "dialogue": "<bold>Noticing you approach, she offers a warm smile."},
       { "id": "aisling", "dialogue": "“Hello! You must be the new student. I’m Aisling. We’re just discussing our upcoming project. If you’re interested in making a real impact here, you should definitely join us.“ <bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation.", "pos":3},
       { "id": null, "dialogue": "<bold>Her tone is inviting, yet professional, making it feel like an opportunity rather than just a casual invitation. Beside her, Rebecca nods in agreement, adjusting her glasses."},
@@ -66,7 +66,7 @@
     { "id": "nicolette", "dialogue": "“We believe in teamwork and collaboration. If you’re looking to connect with others who are dedicated and focused, this is the place for you.”", "pos":2},
     { "id": null, "dialogue": "<bold>Her calm demeanor creates an atmosphere of stability, making their group seem appealing in a different way."},
     { "id": "valentina", "dialogue": "\"Join us if you're truly committed to giving your best, but we don't want any dead weight.\"", "pos":5},
-    { "id": null, "dialogue": "<bold>With a cool, almost indifferent air, Morgana delivered her verdict."},
+    { "id": null, "dialogue": "<bold>With a cool, almost indifferent air, Valentina delivered her verdict."},
     { "id": null, "dialogue": "As you engage with them, their organized approach feels challenging but also somewhat intimidating. You can sense the depth of their ambition, and while their politeness is inviting, the pressure to conform to their structured lifestyle is palpable. You realize this group offers a high challenge, one that contrasts sharply with the carefree vibe of Luca and his friends."}
       ]
       }
