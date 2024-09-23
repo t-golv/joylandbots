@@ -1,0 +1,50 @@
+{
+  "characters": {
+    "annalise": {
+      "defaultLink": "./assets/annalise.png"  
+    },
+
+    "stephanie": {
+      "defaultLink": "./assets/stephanie.png"
+  },
+  "micah": {
+      "defaultLink": "./assets/micah.png"
+  }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Maid Café",
+      "subtitle": "Welcome to Whiskers & Lace",
+      "about": {
+        "title": "Whiskers & Lace",
+      "paragraph": "Whiskers and Lace is a maid café that combines the charm of traditional maid service with a fantasy twist. The maids wear classic, frilly uniforms adorned with lace and bows, but also have real animal features like bunny ears and cat tails, each matching their unique personalities.<br/><br/> The café’s cozy, elegant setting features plush seating, ornate tables, and soft lighting, creating a magical yet welcoming atmosphere. Delicate lace curtains and whimsical animal-themed decorations enhance the fantasy vibe, while soft music adds to the enchanting experience."
+      },
+      "dialogues": [
+        { "id": null,"title":"Whiskers & Lace", "bg": "https://media.discordapp.net/attachments/1283745956596154431/1287822497294843967/f4a8a6371562138661735bda3be16005.png?ex=66f2f1a9&is=66f1a029&hm=8aa599c4f9e1efd7b5198fc63d5228a3d6c80f2365ad34c800268d6ff2827120&=&format=webp&quality=lossless&width=809&height=455", "dialogue": "As you step through the doors, the aroma of freshly brewed coffee and pastries fills the air. A maid with long, silver hair and calm gray eyes approaches." },
+        { "id": "annalise","dialogue": "“Welcome to Whiskers & Lace. I’m Annalise, your bunny-maid today. How may I serve you?” <bold>She curtsies gracefully, her bunny ears twitching. Before you can respond, another maid bounces over with a lively step, her pink fox ears perking up as she grins.", "pos":3 },
+        { "id": "stephanie", "dialogue": "“Oh, a new face! I’m Stephanie, your cunning fox-maid. Prepare to be dazzled by our charms.” <bold>She winks, her fox tail swishing playfully. A timid boy with tousled blonde hair peeks out from behind her, his soft brown eyes wide and nervous.", "pos": 2},
+        { "id": "micah","dialogue": "“Um, h-hi… I’m Micah, your bear-maid for today…” <bold>His voice is barely a whisper, and he clutches his apron nervously. Annalise gives him a reassuring nod and gestures to a nearby table.", "pos": 4 },
+        { "id": "annalise","dialogue": "“Please, take a seat.”", "pos":3},
+        { "id": null,"dialogue": "<bold>She sets down porcelain utensils with delicate precision, then turns to the other maids."},
+        { "id": "annalise", "dialogue": "““Stephanie, Micah, let’s give our guest a proper welcome.”","pos":3},
+        { "id": "stephanie", "dialogue": "“Of course, but a little flair never hurt anyone, right, Micah?” <bold>She nudges him, her eyes sparkling with mischief, and he blushes deeply.", "pos":2} ,
+        { "id": "micah", "dialogue": "“Um, I-I suppose…”", "pos":4},
+        { "id": null, "dialogue": "<bold>Annalise smiles gently, her expression encouraging."},
+        { "id": "annalise", "dialogue": " “You’re doing wonderfully, Micah.”", "pos":3},
+        { "id": null, "dialogue": "<bold>She turns back to you, her gaze soft and attentive."},
+        { "id": "annalise", "dialogue": "“What can we offer you today? A soothing tea, freshly baked pastries, or perhaps something heartier?” <bold>Stephanie leans closer, her fox ears twitching with excitement.", "pos":3},
+        { "id": "stephanie", "dialogue": "“I recommend our enchanted tea blend—it’s to die for! And it might even grant you a wish…”", "pos":2},
+        { "id": null,"item":"", "dialogue": "<bold>Micah, gaining a bit of confidence, adds softly."},
+    { "id": "micah", "dialogue": "“The honey cakes are really good too. Sweet and comforting, just like a warm hug…”", "pos":4},
+    { "id": null, "dialogue": "<bold>Stephanie chuckles and drapes an arm around Micah’s shoulders."},
+    { "id": "stephanie", "dialogue": "“Micah, you’re sweet enough to give our honey cakes some serious competition, don’t you think, Annalise?”", "pos":2},
+    { "id": null, "dialogue": "<bold>Annalise nods, her smile warm."},
+    { "id": "annalise", "dialogue": "“Absolutely. Micah makes everyone feel welcome.”", "pos":3},
+    { "id": null, "dialogue": "<bold>She turns to you, her expression sincere."},
+  { "id": "stephanie", "dialogue": "“Yes, do tell us your heart’s desires… We’re here to make your day magical.”", "pos":2},
+  { "id": "micah", "dialogue": "“Y-yes, please feel free to ask us anything… We’re here to make your day special.”", "pos":4},
+  { "id": null, "dialogue": "<bold>What will you do?."}
+    ]
+    }
+  }
+}  
