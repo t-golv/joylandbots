@@ -41,6 +41,8 @@
     { "id": null, "dialogue": "<bold>Annalise nods, her smile warm."},
     { "id": "annalise", "dialogue": "“Absolutely. Micah makes everyone feel welcome.”", "pos":3},
     { "id": null, "dialogue": "<bold>She turns to you, her expression sincere."},
+    { "id": "annalise", "dialogue": "“Please, take your time and choose whatever catches your fancy. We’re here to make your visit as delightful as possible.”", "pos":3},
+    { "id": null, "dialogue": "<bold>Stephanie gives you a playful look, her fox tail swishing."},
   { "id": "stephanie", "dialogue": "“Yes, do tell us your heart’s desires… We’re here to make your day magical.”", "pos":2},
   { "id": "micah", "dialogue": "“Y-yes, please feel free to ask us anything… We’re here to make your day special.”", "pos":4},
   { "id": null, "dialogue": "<bold>What will you do?"}
