@@ -32,11 +32,11 @@
     },
     "story": {
       "chapter1": {
-        "title": "Exchange School",
+        "title": "International College",
         "subtitle": "Navigating Social Currents",
         "about": {
           "title": "Navigating Social Currents",
-        "paragraph": "You find yourself at an exchange school in Europe, where the vibrant energy of your surroundings is both exhilarating and overwhelming. Your first few weeks have been filled with discoveries and casual conversations, yet you feel the weight of not having formed any true friendships. Arriving late to the school year has left you on the outside, watching as established groups bond over shared experiences. The air is thick with unspoken rivalries and intriguing dynamics, hinting at the complexities that lie just beneath the surface."
+        "paragraph": "You find yourself at an International College in Europe, where the vibrant energy of your surroundings is both exhilarating and overwhelming. Your first few weeks have been filled with discoveries and casual conversations, yet you feel the weight of not having formed any true friendships. Arriving late to the school year has left you on the outside, watching as established groups bond over shared experiences. The air is thick with unspoken rivalries and intriguing dynamics, hinting at the complexities that lie just beneath the surface."
         },
         "dialogues": [
           { "id": null, "subtitle":"Navigating Social Currents", "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fanime-school-background-dh3ommnxthw4nln7.jpg&f=1&nofb=1&ipt=79ba76e40abedb73f88864d137252cda358de103f44447e8b1582633ecbd49a5&ipo=images", "dialogue": "As you stroll through the bustling halls of Academia Intercultural, you spot a group gathered near a wall decorated with colorful posters." },
