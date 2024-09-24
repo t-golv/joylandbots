@@ -67,7 +67,8 @@
     { "id": null, "dialogue": "<bold>Her calm demeanor creates an atmosphere of stability, making their group seem appealing in a different way."},
     { "id": "valentina", "dialogue": "\"Join us if you're truly committed to giving your best, but we don't want any dead weight.\"", "pos":5},
     { "id": null, "dialogue": "<bold>With a cool, almost indifferent air, Valentina delivered her verdict."},
-    { "id": null, "dialogue": "As you engage with them, their organized approach feels challenging but also somewhat intimidating. You can sense the depth of their ambition, and while their politeness is inviting, the pressure to conform to their structured lifestyle is palpable. You realize this group offers a high challenge, one that contrasts sharply with the carefree vibe of Luca and his friends."}
+    { "id": null, "dialogue": "As you engage with them, their organized approach feels challenging but also somewhat intimidating. You can sense the depth of their ambition, and while their politeness is inviting, the pressure to conform to their structured lifestyle is palpable."},
+    { "id": null, "dialogue": "You realize this group offers a high challenge, one that contrasts sharply with the carefree vibe of Luca and his friends. <bold>Continue the story below..."}
       ]
       }
     }
