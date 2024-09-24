@@ -1,4 +1,16 @@
 let user;
+const options = {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json, text/plain, */*",
+    "Accept-Language": "en",
+    DNT: "1",
+    Fingerprint: "840cf1fc79e3d7bb243aeb93ed5757f3",
+    Origin: "https://www.joyland.ai",
+    Referer: "https://www.joyland.ai/",
+  },
+};
 async function loadDialogues() {
   try {
     const response = await fetch("./dialogues.json");
@@ -196,20 +208,82 @@ async function main() {
   }
 
   // add credits
-  async function addcredits() {
+  async function addcredits(userId, badge = "Creator", accentColor) {
     try {
-      const response = await fetch("./credits.html");
-      if (!response.ok) {
-        throw new Error("Network response was not ok " + response.statusText);
+      const responseHTML = await fetch("./credits.html");
+      const responseJoylandBots = await fetch(
+        `https://api.joyland.ai/profile/public-bots?userId=${userId}`,
+        options
+      );
+      const responseJoylandUser = await fetch(
+        `https://api.joyland.ai/profile/info?userId=${userId}`,
+        options
+      );
+      // const response = await fetch()
+      if (!responseHTML.ok) {
+        throw new Error(
+          "Network response was not ok " + responseHTML.statusText
+        );
       }
-      const data = await response.text();
-      document.querySelector("#credits-replace").innerHTML = data;
+      if (!responseJoylandBots.ok) {
+        throw new Error(
+          "Network response was not ok " + responseJoylandBots.statusText
+        );
+      }
+      if (!responseJoylandUser.ok) {
+        throw new Error(
+          "Network response was not ok " + responseJoylandUser.statusText
+        );
+      }
+      const htmlText = await responseHTML.text(); // Get HTML as text
+      const dataJoylandBots = await responseJoylandBots.json();
+      const dataJoylandUser = await responseJoylandUser.json();
+      console.log("dataJoylandBots", dataJoylandBots);
+      // Parse the HTML into a document
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlText, "text/html");
+      if (dataJoylandUser && dataJoylandUser.result) {
+        doc.querySelector(".credits-section-top-name").innerText =
+          dataJoylandUser.result.name;
+        doc.querySelector(".credits-section-top-bio").innerText =
+          dataJoylandUser.result.bio;
+        doc.querySelector(".credits-section-top-avatar").src =
+          dataJoylandUser.result.avatar;
+        doc.querySelector(".credits-section-top-cover").src =
+          dataJoylandUser.result.headImg;
+        doc.querySelector(".credits-section-bottom-badge").innerText = badge;
+      }
+
+      if (dataJoylandBots && dataJoylandBots.result) {
+        dataJoylandBots.result.forEach((item) => {
+          doc.querySelector(".credits-section-bottom-bots").innerHTML += `
+          <a target="_blank" href="https://www.joyland.ai/chat?botId=${item.botId}" class="credits-section-bottom-bot"
+            style="background-image: url(${item.avatar});">
+            <em class="credits-section-bottom-bot-name">${item.characterName}</em>
+            <div class="credits-section-bottom-bot-infos">
+              <sub><span class="material-symbols-outlined">
+                  chat
+                </span> ${item.botChats}</sub>
+              <sub><span class="material-symbols-outlined">
+                  favorite
+                </span> ${item.botLikes}</sub>
+            </div>
+          </a>
+          `;
+        });
+      }
+      document.querySelector(".credits-main").innerHTML += doc.body.innerHTML;
+      document.querySelectorAll(`.credits-button-toggle`).forEach((button) => {
+        button.addEventListener("click", creditsVertical);
+      });
     } catch (error) {
       console.log("Error fetching credits:", error);
     }
   }
 
-  addcredits();
+  addcredits("8Ad2r", "Creator", "#7e66e9");
+
+  addcredits("lMjZp", "Creator", "#f33");
 
   const carousels = document.querySelectorAll("[data-carousel]");
   carousels.forEach(setUpCarousel);
@@ -240,6 +314,7 @@ document.addEventListener("keydown", (event) => {
     event.preventDefault(); // Prevent the default tab action
   }
 });
+
 function playSlideSound() {
   let transitionSound = document.querySelector("#transition-slide-audio");
   transitionSound.volume = 0.2;
@@ -265,3 +340,13 @@ const getReceivedData = () => {
   const data = queryParams["data"];
   return data;
 };
+
+function creditsVertical(event) {
+  console.log("oi");
+  document
+    .querySelector(".credits-section-top")
+    .classList.toggle("credits-section-hidden");
+  document
+    .querySelector(".credits-section-bottom")
+    .classList.toggle("credits-section-hidden");
+}
