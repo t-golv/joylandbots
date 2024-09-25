@@ -1,0 +1,32 @@
+{
+  "creators": [
+    {
+      "userId": "8Ad2r",
+      "badge": "Creator",
+      "color": "#7e66e9",
+      "position": "right",
+      "placeholder": {
+        "name": "Theodorus",
+        "userVip": true,
+        "vipEnum": "PREMIUM",
+        "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp",
+        "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1726883726808_0404160c.webp",
+        "bio": "⧼ Discord: @ahirudo ⧽"
+      }
+    },
+    {
+      "userId": "lMjZp",
+      "badge": "Creator",
+      "color": "#f33",
+      "position": "left",
+      "placeholder": {
+        "name": "🅷🆄🅼🅰🅽",
+        "userVip": false,
+        "vipEnum": "FREE",
+        "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041777788_de2775ea.webp",
+        "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041744153_d44c5451.webp",
+        "bio": "😊Your Friendly Neighborhood BOT Pimp😊"
+      }
+    }
+  ]
+}

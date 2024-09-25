@@ -11,19 +11,29 @@ const options = {
     Referer: "https://www.joyland.ai/",
   },
 };
-async function loadDialogues() {
+
+async function loadJson(path) {
   try {
-    const response = await fetch("./dialogues.json");
+    const response = await fetch(path);
     if (!response.ok) throw new Error("Network response was not ok");
-    const dialogues = await response.json();
-    return dialogues;
+    const data = await response.json();
+    return data;
   } catch (error) {
     console.error("Failed to load dialogues:", error);
     return {}; // Return an empty object or handle the error as needed
   }
 }
 async function main() {
-  const RPG = await loadDialogues();
+  const RPG = await loadJson("./dialogues.json");
+  const CREDITS = await loadJson("../NovelEngineV3/credits.json");
+  let creators = {};
+  if (RPG.creators) {
+    creators = CREDITS.creators.filter((creator) =>
+      RPG.creators.includes(creator.userId)
+    );
+  } else {
+    creators = CREDITS.creators.filter((creator) => creator.userId == "8Ad2r");
+  }
   const chapter = document.body.classList[0];
   user = getReceivedData();
   const slides = document.querySelectorAll(".slide");
@@ -131,7 +141,11 @@ async function main() {
             audioEl.volume = 0.3;
             audioEl.play();
           }
+          document.querySelector(".novel-dialogues-name").innerText =
+            characterActive.name;
           activeIMG.classList.add("active");
+        } else {
+          document.querySelector(".novel-dialogues-name").innerText = "";
         }
         // se tiver bg
         if (currentDialogue?.bg) {
@@ -149,7 +163,7 @@ async function main() {
         }
         let overlayElement = document.querySelector(".novel-overlay");
         let itemElement = document.querySelector(".novel-item");
-        if (currentDialogue?.overlay) {
+        if (currentDialogue?.overlay && currentDialogue.overlay !== "#") {
           overlayElement.src = currentDialogue.overlay;
           overlayElement.onload = () => {
             overlayElement.style.display = "block"; // Show only when loaded
@@ -159,7 +173,10 @@ async function main() {
           };
           // Initially hide the image
           overlayElement.style.display = "none";
-        } else {
+        } else if (
+          currentDialogue?.overlay &&
+          currentDialogue.overlay === "#"
+        ) {
           overlayElement.style.display = "none";
         }
         if (currentDialogue?.item) {
@@ -208,82 +225,126 @@ async function main() {
   }
 
   // add credits
-  async function addcredits(userId, badge = "Creator", accentColor) {
+  async function addcredits(
+    { userId, badge, color, position, placeholder },
+    idx
+  ) {
+    const creditsMain = document.querySelector(".credits-main");
+    const responseHTML = await fetch("./credits.html");
+    const htmlText = await responseHTML.text();
+    const parser = new DOMParser();
+    let dataUser;
+    let dataBots;
+    const doc = parser.parseFromString(htmlText, "text/html");
+    function dataOrPlaceholder() {
+      doc
+        .querySelector(".credits-section")
+        .style.setProperty("--accent-color", color);
+      doc.querySelector(
+        ".credits-section-link"
+      ).href = `https://www.joyland.ai/profile?userId=${userId}`;
+      doc.querySelector(".credits-section-top-name").innerText = dataUser
+        ? dataUser.result.name
+        : placeholder.name;
+      doc.querySelector(".credits-section-top-bio").innerText = dataUser
+        ? dataUser.result.bio
+        : placeholder.bio;
+      doc.querySelector(".credits-section-top-avatar").src = dataUser
+        ? dataUser.result.avatar
+        : placeholder.avatar;
+      doc.querySelector(".credits-section-top-cover").src = dataUser
+        ? dataUser.result.headImg
+        : placeholder.headImg;
+      doc.querySelector(".credits-section-bottom-badge").innerText = badge;
+    }
+    dataOrPlaceholder(dataUser);
     try {
-      const responseHTML = await fetch("./credits.html");
-      const responseJoylandBots = await fetch(
-        `https://api.joyland.ai/profile/public-bots?userId=${userId}`,
+      creditsMain.innerHTML += doc.body.innerHTML;
+      const responseUser = await fetch(
+        `https://api.joylanad.ai/profile/info?userId=${userId}`,
         options
       );
-      const responseJoylandUser = await fetch(
-        `https://api.joyland.ai/profile/info?userId=${userId}`,
+      dataUser = await responseUser.json();
+    } catch (err) {}
+    try {
+      const responseBots = await fetch(
+        `https://api.joylaand.ai/profile/public-bots?userId=${userId}`,
         options
       );
-      // const response = await fetch()
-      if (!responseHTML.ok) {
-        throw new Error(
-          "Network response was not ok " + responseHTML.statusText
-        );
-      }
-      if (!responseJoylandBots.ok) {
-        throw new Error(
-          "Network response was not ok " + responseJoylandBots.statusText
-        );
-      }
-      if (!responseJoylandUser.ok) {
-        throw new Error(
-          "Network response was not ok " + responseJoylandUser.statusText
-        );
-      }
-      const htmlText = await responseHTML.text(); // Get HTML as text
-      const dataJoylandBots = await responseJoylandBots.json();
-      const dataJoylandUser = await responseJoylandUser.json();
-      console.log("dataJoylandBots", dataJoylandBots);
-      // Parse the HTML into a document
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(htmlText, "text/html");
-      if (dataJoylandUser && dataJoylandUser.result) {
-        doc.querySelector(".credits-section-top-name").innerText =
-          dataJoylandUser.result.name;
-        doc.querySelector(".credits-section-top-bio").innerText =
-          dataJoylandUser.result.bio;
-        doc.querySelector(".credits-section-top-avatar").src =
-          dataJoylandUser.result.avatar;
-        doc.querySelector(".credits-section-top-cover").src =
-          dataJoylandUser.result.headImg;
-        doc.querySelector(".credits-section-bottom-badge").innerText = badge;
-      }
-
-      if (dataJoylandBots && dataJoylandBots.result) {
-        dataJoylandBots.result.forEach((item) => {
-          doc.querySelector(".credits-section-bottom-bots").innerHTML += `
-          <a target="_blank" href="https://www.joyland.ai/chat?botId=${item.botId}" class="credits-section-bottom-bot"
-            style="background-image: url(${item.avatar});">
-            <em class="credits-section-bottom-bot-name">${item.characterName}</em>
-            <div class="credits-section-bottom-bot-infos">
-              <sub><span class="material-symbols-outlined">
-                  chat
-                </span> ${item.botChats}</sub>
-              <sub><span class="material-symbols-outlined">
-                  favorite
-                </span> ${item.botLikes}</sub>
-            </div>
-          </a>
-          `;
-        });
-      }
-      document.querySelector(".credits-main").innerHTML += doc.body.innerHTML;
-      document.querySelectorAll(`.credits-button-toggle`).forEach((button) => {
-        button.addEventListener("click", creditsVertical);
+      dataBots = await responseBots.json();
+    } catch (err) {}
+    // DATA OR PLACEHOLDER
+    dataOrPlaceholder(dataUser);
+    if (dataBots && dataBots.result) {
+      dataBots.result.forEach((item) => {
+        doc.querySelector(".credits-section-bottom-bots").innerHTML += `
+        <a target="_blank" href="https://www.joyland.ai/chat?botId=${item.botId}" class="credits-section-bottom-bot"
+          style="background-image: url(${item.avatar});">
+          <em class="credits-section-bottom-bot-name">${item.characterName}</em>
+          <div class="credits-section-bottom-bot-infos">
+            <sub><span class="material-symbols-outlined">
+                chat
+              </span> ${item.botChats}</sub>
+            <sub><span class="material-symbols-outlined">
+                favorite
+              </span> ${item.botLikes}</sub>
+          </div>
+        </a>
+        `;
       });
-    } catch (error) {
-      console.log("Error fetching credits:", error);
+    }
+    const badgeElements = doc.querySelectorAll(".credits-section-badge");
+    badgeElements.forEach((badgeEl) => {
+      badgeEl.innerText = badge;
+      if (position == "left") {
+        console.log(badgeEl.style.right);
+        badgeEl.style.left = "0%";
+        badgeEl.style.right = "auto";
+        badgeEl.style.borderRadius = "0px 0px 1rem 0px";
+      }
+    });
+    if (dataBots) {
+      const sectionTop = doc.querySelector(".credits-section-top");
+      const button = `
+      <button class="credits-section-top-button credits-button-toggle">
+      SEE NEW BOTS
+    </button>`;
+      sectionTop.innerHTML += button;
+      doc
+        .querySelectorAll(".credits-button-toggle")
+        .forEach((button) => button.classList.add(`user-${userId}`));
+      sectionTop.classList.add(`user-${userId}`);
+      doc
+        .querySelector(".credits-section-bottom")
+        .classList.add(`user-${userId}`);
+    }
+    if (
+      creditsMain.children.length < (RPG.creators ? RPG.creators.length : 1)
+    ) {
+      creditsMain.innerHTML += doc.body.innerHTML;
+    } else {
+      document.querySelectorAll(`.credits-section`)[idx].innerHTML =
+        doc.querySelector(".credits-section").innerHTML;
+      console.log(
+        "btn toggle",
+        document.querySelectorAll(".credits-button-toggle")
+      );
+      document
+        .querySelectorAll(`.credits-button-toggle.user-${userId}`)
+        .forEach((button) => {
+          console.log("button", userId, button);
+          button.addEventListener("click", (e) => {
+            document
+              .querySelector(`.credits-section-top.user-${userId}`)
+              .classList.toggle("credits-section-hidden");
+            document
+              .querySelector(`.credits-section-bottom.user-${userId}`)
+              .classList.toggle("credits-section-hidden");
+          });
+        });
     }
   }
-
-  addcredits("8Ad2r", "Creator", "#7e66e9");
-
-  addcredits("lMjZp", "Creator", "#f33");
+  creators.forEach((creator, idx) => addcredits({ ...creator }, idx));
 
   const carousels = document.querySelectorAll("[data-carousel]");
   carousels.forEach(setUpCarousel);
@@ -340,13 +401,3 @@ const getReceivedData = () => {
   const data = queryParams["data"];
   return data;
 };
-
-function creditsVertical(event) {
-  console.log("oi");
-  document
-    .querySelector(".credits-section-top")
-    .classList.toggle("credits-section-hidden");
-  document
-    .querySelector(".credits-section-bottom")
-    .classList.toggle("credits-section-hidden");
-}

@@ -2,6 +2,11 @@
 
 :root {
   --accent-color: #7e66e9;
+  --color-1: #ffd447;
+  --color-2: #ff9f1c;
+  --color-3: #41ead4;
+  --color-4: #f71735;
+  --color-5: #011627;
 }
 
 @keyframes arrowAnim {
@@ -115,7 +120,7 @@ body {
 }
 
 .carousel {
-  --current-slide: 3;
+  --current-slide: 2;
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
@@ -141,7 +146,6 @@ body {
 }
 
 .carousel-btn-music {
-  background-color: var(--accent-color);
   position: absolute;
   top: 5%;
   justify-content: center;
@@ -152,9 +156,18 @@ body {
   border-radius: 50%;
   left: 5%;
 }
-
-.carousel-btn-music .material-symbols-outlined {
-  color: var(--color-1) !important;
+.carousel-btn-play {
+  gap: 0.5rem;
+  width: auto;
+  /* color: var(--color-1); */
+  margin-top: 2vh;
+}
+.carousel-btn-play span {
+  font-size: 5vw !important;
+}
+.carousel-btn-music .material-symbols-outlined,
+.carousel-btn-play .material-symbols-outlined {
+  color: var(--color-2);
 }
 
 .material-symbols-outlined {
@@ -203,6 +216,8 @@ body {
   color: var(--color-1);
   text-transform: uppercase;
 }
+.title-main {
+}
 /* slide header */
 .slide-header {
   display: flex;
@@ -217,7 +232,7 @@ body {
 }
 
 .slide-header h5 {
-  color: var(--color-1);
+  color: var(--color-2);
 }
 .slide-header em {
   color: gray;
@@ -244,13 +259,13 @@ body {
 
 .slide-section h5,
 .slide-section p,
-.slide-section bold {
+.slide-section strong {
   font-weight: 400;
   padding-bottom: 0.5rem;
   font-family: serif;
 }
 
-.slide-section bold {
+.slide-section strong {
   font-weight: 600;
   font-family: var(--font-1) !important;
 }
@@ -258,9 +273,11 @@ body {
 .slide-section mark {
   color: black;
   font-family: var(--font-1);
-  background-color: var(--color-1);
+  background-color: var(--color-4);
 }
-
+.slide-section .title-about {
+  color: var(--color-3);
+}
 /* Novel Section */
 .novel-section {
   display: flex;
@@ -351,11 +368,11 @@ body {
   min-height: 90px;
 }
 
-.novel-dialogues bold {
+.novel-dialogues strong {
   font-weight: 600;
   font-style: italic;
   font-family: var(--font-1);
-  color: var(--color-2);
+  color: var(--color-3);
 }
 
 .novel-dialogues p {
@@ -393,16 +410,15 @@ body {
   animation: arrowAnim 2s infinite;
 }
 
-.novel-dialogues::after {
-  content: "⠀";
+.novel-dialogues-name {
   top: -2rem;
   position: absolute;
   left: 0;
   padding: 0.5rem 0.5rem;
   font-size: calc(0.45rem + 0.8vw);
   background-color: #111;
-  text-transform: uppercase;
-  opacity: 0;
+  text-transform: capitalize;
+  opacity: 1;
   color: var(--color-1);
   font-family: var(--font-1);
 }
@@ -414,6 +430,10 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .credits-section {
@@ -430,13 +450,8 @@ body {
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0rem 6px 0 0rem var(--accent-color);
+  background-color: black;
   justify-content: center;
-  background-color: #000000;
-  background-image: linear-gradient(
-    to top,
-    rgba(66, 51, 134, 0.2),
-    transparent
-  );
   width: 100%;
   height: 100vh;
   gap: 2vh;
@@ -445,6 +460,16 @@ body {
   z-index: 2;
   padding: 2vh;
   overflow: hidden;
+}
+.credits-section-top:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.2;
+  mix-blend-mode: color;
+  background-image: linear-gradient(to top, var(--accent-color), black);
+  z-index: -1;
 }
 .credits-section-top-badge,
 .credits-section-bottom-badge {
@@ -471,6 +496,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+.red {
+  --accent-color: red;
+}
 .credits-section-top-avatar {
   width: 20%;
   border-radius: 50%;
@@ -488,13 +516,23 @@ body {
   text-transform: capitalize;
   color: var(--accent-color);
 }
+.credits-section-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 .credits-section-top-button,
 .credits-section-bottom-button {
-  margin-top: 0.5rem;
   padding: 0.5rem 2rem;
   background-color: transparent;
   border: 1px solid var(--accent-color);
-  border-radius: 1rem;
+  width: 100%;
+  /* border-radius: 1rem; */
   cursor: pointer;
   outline: none;
 }
@@ -505,6 +543,7 @@ body {
 .credits-section-bottom {
   width: 100%;
   height: 100vh;
+  padding: 2vh;
   display: flex;
   position: relative;
   box-shadow: inset 0rem 6px 0 0rem var(--accent-color);
@@ -519,7 +558,7 @@ body {
 }
 .credits-section-bottom-bots {
   width: 100%;
-  height: 80%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -527,6 +566,7 @@ body {
   flex-wrap: wrap;
   padding: 1vw 0;
   gap: 1vw;
+  box-shadow: inset 0 -20vh 10vh -20vh var(--accent-color);
 }
 .credits-section-bottom-bot {
   width: 30%;
@@ -565,7 +605,7 @@ body {
 }
 .credits-section-bottom-bot-infos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
 }
@@ -573,7 +613,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.2vw;
+}
+.credits-section-bottom-bot-infos span {
+  font-size: 0.8vw;
 }
 .credits-section-hidden {
   transform: translateY(-10vh);
