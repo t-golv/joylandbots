@@ -121,7 +121,8 @@ async function main() {
           activeIMG = document.querySelector(`#img${currentDialogue.pos || 1}`);
           activeIMG.src = "";
           activeIMG.style.display = "block";
-
+          document.querySelector(".novel-dialogues-name").style.display =
+            "block";
           if (currentDialogue.type === "#") {
             console.log("#");
             document
@@ -261,7 +262,7 @@ async function main() {
       doc.querySelector(".credits-section-top-cover").src = dataUser
         ? dataUser.result.headImg
         : placeholder.headImg;
-      doc.querySelector(".credits-section-bottom-badge").innerText = badge;
+      // doc.querySelector(".credits-section-bottom-badge").innerText =
       if (RPG.creators && RPG.creators[idx].link) {
         let link = doc.querySelector(".credits-section-link-2");
         link.href =
@@ -271,21 +272,7 @@ async function main() {
       }
     }
     dataOrPlaceholder(dataUser);
-    function generateRandomHex(length) {
-      const characters = "0123456789abcdef";
-      let result = "";
 
-      for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * characters.length);
-        result += characters[randomIndex];
-      }
-
-      return result;
-    }
-
-    // Example usage: Generate a random hexadecimal string of length 32
-    const randomHex = generateRandomHex(32);
-    console.log(randomHex);
     options.headers.Fingerprint = generateRandomHex(32);
     try {
       creditsMain.innerHTML += doc.body.innerHTML;
@@ -296,9 +283,8 @@ async function main() {
       dataUser = await responseUser.json();
     } catch (err) {}
     try {
-      console.log(options);
       const responseBots = await fetch(
-        `https://api.joyland.ai/profile/public-bots?userId=${userId}`,
+        `https://api.joylaand.ai/profile/public-bots?userId=${userId}`,
         options
       );
       dataBots = await responseBots.json();
@@ -326,7 +312,10 @@ async function main() {
     }
     const badgeElements = doc.querySelectorAll(".credits-section-badge");
     badgeElements.forEach((badgeEl) => {
-      badgeEl.innerText = badge;
+      badgeEl.innerText =
+        RPG.creators && RPG.creators[idx].badge
+          ? RPG.creators[idx].badge
+          : badge;
       if (position == "left") {
         console.log(badgeEl.style.right);
         badgeEl.style.left = "0%";
@@ -430,3 +419,14 @@ const getReceivedData = () => {
   const data = queryParams["data"];
   return data;
 };
+function generateRandomHex(length) {
+  const characters = "0123456789abcdef";
+  let result = "";
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters[randomIndex];
+  }
+
+  return result;
+}
