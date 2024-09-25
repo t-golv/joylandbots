@@ -6,11 +6,13 @@ const options = {
     Accept: "application/json, text/plain, */*",
     "Accept-Language": "en",
     DNT: "1",
-    Fingerprint: "840cf1fc79e3d7bb243aeb93ed5757f3",
+    // Fingerprint: "840cf1fc79e3d7bb243aeb93ed5757f3",
     Origin: "https://www.joyland.ai",
     Referer: "https://www.joyland.ai/",
   },
 };
+
+// "creators": [{ "userId": "8Ad2r", "link": "" }] in json
 
 async function loadJson(path) {
   try {
@@ -28,9 +30,11 @@ async function main() {
   const CREDITS = await loadJson("../NovelEngineV3/credits.json");
   let creators = {};
   if (RPG.creators) {
-    creators = CREDITS.creators.filter((creator) =>
-      RPG.creators.includes(creator.userId)
-    );
+    creators = CREDITS.creators.filter((creator) => {
+      return RPG.creators.some(
+        (creatorRPG) => creatorRPG.userId === creator.userId
+      );
+    });
   } else {
     creators = CREDITS.creators.filter((creator) => creator.userId == "8Ad2r");
   }
@@ -117,6 +121,7 @@ async function main() {
           activeIMG = document.querySelector(`#img${currentDialogue.pos || 1}`);
           activeIMG.src = "";
           activeIMG.style.display = "block";
+
           if (currentDialogue.type === "#") {
             console.log("#");
             document
@@ -145,7 +150,8 @@ async function main() {
             characterActive.name;
           activeIMG.classList.add("active");
         } else {
-          document.querySelector(".novel-dialogues-name").innerText = "";
+          document.querySelector(".novel-dialogues-name").style.display =
+            "none";
         }
         // se tiver bg
         if (currentDialogue?.bg) {
@@ -256,23 +262,48 @@ async function main() {
         ? dataUser.result.headImg
         : placeholder.headImg;
       doc.querySelector(".credits-section-bottom-badge").innerText = badge;
+      if (RPG.creators && RPG.creators[idx].link) {
+        let link = doc.querySelector(".credits-section-link-2");
+        link.href =
+          RPG.creators[idx].link ||
+          `https://www.joyland.ai/profile?userId=${userId}`;
+        link.style.display = "block";
+      }
     }
     dataOrPlaceholder(dataUser);
+    function generateRandomHex(length) {
+      const characters = "0123456789abcdef";
+      let result = "";
+
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        result += characters[randomIndex];
+      }
+
+      return result;
+    }
+
+    // Example usage: Generate a random hexadecimal string of length 32
+    const randomHex = generateRandomHex(32);
+    console.log(randomHex);
+    options.headers.Fingerprint = generateRandomHex(32);
     try {
       creditsMain.innerHTML += doc.body.innerHTML;
       const responseUser = await fetch(
-        `https://api.joylanad.ai/profile/info?userId=${userId}`,
+        `https://api.joylaand.ai/profile/info?userId=${userId}`,
         options
       );
       dataUser = await responseUser.json();
     } catch (err) {}
     try {
+      console.log(options);
       const responseBots = await fetch(
-        `https://api.joylaand.ai/profile/public-bots?userId=${userId}`,
+        `https://api.joyland.ai/profile/public-bots?userId=${userId}`,
         options
       );
       dataBots = await responseBots.json();
     } catch (err) {}
+
     // DATA OR PLACEHOLDER
     dataOrPlaceholder(dataUser);
     if (dataBots && dataBots.result) {
@@ -307,7 +338,7 @@ async function main() {
       const sectionTop = doc.querySelector(".credits-section-top");
       const button = `
       <button class="credits-section-top-button credits-button-toggle">
-      SEE NEW BOTS
+      SEE ALL ${dataBots.result.length} BOTS
     </button>`;
       sectionTop.innerHTML += button;
       doc
@@ -318,9 +349,7 @@ async function main() {
         .querySelector(".credits-section-bottom")
         .classList.add(`user-${userId}`);
     }
-    if (
-      creditsMain.children.length < (RPG.creators ? RPG.creators.length : 1)
-    ) {
+    if (creditsMain.children.length < (creators ? creators.length : 1)) {
       creditsMain.innerHTML += doc.body.innerHTML;
     } else {
       document.querySelectorAll(`.credits-section`)[idx].innerHTML =

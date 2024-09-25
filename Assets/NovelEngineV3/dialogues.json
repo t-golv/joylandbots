@@ -152,5 +152,9 @@
         }
       ]
     }
-  }
+  },
+  "creators": [
+    { "userId": "8Ad2r", "link": "" },
+    { "userId": "lMjZp", "link": "https://www.joyland.ai/chat?botId=aanjN" }
+  ]
 }
