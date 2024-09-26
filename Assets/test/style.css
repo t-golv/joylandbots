@@ -1,45 +1,41 @@
-/* CSS styles */
-html,body {
-    font-family: arial;
+#btn-load {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+#btn-load:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 0.8) 0%,
+    rgba(253, 187, 45, 0.8) 100%
+  );
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+#btn-load:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
   }
-  .bg-dark {
-    background: #333;
-    color:#f5f5f5;
+  50% {
+    transform: scale(1.1);
   }
-  .actions {
-        font-style: italic;
-    color: #8d8e99;
-  }
-  .bg-white {
-    background: #fff;
-    color:black;
-  }
-  .bg {
-    box-sizing:border-box;
-    position:relative;
-    padding-bottom:2rem;
-  }
-  .bg > div {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      max-width: 100%;
-      position: relative;
-      z-index: 1;
-      padding: 12px 16px;
-      margin-bottom: 12px;
-  }
-  .bg > div > div {
-      background-color: rgba(141,142,153,.2);
-      border-radius: 2px 8px 8px;
-      width: 100%;
-    font-size:1rem;
-      word-wrap: break-word;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-      margin-bottom: 0;
-      max-width: 100%;
-      word-break: break-word;
-    padding:1rem;
-  }
+}
