@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="output"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Human</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f8ff;
+        margin: 0;
+      }
+      .greeting {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid #008cba;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+      .greeting:hover {
+        transform: scale(1.05);
+      }
+      h1 {
+        color: #008cba;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #008cba;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #005f7f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="greeting">
+      <h1>Hello, Human!</h1>
+      <p>Welcome to your simple webpage.</p>
+      <button onclick="showMessage()">Click Me!</button>
+      <p id="message" style="display: none; color: green"></p>
+    </div>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IFrame Content</title>
-    </head>
-    <body>
-        <div id="output"></div>
-    
-        <script>
-            // Function to parse query parameters from URL and return them as an object
-            const getQueryParams = () => {
-                const params = {};
-                const queryString = window.location.search.substring(1);
-                const pairs = queryString.split('&');
-                pairs.forEach(pair => {
-                    const [key, value] = pair.split('=');
-                    params[decodeURIComponent(key)] = decodeURIComponent(value || '');
-                });
-                return params;
-            };
-    
-            // Function to display received data
-            const displayReceivedData = () => {
-                const queryParams = getQueryParams();
-                const data = queryParams['data'];
-                const outputDiv = document.getElementById('output');
-                outputDiv.textContent = `Received data: ${data}`;
-            };
-    
-            // Call the display function when the document is ready
-            document.addEventListener('DOMContentLoaded', displayReceivedData);
-        </script>
-    </body>
-    </html>
-    
-</body>
+    <script>
+      function showMessage() {
+        const message = document.getElementById("message");
+        message.innerText = "You clicked the button! Have a great day!";
+        message.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
