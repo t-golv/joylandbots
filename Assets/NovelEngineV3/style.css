@@ -120,7 +120,7 @@ body {
 }
 
 .carousel {
-  --current-slide: 3;
+  --current-slide: 0;
   /* we set position relative so absolute position works properly for the buttons */
   position: relative;
   overflow: hidden;
