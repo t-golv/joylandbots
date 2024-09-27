@@ -105,13 +105,16 @@ async function main() {
     // Função próximo dialogo
 
     let currentDialogueIndex = 0;
+    let typing = false;
+    let index = 0;
+    let paragraphElement = document.querySelector(`.novel-dialogues p`);
     function nextDialogue() {
       // pega o elemento dialogo
+      let currentDialogue = RPG.story[chapter].dialogues[currentDialogueIndex];
       if (currentDialogueIndex < RPG.story[chapter].dialogues.length) {
+        paragraphElement.textContent = "";
         playDialogueSound();
         let activeIMG;
-        let currentDialogue =
-          RPG.story[chapter].dialogues[currentDialogueIndex];
         let characterActive = RPG.characters[currentDialogue.id];
         document
           .querySelectorAll(".novel-img")
@@ -134,10 +137,8 @@ async function main() {
             currentDialogue.type !== undefined
           ) {
             activeIMG.src = characterActive[currentDialogue.type];
-            console.log('The string is not "#" but is a valid string.');
           } else {
             activeIMG.src = characterActive["defaultLink"];
-            console.log("defat.");
           }
           if (characterActive?.audio?.length > 0) {
             audioEl.src =
@@ -147,8 +148,15 @@ async function main() {
             audioEl.volume = 0.3;
             audioEl.play();
           }
-          document.querySelector(".novel-dialogues-name").innerText =
-            characterActive.name;
+          if (characterActive?.name) {
+            document.querySelector(".novel-dialogues-name").innerText =
+              characterActive.name;
+            document.querySelector(".novel-dialogues-name").style.display =
+              "block";
+          } else {
+            document.querySelector(".novel-dialogues-name").style.display =
+              "none";
+          }
           activeIMG.classList.add("active");
         } else {
           document.querySelector(".novel-dialogues-name").style.display =
@@ -199,25 +207,31 @@ async function main() {
         } else {
           itemElement.style.display = "none";
         }
+        if (currentDialogue?.action) {
+          paragraphElement.classList.add("action");
+        } else {
+          paragraphElement.classList.remove("action");
+        }
         document.querySelector(".novel-section").removeAttribute("id");
         document.querySelector(".novel-section").id = currentDialogue.id;
-        let paragraphElement = document.querySelector(`.novel-dialogues p`);
-        if (currentDialogue.user) {
-          if (user) {
-            paragraphElement.innerHTML = currentDialogue.dialogue.replace(
-              "{user}",
-              user
-            );
+        function showPhrase() {
+          if (index < currentDialogue.dialogue.length && !typing) {
+            typing = true;
+            paragraphElement.textContent += currentDialogue.dialogue[index];
+            index++;
+            setTimeout(() => {
+              typing = false; // Allow next character to be typed
+              showPhrase(); // Call showPhrase again
+            }, 30); // Adjust typing speed here
           } else {
-            paragraphElement.innerHTML = currentDialogue.dialogue.replace(
-              "{user}",
-              "you"
-            );
+            index = 0; // Reset index for the next dialogue
+            currentDialogueIndex++;
+            paragraphElement.textContent = currentDialogue.dialogue;
           }
-        } else {
-          paragraphElement.innerHTML = currentDialogue.dialogue;
         }
-        currentDialogueIndex++;
+
+        showPhrase();
+        // paragraphElement.innerHTML = currentDialogue.dialogue;
       } else {
         // quando os dialogos chegarem no maximo vai para proximo slide
         let imgs = document.querySelectorAll(".novel-img");
@@ -228,7 +242,14 @@ async function main() {
     const novelDialogues = document.querySelector(
       ".novel-dialogues .dialogues-arrow"
     );
-    novelDialogues.addEventListener("click", nextDialogue);
+    novelDialogues.addEventListener("click", () => {
+      if (!typing) {
+        nextDialogue();
+      } else {
+        typing = false;
+        index = 9999;
+      }
+    });
   }
 
   // add credits
@@ -237,7 +258,7 @@ async function main() {
     idx
   ) {
     const creditsMain = document.querySelector(".credits-main");
-    const responseHTML = await fetch("./credits.html");
+    const responseHTML = await fetch("../NovelEngineV3/credits.html");
     const htmlText = await responseHTML.text();
     const parser = new DOMParser();
     let dataUser;
@@ -277,14 +298,14 @@ async function main() {
     try {
       creditsMain.innerHTML += doc.body.innerHTML;
       const responseUser = await fetch(
-        `https://api.joylaand.ai/profile/info?userId=${userId}`,
+        `https://api.joyland.ai/profile/info?userId=${userId}`,
         options
       );
       dataUser = await responseUser.json();
     } catch (err) {}
     try {
       const responseBots = await fetch(
-        `https://api.joylaand.ai/profile/public-bots?userId=${userId}`,
+        `https://api.joyland.ai/profile/public-bots?userId=${userId}`,
         options
       );
       dataBots = await responseBots.json();
@@ -317,7 +338,6 @@ async function main() {
           ? RPG.creators[idx].badge
           : badge;
       if (position == "left") {
-        console.log(badgeEl.style.right);
         badgeEl.style.left = "0%";
         badgeEl.style.right = "auto";
         badgeEl.style.borderRadius = "0px 0px 1rem 0px";
@@ -343,14 +363,10 @@ async function main() {
     } else {
       document.querySelectorAll(`.credits-section`)[idx].innerHTML =
         doc.querySelector(".credits-section").innerHTML;
-      console.log(
-        "btn toggle",
-        document.querySelectorAll(".credits-button-toggle")
-      );
+
       document
         .querySelectorAll(`.credits-button-toggle.user-${userId}`)
         .forEach((button) => {
-          console.log("button", userId, button);
           button.addEventListener("click", (e) => {
             document
               .querySelector(`.credits-section-top.user-${userId}`)

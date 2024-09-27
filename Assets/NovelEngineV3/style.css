@@ -2,11 +2,11 @@
 
 :root {
   --accent-color: #7e66e9;
-  --color-1: #ffd447;
+  /* --color-1: #ffd447;
   --color-2: #ff9f1c;
   --color-3: #41ead4;
   --color-4: #f71735;
-  --color-5: #011627;
+  --color-5: #011627; */
 }
 
 @keyframes arrowAnim {
@@ -163,7 +163,7 @@ body {
   margin-top: 2vh;
 }
 .carousel-btn-play span {
-  font-size: 5vw !important;
+  font-size: calc(5vw + 5vh) !important;
 }
 .carousel-btn-music .material-symbols-outlined,
 .carousel-btn-play .material-symbols-outlined {
@@ -229,6 +229,7 @@ body {
 }
 .slide-header div {
   padding: calc(1vw + 1vh);
+  opacity: 0.5;
 }
 .slide-header h5 {
   color: var(--color-2);
@@ -338,7 +339,7 @@ body {
   bottom: 0;
   position: absolute;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   padding: 1%;
   font-size: calc(0.45rem + 0.8vw);
   background-color: #111;
@@ -383,7 +384,7 @@ body {
   min-height: 90px;
 }
 
-.novel-dialogues strong {
+.novel-dialogues p.action {
   font-weight: 600;
   font-style: italic;
   font-family: var(--font-1);
@@ -756,11 +757,13 @@ body {
 
 @keyframes pulse {
   from {
-    background-size: 80% 80%;
+    background-size: 50% 50%;
+    background-position: center center;
   }
 
   to {
-    background-size: 100% 100%;
+    background-size: 80% 80%;
+    background-position: center center;
   }
 }
 
@@ -768,12 +771,13 @@ body {
   opacity: 1 !important;
   transform: scale(100%) translateY(0);
   mix-blend-mode: normal;
-  background: radial-gradient(
-      farthest-side,
-      rgba(255, 255, 255, 0.5),
-      transparent
-    )
-    center no-repeat;
+  background-image: radial-gradient(
+    farthest-side,
+    var(--color-4) -100%,
+    transparent 100%
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
   animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),
     pulse 0.5s linear infinite alternate;
   z-index: 2;
