@@ -2,21 +2,41 @@
   "characters": {
     "kitsu": {
       "name": "kitsu (Fox)",
-      "defaultLink": "./assets/kitsu.png"
+      "defaultLink": "./assets/kitsu.png",
+      "audio": [
+        "https://ami.animecharactersdatabase.com/audio/100717/4/100717-4-95.mp4",
+        "https://ami.animecharactersdatabase.com/audio/100717/3/100717-3-348.mp4",
+        "https://ami.animecharactersdatabase.com/audio/104931/4/104931-4-421.mp4"
+      ]
     },
 
     "milly": {
       "name": "Milly (Cow)",
-      "defaultLink": "./assets/milly.png"
+      "defaultLink": "./assets/milly.png",
+      "audio": [
+        "https://ami.animecharactersdatabase.com/audio/101711/7/101711-7-133.mp4",
+        "https://ami.animecharactersdatabase.com/audio/101711/6/101711-6-80.mp4",
+        "https://ami.animecharactersdatabase.com/audio/101711/5/101711-5-237.mp4"
+      ]
     },
 
     "ms_tama": {
       "name": "Ms. Tama (Bear)",
-      "defaultLink": "./assets/tama.png"
+      "defaultLink": "./assets/tama.png",
+      "audio": [
+        "https://ami.animecharactersdatabase.com/audio/106773/5/106773-5-401.mp4",
+        "https://ami.animecharactersdatabase.com/audio/106773/6/106773-6-20.mp4",
+        "https://ami.animecharactersdatabase.com/audio/106773/5/106773-5-405.mp4"
+      ]
     },
     "rika": {
       "name": "Rika (Bunny)",
-      "defaultLink": "./assets/rika.png"
+      "defaultLink": "./assets/rika.png",
+      "audio": [
+        "https://ami.animecharactersdatabase.com/audio/104147/4/104147-4-158.mp4",
+        "https://ami.animecharactersdatabase.com/audio/104147/1/104147-1-132.mp4",
+        "https://ami.animecharactersdatabase.com/audio/104147/4/104147-4-94.mp4"
+      ]
     }
   },
   "story": {
