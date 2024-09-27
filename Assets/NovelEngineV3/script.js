@@ -11,7 +11,7 @@ const options = {
     Referer: "https://www.joyland.ai/",
   },
 };
-
+let creditsLoaded = false;
 // "creators": [{ "userId": "8Ad2r", "link": "" }] in json
 
 async function loadJson(path) {
@@ -76,6 +76,10 @@ async function main() {
 
     function changeSlide(slideNumber) {
       currentDialogueIndex = 0;
+
+      if (currentSlide == slides.length - 1 && !creditsLoaded) {
+        creators.forEach((creator, idx) => addcredits({ ...creator }, idx));
+      }
       playSlideSound();
       activeSlide();
       if (slideNumber == 2) {
@@ -239,6 +243,7 @@ async function main() {
         handleNext();
       }
     }
+
     const novelDialogues = document.querySelector(
       ".novel-dialogues .dialogues-arrow"
     );
@@ -248,6 +253,18 @@ async function main() {
       } else {
         typing = false;
         index = 9999;
+      }
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Space" && currentSlide == 2) {
+        if (!typing) {
+          nextDialogue();
+        } else {
+          typing = false;
+          index = 9999;
+        }
+      } else if (e.code === "Space" && currentSlide < 2) {
+        handleNext();
       }
     });
   }
@@ -377,9 +394,8 @@ async function main() {
           });
         });
     }
+    creditsLoaded = true;
   }
-  creators.forEach((creator, idx) => addcredits({ ...creator }, idx));
-
   const carousels = document.querySelectorAll("[data-carousel]");
   carousels.forEach(setUpCarousel);
   const musicButton = document.querySelector(".carousel-btn-music");
@@ -405,7 +421,8 @@ main();
 
 // Prevent default Tab behavior
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Tab") {
+  console.log(event);
+  if (event.code === "Tab" || event.code == "Space") {
     event.preventDefault(); // Prevent the default tab action
   }
 });
