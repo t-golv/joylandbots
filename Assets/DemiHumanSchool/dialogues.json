@@ -50,10 +50,11 @@
       },
       "dialogues": [
         {
-          "id": null,
+          "id": "null",
           "title": "First Day",
           "subtitle": "Your first day as a human at demi-human school",
-          "dialogue": "It's your first day at a school for Demi-Humans. Initially, you feel apprehensive due to the tension between humans and demi-humans. You're unsure what to expect, but with no other choice, you face it head-on."
+          "dialogue": "It's your first day at a school for Demi-Humans. Initially, you feel apprehensive due to the tension between humans and demi-humans. You're unsure what to expect, but with no other choice, you face it head-on.",
+          "type": "#"
         },
         {
           "id": null,
