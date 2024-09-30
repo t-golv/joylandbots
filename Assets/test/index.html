@@ -1,60 +1,31 @@
+<!-- <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://t-golv.github.io/joylandbots/Assets/StrawHats/iframe.css" -->
+<!-- /> -->
+<style>
+  .msg-body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .msg-greeting {
+    height: 10vh;
+    font-size: 2rem;
+  }
+</style>
 <body
   onload="(function() { 
   const params = new URLSearchParams(window.location.search); 
   const data = params.get('data'); 
   if (data) {
-    const greeting = document.querySelector('.html-greeting p');
+    const greeting = document.querySelector('.msg-greeting');
     greeting.innerText = `Welcome to the page, ${data}!!`;
   } 
 })()"
+  class="msg-body"
 >
-  <style>
-    .html-greeting {
-      text-align: center;
-      padding: 20px;
-      position: fixed;
-      border: 2px solid #008cba;
-      border-radius: 10px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
-      top: 0;
-      left: 50%;
-      z-index: 1;
-      transform: translateX(-50%);
-      color: black;
-    }
-    .html-greeting:hover {
-      transform: translateX(-50%) scale(0.95);
-    }
-    .html-greeting h1 {
-      color: #008cba;
-    }
-        .html-greeting p {
-          text-align: center;
-    }
-    .html-greeting button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      background-color: #008cba;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .html-greeting button:hover {
-      background-color: #005f7f;
-    }
-  </style>
-  <link rel="stylesheet" type="text/css" href="https://t-golv.github.io/joylandbots/Assets/StrawHats/iframe.css"><div class="iframe-parent"><iframe class="iframe-greeting"" scrolling="no" src="https://t-golv.github.io/joylandbots/Assets/DemiHumanSchool/index.html" frameborder="no" loading="lazy"></iframe><div class="msg-dialogue"></div>
-  <div class="html-greeting">
-    <h1>Hello, Human!</h1>
-    <p>Welcome to your simple webpage.</p>
-    <button
-      onclick="(function() { const message = document.getElementById('message'); message.innerText = 'You clicked the button! Have a great day!'; message.style.display = 'block'; })()"
-    >
-      Click Me!
-    </button>
-    <p id="message" style="display: none; color: green"></p>
-  </div>
+  <div class="msg-greeting"></div>
 </body>
