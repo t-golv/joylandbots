@@ -427,7 +427,6 @@ main();
 
 // Prevent default Tab behavior
 document.addEventListener("keydown", (event) => {
-  console.log(event);
   if (event.code === "Tab" || event.code == "Space") {
     event.preventDefault(); // Prevent the default tab action
   }

@@ -21,8 +21,8 @@
       "position": "left",
       "placeholder": {
         "name": "🅷🆄🅼🅰🅽",
-        "userVip": false,
-        "vipEnum": "FREE",
+        "userVip": true,
+        "vipEnum": "PREMIUM",
         "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041777788_de2775ea.webp",
         "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041744153_d44c5451.webp",
         "bio": "😊Your Friendly Neighborhood BOT Pimp😊"
