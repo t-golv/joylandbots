@@ -282,9 +282,15 @@ async function main() {
     let dataBots;
     const doc = parser.parseFromString(htmlText, "text/html");
     function dataOrPlaceholder() {
-      doc
-        .querySelector(".credits-section")
-        .style.setProperty("--accent-color", color);
+      if (RPG.creators && RPG.creators[idx].color) {
+        doc
+          .querySelector(".credits-section")
+          .style.setProperty("--accent-color", RPG.creators[idx].color);
+      } else {
+        doc
+          .querySelector(".credits-section")
+          .style.setProperty("--accent-color", color);
+      }
       doc.querySelector(
         ".credits-section-link"
       ).href = `https://www.joyland.ai/profile?userId=${userId}`;

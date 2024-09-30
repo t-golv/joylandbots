@@ -1,0 +1,123 @@
+<head></head>
+<!-- Import font-awesome somewhere in the HTML -->
+
+<link rel="stylesheet" type="text/css" href="../NovelEngineV3/style.css">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<title>Demi Human School</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+  :root {
+    --color-1: #ffe100;
+  --color-2: #F26419;
+  --color-3: #0CCE6B;
+  --color-4: #243E36;
+  --color-5: #0A210F;
+  }
+  .title {
+    font-family: "Roboto Mono", monospace !important;
+    text-shadow: 0 0 .5rem var(--color-3) ;
+  }
+</style>
+</head>
+<body class="chapter1">
+  <audio id="transition-slide-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/12/29/audio_2fd079020a.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="transition-dialogue-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_160c87d772.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="carousel" data-carousel>
+    <div class="slides" data-carousel-slides-container>
+      <div class="slide slide-main"
+        style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(./assets/cover.jpg)">
+        <h1 class="title title-main"></h1>
+        <h6 class="subtitle subtitle-main"></h6>
+        <button class="carousel-button carousel-button_next carousel-btn-play" data-carousel-button-next>
+          <span class="material-symbols-outlined">
+            play_circle
+          </span>
+        </button>
+        <button class="carousel-button carousel-btn-music">
+          <span class="material-symbols-outlined">
+            music_note
+          </span>
+        </button>
+        <audio id="bg-ost-sound">
+          <source src="./assets/bg-ost.mp3" type="audio/mpeg" />
+        </audio>
+        <p>Or press "Space" to go to the next</p>
+      </div>
+
+      <div class="slide slide-main"
+        style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(./assets/bg-2.jpg); display:flex;align-items:center">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios
+            </span>
+          </button>
+          <button class="carousel-button carousel-button_next" data-carousel-button-next><span
+              class="material-symbols-outlined">
+              arrow_forward_ios
+            </span>
+          </button>
+        </header>
+
+        <section class="slide-section">
+          <h5 class="title title-about"></h5>
+          <p class="about"></p>
+        </section>
+      </div>
+
+      <div class="slide slide-main"
+        style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3738652.jpg&f=1&nofb=1&ipt=e092497e7cfb140a5cf5f2cd23c08cd646e09e78a5c01411e4dbf5f95c553e10&ipo=images);">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios
+            </span>
+          </button>
+          <div>
+            <h6 class="title title-header"></h6>
+            <em class="subtitle subtitle-header"></em>
+          </div>
+        </header>
+        <section class="novel-section">
+          <audio id="voice">
+            <source src="" type="audio/mpeg" />
+          </audio>
+          <img id="novel-overlay" class="novel-overlay" />
+          <img id="novel-item" class="novel-item" />
+          <div class="novel-images">
+            <img src="" id="img1" class="novel-img" />
+            <img src="" id="img2" class="novel-img" />
+            <img src="" id="img3" class="novel-img" />
+            <img src="" id="img4" class="novel-img" />
+            <img src="" id="img5" class="novel-img" />
+            <span class="novel-dialogues-name"></span>
+          </div>
+          <div class="novel-dialogues">
+            <p></p>
+            <div class="dialogues-arrow-container"><span class="material-symbols-outlined dialogues-arrow">
+                arrow_drop_down
+              </span></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Credits -->
+      <div class="slide slide-main">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios
+            </span>
+          </button>
+        </header>
+        <main class="credits-main" ></main>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="../NovelEngineV3/script.js"></script>
+</body>

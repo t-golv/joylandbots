@@ -635,8 +635,8 @@ body {
   box-shadow: inset 0 -50vh 100vh -50vh var(--accent-color);
 }
 .credits-section-bottom-bot {
-  width: calc(10vw + 10vh);
-  height: calc(12vw + 12vh);
+  width: calc(14vw + 14vh);
+  height: calc(24vw + 24vh);
   height: 20vw;
   text-decoration: none;
   z-index: 2;
