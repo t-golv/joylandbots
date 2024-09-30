@@ -19,7 +19,9 @@
   }
 </style>
 </head>
-<body class="chapter3">
+<body class="chapter3">  <audio id="play-audio">
+  <source src="https://ami.animecharactersdatabase.com/audio/104680/58/104680-58-422.mp4" type="audio/mpeg" />
+</audio>
   <audio id="transition-slide-audio">
     <source src="https://cdn.pixabay.com/audio/2022/12/29/audio_2fd079020a.mp3" type="audio/mpeg" />
   </audio>
@@ -32,7 +34,7 @@
         style="background-color: rgba(0,0,0,0.8);background-blend-mode:color;background-image: linear-gradient(to top, var(--color-1) -100%, transparent 100%), url(./assets/cover.jpg)">
         <h1 class="title title-main"></h1>
         <h6 class="subtitle subtitle-main"></h6>
-        <button class="carousel-button carousel-button_next carousel-btn-play" data-carousel-button-next>
+        <button onclick="(function() {let audio = document.getElementById('play-audio');if (audio) {audio.volume = 0.3;audio.play();}})();" class="carousel-button carousel-button_next carousel-btn-play" data-carousel-button-next>
           <span class="material-symbols-outlined">
             play_circle
           </span>

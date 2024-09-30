@@ -409,7 +409,7 @@ async function main() {
   function bgOst() {
     let audio = document.getElementById("bg-ost-sound");
     if (audio.currentTime == 0 || audio.paused) {
-      audio.volume = 0.25;
+      audio.volume = 0.2;
       audio.play();
       document.querySelector(
         ".carousel-btn-music .material-symbols-outlined"
