@@ -1,4 +1,9 @@
 <style>
+  :root {
+    --color1: #e09f9f;
+    --color2: #cc2b2b;
+    --color3: #941e1e;
+  }
   .msg-container {
     display: flex;
     justify-content: center;
@@ -15,8 +20,13 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    color: var(--color1);
+    text-align: center;
     width: 100%;
+  }
+  .msg-greeting h1 {
+    color: var(--color2);
   }
   .msg-greeting iframe {
     width: 100%;
@@ -24,18 +34,19 @@
     max-height: 450px;
   }
   html.theme-dark .markdown-body strong {
-    color: #db9d47;
+    color: var(--color3);
   }
   html.theme-dark .markdown-body em {
-    color: #ffe19c;
+    color: var(--color2);
   }
   html.theme-dark .markdown-body p,
   html.theme-dark .markdown-body hr {
-    color: #edffd9;
-    border-color: #edffd9;
+    color: var(--color1);
+    border-color: var(--color1);
   }
   html.theme-dark .body-text {
-    border: 2px dashed #db9d47 !important;
+    border: 1px solid var(--color2) !important;
+    box-shadow: 0px 0px 0.5rem 0 var(--color3);
   }
   html.theme-dark .chat-main-container:before {
     content: "";
@@ -43,30 +54,44 @@
     z-index: 0;
     background-color: rgba(0, 0, 0, 0.8) !important;
     background-blend-mode: color !important;
-    background-image: linear-gradient(to top, #edffd9 0%, transparent 100%),
-      url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F6d7e25dcfc52c1637aa7872e47b4f3fd%2Fc07a87f8ebaff7b3-99%2Fs500x750%2F66c25ce9a4168fbd9b4c7a1c09306c20a4199b25.gif&f=1&nofb=1&ipt=c59187179e60b429fe87451df132fa418b1e20c781a1a8fa8d75c7dd099da1a5&ipo=images) !important;
+    background-image: linear-gradient(
+        to top,
+        var(--color1) 0%,
+        transparent 100%
+      ),
+      url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FzssZWYp5dP0AAAAC%2Fblood.gif&f=1&nofb=1&ipt=e0297ad51b18d345abc7183ed23c7aa460f3c3429bcd59ff9b140b602a640910&ipo=images) !important;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.1;
+    opacity: 1;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    /* border-top-left-radius: 8px; */
+    /* border-bottom-left-radius: 8px; */
   }
 </style>
 <div class="msg-container">
   <div class="msg-greeting">
-    <iframe
-      class="iframe-greeting"
-      scrolling="no"
-      src="https://t-golv.github.io/joylandbots/Assets/MHA-HEROES/chapter3.html"
-      frameborder="no"
-      loading="lazy"
-    ></iframe>
+    <div class="halloween-div">
+      <h2>Welcome to Halloween Night</h2>
+      <p>
+        It was a dark and stormy night. The wind howled through the trees as the
+        leaves rustled ominously. Jack-o'-lanterns flickered eerily on porches,
+        casting spooky shadows.
+      </p>
+      <p>
+        In the distance, children's laughter mixed with spooky music from
+        haunted houses. The air was filled with the scent of candy and
+        excitement as ghosts, witches, and vampires roamed the streets.
+      </p>
+      <p>
+        Underneath the pale moonlight, the spirits of Halloween stirred, ready
+        to haunt and delight until the dawn broke and the magic faded.
+      </p>
+    </div>
   </div>
 </div>
 
