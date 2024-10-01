@@ -1,41 +1,19 @@
-#btn-load {
-  background: linear-gradient(
-    90deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+html .markdown-body #markdown-btn {
+  background: transparent;
+  border: 1px solid;
   padding: 0.5rem 1rem;
+  width: 100%;
   cursor: pointer;
-  border-radius: 1rem;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  animation: pulse 1.5s infinite;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+html.theme-dark .markdown-body #markdown-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+html.theme-default .markdown-body #markdown-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
-#btn-load:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(34, 193, 195, 0.8) 0%,
-    rgba(253, 187, 45, 0.8) 100%
-  );
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
-}
-
-#btn-load:active {
+html .markdown-body #markdown-btn:active {
   transform: scale(0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
 }

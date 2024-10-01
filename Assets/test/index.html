@@ -1,31 +1,15 @@
-<!-- <link
-  rel="stylesheet"
-  type="text/css"
-  href="https://t-golv.github.io/joylandbots/Assets/StrawHats/iframe.css" -->
-<!-- /> -->
 <style>
-  .msg-body {
+  .msg-container {
     display: flex;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
   .msg-greeting {
-    height: 10vh;
-    font-size: 2rem;
+    background-color: red;
   }
 </style>
-<body
-  onload="(function() { 
-  const params = new URLSearchParams(window.location.search); 
-  const data = params.get('data'); 
-  if (data) {
-    const greeting = document.querySelector('.msg-greeting');
-    greeting.innerText = `Welcome to the page, ${data}!!`;
-  } 
-})()"
-  class="msg-body"
->
-  <div class="msg-greeting"></div>
-</body>
+<div class="msg-container">
+  <div class="msg-greeting">asdasd</div>
+</div>
