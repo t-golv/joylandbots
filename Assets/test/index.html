@@ -3,13 +3,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 450px;
+    border-radius: 0 6px 6px 6px;
   }
   .msg-greeting {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .msg-greeting iframe {
+    width: 100%;
+    height: 58vh;
+    max-height: 450px;
+  }
+  html.theme-dark .markdown-body strong {
+    color: #db9d47;
+  }
+  html.theme-dark .markdown-body em {
+    color: #ffe19c;
+  }
+  html.theme-dark .markdown-body p,
+  html.theme-dark .markdown-body hr {
+    color: #edffd9;
+    border-color: #edffd9;
+  }
+  html.theme-dark .body-text {
+    border: 2px dashed #db9d47 !important;
+  }
+  html.theme-dark .chat-main-container:before {
+    content: "";
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-blend-mode: color !important;
+    background-image: linear-gradient(to top, #edffd9 0%, transparent 100%),
+      url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F6d7e25dcfc52c1637aa7872e47b4f3fd%2Fc07a87f8ebaff7b3-99%2Fs500x750%2F66c25ce9a4168fbd9b4c7a1c09306c20a4199b25.gif&f=1&nofb=1&ipt=c59187179e60b429fe87451df132fa418b1e20c781a1a8fa8d75c7dd099da1a5&ipo=images) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 </style>
 <div class="msg-container">
-  <div class="msg-greeting">asdasd</div>
+  <div class="msg-greeting">
+    <iframe
+      class="iframe-greeting"
+      scrolling="no"
+      src="https://t-golv.github.io/joylandbots/Assets/MHA-HEROES/chapter3.html"
+      frameborder="no"
+      loading="lazy"
+    ></iframe>
+  </div>
 </div>
+
+<!-- <div class="msg-dialogue"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="https://t-golv.github.io/joylandbots/Assets/StrawHats/iframe.css"><div class="iframe-parent"></div> -->
