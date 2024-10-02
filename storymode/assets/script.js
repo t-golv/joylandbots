@@ -72,6 +72,7 @@ async function main() {
     }
   }
   function setUpCarousel(carousel) {
+    bgOst();
     function handleNext() {
       currentSlide = modulo(currentSlide + 1, numSlides);
       changeSlide(currentSlide);
@@ -116,8 +117,6 @@ async function main() {
     activeSlide();
     // Função próximo dialogo
 
-    document.getElementById("bg-sound").volume = 0.3;
-    document.getElementById("bg-sound").play();
     let currentDialogueIndex = 0;
     let typing = false;
     let index = 0;
