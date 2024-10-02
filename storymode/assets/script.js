@@ -13,7 +13,6 @@ const options = {
 };
 let creditsLoaded = false;
 // "creators": [{ "userId": "8Ad2r", "link": "" }] in json
-
 async function loadJson(path) {
   try {
     const response = await fetch(path);
@@ -57,11 +56,20 @@ async function main() {
     let subtitle = slides[currentSlide].querySelector(".subtitle-main");
     let titleAbout = slides[currentSlide].querySelector(".title-about");
     let about = slides[currentSlide].querySelector(".about");
+    let image = slides[currentSlide].querySelector(".aside-image");
 
-    if (title) title.innerHTML = RPG.story[chapter].title;
-    if (subtitle) subtitle.innerHTML = RPG.story[chapter].subtitle;
+    if (title) {
+      title.innerHTML = RPG.story[chapter].title;
+    }
+    if (subtitle) {
+      subtitle.setAttribute("data-text", RPG.story[chapter].subtitle);
+      subtitle.innerHTML = RPG.story[chapter].subtitle;
+    }
     if (titleAbout) titleAbout.innerHTML = RPG.story[chapter].about.title;
     if (about) about.innerHTML = RPG.story[chapter].about.paragraph;
+    if (image) {
+      image.src = RPG.story[chapter].about.image;
+    }
   }
   function setUpCarousel(carousel) {
     function handleNext() {
@@ -108,6 +116,8 @@ async function main() {
     activeSlide();
     // Função próximo dialogo
 
+    document.getElementById("bg-sound").volume = 0.3;
+    document.getElementById("bg-sound").play();
     let currentDialogueIndex = 0;
     let typing = false;
     let index = 0;
@@ -119,22 +129,60 @@ async function main() {
       if (currentDialogueIndex < RPG.story[chapter].dialogues.length) {
         paragraphElement.textContent = "";
         playDialogueSound();
+        let activeIMG;
         document
           .querySelectorAll(".novel-img")
           .forEach((novelImg) => novelImg.classList.remove("active"));
 
         if (currentDialogue.bg) {
-          slides[
-            currentSlide
-          ].style.backgroundImage = `url(${currentDialogue.bg})`;
+          slides[currentSlide].style.backgroundImage = `linear-gradient(
+          to top,
+          var(--color-3) -100%,
+          transparent 100%
+        ), url(${currentDialogue.bg})`;
         }
         let overlayElement = document.querySelector(".novel-overlay");
         let itemElement = document.querySelector(".novel-item");
-        if (currentDialogue?.id) {
-          document.querySelector(".novel-dialogues-name").innerText =
-            currentDialogue.id;
+        let audioEl = document.querySelector("#voice");
+        if (currentDialogue.id) {
+          let characterActive = RPG.characters[currentDialogue.id];
+          activeIMG = document.querySelector(`#img1`);
+          activeIMG.src = "";
           document.querySelector(".novel-dialogues-name").style.display =
             "block";
+          if (currentDialogue.type === "#") {
+            console.log("#");
+            document
+              .querySelectorAll(".novel-img")
+              .forEach((img) => (img.style.display = "none"));
+          } else if (
+            typeof currentDialogue.type === "string" &&
+            currentDialogue.type !== "#" &&
+            currentDialogue.type !== undefined
+          ) {
+            activeIMG.src = characterActive[currentDialogue.type];
+          } else {
+            activeIMG.src = characterActive.defaultLink;
+          }
+          if (characterActive?.audio?.length > 0) {
+            audioEl.src =
+              characterActive.audio[
+                Math.floor(Math.random() * characterActive.audio.length)
+              ];
+            audioEl.volume = 0.3;
+            audioEl.play();
+          }
+          activeIMG.style.display = "block";
+          if (characterActive?.name) {
+            document.querySelector(".novel-dialogues-name").innerText =
+              characterActive.name;
+            document.querySelector(".novel-dialogues-name").style.display =
+              "block";
+          } else {
+            document.querySelector(".novel-dialogues-name").style.display =
+              "none";
+          }
+          activeIMG.classList.add("active");
         } else {
           document.querySelector(".novel-dialogues-name").style.display =
             "none";
@@ -173,11 +221,20 @@ async function main() {
         } else {
           paragraphElement.classList.remove("action");
         }
+        if (currentDialogue?.audio) {
+          audioEl.src = currentDialogue.audio;
+          if (typeof currentDialogue.volume == "number") {
+            audioEl.volume = currentDialogue.volume;
+          } else {
+            audioEl.volume = 0.7;
+          }
+          audioEl.play();
+        }
         document.querySelector(".novel-section").removeAttribute("id");
         document.querySelector(".novel-section").id = currentDialogue.id;
         function showPhrase() {
           let typeAudio = document.querySelector("#audio-click");
-          typeAudio.volume = 0.7;
+          typeAudio.volume = 0.5;
           if (index < currentDialogue.dialogue.length && !typing) {
             typing = true;
             paragraphElement.textContent += currentDialogue.dialogue[index];
@@ -375,12 +432,15 @@ async function main() {
   }
   const carousels = document.querySelectorAll("[data-carousel]");
   carousels.forEach(setUpCarousel);
-  const musicButton = document.querySelector(".carousel-btn-music");
+  const musicButton = document.querySelector(
+    ".carousel-button.carousel-btn-music"
+  );
   musicButton.addEventListener("click", bgOst);
   function bgOst() {
-    let audio = document.getElementById("bg-ost-sound");
+    let audio = document.getElementById("bg-sound");
     if (audio.currentTime == 0 || audio.paused) {
-      audio.volume = 0.2;
+      console.log(audio);
+      audio.volume = 0.3;
       audio.play();
       document.querySelector(
         ".carousel-btn-music .material-symbols-outlined"

@@ -6,7 +6,9 @@ async function main_script() {
   greeting.style.padding = "0";
   let textBlack = greeting.querySelector(".text-black");
   textBlack.remove();
-  const response = await fetch("http://127.0.0.1:5502/Assets/test/index.html");
+  const response = await fetch(
+    "https://t-golv.github.io/joylandbots/storymode/01-ManiacClassmate/greeting.html"
+  );
   const html = await response.text();
   greeting.innerHTML += html;
 }
