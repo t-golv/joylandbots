@@ -7,7 +7,7 @@ async function main_script() {
   let textBlack = greeting.querySelector(".text-black");
   textBlack.remove();
   const response = await fetch(
-    "https://t-golv.github.io/joylandbots/storymode/01-ManiacClassmate/greeting.html"
+    "https://t-golv.github.io/joylandbots/storymode/01ManiacClassmate/greeting.html"
   );
   const html = await response.text();
   greeting.innerHTML += html;
