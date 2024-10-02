@@ -68,12 +68,8 @@ html.theme-dark .chat-main-container:before {
   /* border-top-left-radius: 8px; */
   /* border-bottom-left-radius: 8px; */
 }
-html.theme-dark .bot-info-main {
-  background-image: url(https://64.media.tumblr.com/4b46c422fa1441c1b522e9c2f7603394/0b309683aa48bd8c-5a/s500x750/8971439ea94fe5d5b4b8a441755f8593faf1cbd0.gifv);
-  background-size: 100%;
-  background-blend-mode: color-burn;
-  background-position: center top;
-  background-repeat: no-repeat;
+html.theme-dark .left-card-box {
+  background-image: linear-gradient(to bottom, var(--color-3), transparent);
 }
 html.theme-dark .creator-name .name.can-click {
   color: var(--color1);
