@@ -1,0 +1,127 @@
+<head></head>
+<!-- Import font-awesome somewhere in the HTML -->
+
+<link rel="stylesheet" type="text/css" href="../assets/style.css">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<title>Demi Human School</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru:wght@300;400;500&family=Sofia&display=swap');
+
+  :root {
+    --color-1: #e09f9f;
+    --color-2: #cc2b2b;
+    --color-3: #941e1e;
+    --color-4: #CE96A6;
+    --color-5: #CE84AD;
+  }
+  .title-main{
+    font-family: "Sofia", cursive !important;
+  }
+</style>
+</head>
+<body class="chapter1">
+  <audio id="transition-slide-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/12/29/audio_2fd079020a.mp3" type="audio/mpeg" />
+  </audio>
+  
+  <audio id="transition-dialogue-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_160c87d772.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="audio-click" loop>
+    <source src="../assets/frog.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="carousel" data-carousel>
+    <div class="slides" data-carousel-slides-container>
+      <div class="slide slide-main" style="background-image: url(https://cdn.joyland.ai/ai-character/uploaded/c/image/1727750039420_ae54115f.webp);">
+        <h1 class="title title-main"></h1>
+        <h6 class="subtitle subtitle-main"></h6>
+        <button class="carousel-button carousel-button_next carousel-btn-continue" data-carousel-button-next>
+          continue
+        </button>
+
+        <sub>Or press "Space" to go to the next</sub>
+        <audio id="bg-ost-sound">
+          <source src="./assets/bg-ost.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="slide slide-main"
+        style="background-image: url(https://cdn.joyland.ai/ai-character/uploaded/c/image/1727750039420_ae54115f.webp)">
+        <main class="main-container">
+          <aside>
+            <img src="https://cdn.joyland.ai/ai-character/uploaded/c/image/1727750039420_ae54115f.webp" />
+          </aside>
+        <section class="slide-section">
+          <header class="slide-header">
+            <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+              <span class="material-symbols-outlined">
+                arrow_back_ios_new
+              </span>
+            </button>
+  
+          </header>
+          <div class="main-content">
+
+            <h5 class="title title-about"></h5>
+            <hr/>
+            <p class="about"></p>
+            <button class="carousel-button carousel-button_next carousel-btn-continue" data-carousel-button-next>
+              continue
+            </button>
+          </section>
+        </main>
+        </div>
+
+
+      <div class="slide slide-main"
+        style="background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3738652.jpg&f=1&nofb=1&ipt=e092497e7cfb140a5cf5f2cd23c08cd646e09e78a5c01411e4dbf5f95c553e10&ipo=images);">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+          </button>
+          <button class="carousel-button carousel-btn-music">
+            <span class="material-symbols-outlined">
+              headphones
+              </span>
+          </button>
+        </header>
+        <section class="novel-section">
+          <audio id="voice">
+            <source src="" type="audio/mpeg" />
+          </audio>
+ 
+          <img id="novel-overlay" class="novel-overlay" />
+          <img id="novel-item" class="novel-item" />
+          <div class="novel-images">
+      
+            <span class="novel-dialogues-name"></span>
+          </div>
+          <div class="novel-dialogues">
+            <p></p>
+            <div class="dialogues-arrow-container"><span class="material-symbols-outlined dialogues-arrow">
+                arrow_drop_down
+              </span></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Credits -->
+      <div class="slide slide-main">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+          </button>
+        </header>
+        <main class="credits-main" ></main>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="../assets/script.js"></script>
+</body>

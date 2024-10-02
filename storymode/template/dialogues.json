@@ -1,0 +1,247 @@
+{
+  "story": {
+    "chapter1": {
+      "title": "A SUPER COOL TITLE",
+      "subtitle": "PROLOGUE",
+      "about": {
+        "title": "PROLOGUE",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada massa, ac lacinia neque mattis id. In malesuada porta ante in aliquet. Praesent a lacus erat. Phasellus porttitor magna sit amet dui faucibus dignissim. Maecenas a nisi fermentum, pharetra libero sed, aliquam odio. Quisque tincidunt varius magna in rutrum. Nullam ut justo sed turpis tincidunt pellentesque eget ut massaLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada massa, ac lacinia neque mattis id. In malesuada porta ante in aliquet. Praesent a lacus erat. Phasellus porttitor magna sit amet dui faucibus dignissim. Maecenas a nisi fermentum, pharetra libero sed, aliquam odio. Quisque tincidunt varius magna in rutrum. Nullam ut justo sed turpis tincidunt pellentesque eget ut massaLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim malesuada massa, ac lacinia neque mattis id. In malesuada porta ante in aliquet. Praesent a lacus erat. Phasellus porttitor magna sit amet dui faucibus dignissim. Maecenas a nisi fermentum, pharetra libero sed, aliquam odio. Quisque tincidunt varius magna in rutrum. Nullam ut justo sed turpis tincidunt pellentesque eget ut massa...",
+        "image": "."
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "dialogue": "It's your first day at a school for Demi-Humans. Initially, you feel apprehensive due to the tension between humans and demi-humans. You're unsure what to expect, but with no other choice, you face it head-on."
+        },
+        {
+          "id": null,
+          "bg": "https://cdn.joyland.ai/ai-character/uploaded/c/image/1727750039420_ae54115f.webp",
+          "dialogue": "As you enter the building, you're greeted by a diverse array of races, grouped by species and gender. For a moment, you think it might not be as bad as you'd imagined—until..."
+        },
+        {
+          "id": "kitsu",
+          "dialogue": "\"Well, well, what do we have here? Fresh meat wandering into my territory. Let's see if you're worth my time, human.\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "overlay": "https://europe1.discourse-cdn.com/unity/original/4X/6/2/f/62f01ef8d7f95d4d2cf14e414b41dee973ad8cc6.gif",
+          "action": true,
+          "dialogue": "She strongly pushes you to the wall, her eyes locked onto yours, exuding an aura of dominance."
+        },
+        {
+          "id": "milly",
+          "overlay": "#",
+          "dialogue": "\"Mmm, not bad for a human. I could think of a few... interesting ways to put you to use.\"",
+          "pos": 5
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She leans in, her ample chest pressing against you as she whispers seductively."
+        },
+        {
+          "id": "kitsu",
+          "dialogue": "\"Cat got your tongue, newbie? Or should I say... fox? Don't worry, I'll teach you how to speak when spoken to.\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her tail flicks sharply, a clear sign of her assertive nature."
+        },
+        {
+          "id": "kitsu",
+          "overlay": "https://europe1.discourse-cdn.com/unity/original/4X/6/2/f/62f01ef8d7f95d4d2cf14e414b41dee973ad8cc6.gif",
+          "dialogue": "\"Listen up, because I'm only saying this once. There's a hierarchy here, and you're at the bottom. Show some respect and maybe, just maybe, I'll consider not making your life a living hell.\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her voice drips with authority, leaving no room for argument."
+        },
+        {
+          "id": "kitsu",
+          "dialogue": "\"You know what? I think it's time for your first lesson. Kneel down and kiss my feet, human. Show everyone here who's in charge.\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She extends her hand, palm down, her claws glinting dangerously."
+        },
+        {
+          "id": "milly",
+          "dialogue": "\"Oh my, Kitsu. Don't hog all the fun. I've got something this lil human can kiss too... ♡\"",
+
+          "overlay": "https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif",
+          "pos": 5
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She runs a hand along her curved hip, her eyes filled with lustful mischief."
+        },
+        {
+          "id": "kitsu",
+          "overlay": "#",
+          "dialogue": "\"Tch, you're always thinking with your udders, Milly. Fine, let's see how our new toy handles a real challenge.\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She crosses her arms, a wicked grin spreading across her face."
+        },
+        {
+          "id": "milly",
+          "dialogue": "\"That's rich coming from you, foxy. But you're right, let's put this human through his paces. Hope you're ready for a wild ride, newbie.\"",
+          "pos": 5
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She licks her lips, her intentions far from innocent."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "You notice curious glances turning in your direction as you are viciously pressed against the wall. As the scene unfolds, a teacher, Ms. Tama, comes to your rescue."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"My, my, what do we have here? Kitsu, Milly, I hope you're not giving our new student too warm of a welcome.\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her voice, smooth as honey, carries a hint of amusement and authority. She approaches with graceful strides, her presence commanding respect."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"Now, ladies, I'm sure you were just about to show our newcomer around, weren't you? Perhaps we could start with a tour that doesn't involve quite so much... physical contact?\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She raises an eyebrow, her lips curving into a gentle yet knowing smile."
+        },
+        {
+          "id": "kitsu",
+          "dialogue": "\"Tch, we were just having a bit of fun, Ms. Tama. No harm done, right?\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She reluctantly steps back, her tail swishing in annoyance."
+        },
+        {
+          "id": "milly",
+          "dialogue": "\"Yeah, just a friendly initiation. We always make sure the new ones feel... welcome.\"",
+          "pos": 5
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She winks, her flirtatious nature undiminished even in the teacher's presence."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"I'm sure you do. Now, why don't you two run along to class? I'll make sure our new friend here gets properly oriented.\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She gently places her hands on your shoulder, her touch warm and reassuring."
+        },
+        {
+          "id": "milly",
+          "dialogue": "\"Aww, but Ms. Tama, we were just getting to know each other. Can't we stay and help with the orientation?\"",
+          "pos": 5
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She pouts playfully, her eyes still fixed on you with unmistakable interest."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"I appreciate your enthusiasm, Milly, but I think our new student could use a moment to catch their breath. Now, off you go.\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her tone remains gentle but leaves no room for argument."
+        },
+        {
+          "id": "null",
+          "type": "#",
+          "action": true,
+          "dialogue": "Milly and Kitsu stroll away, a cloud of defeat hanging over them for the moment. Yet, you can’t shake the feeling that this is merely the prologue to a much larger tale waiting to unfold."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"Welcome to our school, dear. Don’t mind those two; they’re more bark than bite. Now, shall we start that tour? I promise it’ll be much more pleasant than the one you almost got.\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She offers you a charming smile, her eyes twinkling with warmth and a hint of mischief."
+        },
+        {
+          "id": "ms_tama",
+          "dialogue": "\"“But first, what’s your name?\"",
+          "pos": 4
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Before you could answer the teacher, a new student timidly approached and intruded."
+        },
+        {
+          "id": "rika",
+          "dialogue": "\"Hi there... I'm Rika!\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She hops forward, her bunny ears twitching with excitement, her cheeks flushed with a hint of embarrassment."
+        },
+        {
+          "id": "rika",
+          "dialogue": "\"I saw everything those two did, and I'm really sorry I didn’t step in sooner...\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She fidgets with her hands, a regretful smile breaking through, her fluffy tail peeking out from behind her."
+        },
+        {
+          "id": "rika",
+          "dialogue": "\"But don’t fret! I’ll be your guide through this school adventure for now. Just follow me and I promise to keep you out of trouble!\"",
+          "pos": 3
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She smiles reassuringly and catch your hands preparing for a tour."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "This is how your first day begins. Continue the story below with caution ⚠️..."
+        }
+      ]
+    }
+  },
+  "creators": [{ "userId": "8Ad2r", "badge": "Creator", "color": "#7e66e9" }]
+}
