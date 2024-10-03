@@ -74,8 +74,12 @@ html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
     #941e1e,
-    rgba(0, 0, 0, 0.8)
+    rgba(0, 0, 0, 0)
   ) !important  ;
+}
+html.theme-dark .left-card-box {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 html.theme-dark .creator-name .name.can-click {
   color: var(--color1);
