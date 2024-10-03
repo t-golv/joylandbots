@@ -37,7 +37,7 @@ html.theme-dark .markdown-body strong {
   color: var(--color2);
 }
 html.theme-dark .markdown-body em {
-  color: var(--color2);
+  color: var(--color3);
 }
 html.theme-dark .markdown-body p,
 html.theme-dark .markdown-body hr {
@@ -47,6 +47,8 @@ html.theme-dark .markdown-body hr {
 html.theme-dark .body-text {
   border: 1px solid var(--color2) !important;
   box-shadow: 0px 0px 6px 0 var(--color3);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
 }
 html.theme-dark .chat-main-container:before {
   content: "";
@@ -69,7 +71,7 @@ html.theme-dark .chat-main-container:before {
   /* border-bottom-left-radius: 8px; */
 }
 html.theme-dark .left-card-box {
-  background-image: linear-gradient(to bottom, var(--color-3), transparent);
+  background: linear-gradient(to bottom, var(--color-3), rgba(0, 0, 0, 0.5));
 }
 html.theme-dark .creator-name .name.can-click {
   color: var(--color1);
