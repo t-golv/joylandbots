@@ -4,7 +4,7 @@
       "name": "Yuri",
       "defaultLink": "./assets/default.png",
       "crouchLink": "./assets/crouch.png",
-      "takingPicLink": "./assets/cellphone.png"
+      "leaningLink": "./assets/leaning.png"
     }
   },
   "story": {
@@ -109,7 +109,7 @@
           "audio": "./assets/laugh.mp3",
           "volume": 0.2,
           "dialogue": "\"But i must say, you look so good being my toy.\"",
-          "type": "takingPicLink"
+          "type": "leaningLink"
         },
         {
           "id": null,
