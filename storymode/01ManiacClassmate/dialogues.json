@@ -58,8 +58,8 @@
         {
           "id": null,
           "action": true,
-          "audio": "./assets/laugh.mp3",
-          "volume": 0.1,
+          "audio": "./assets/door.mp3",
+          "volume": 0.4,
           "dialogue": "With a disturbingly playful tone, she descends the stairs, her twisted laughter echoing through the unsettling silence."
         },
         {

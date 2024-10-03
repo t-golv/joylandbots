@@ -70,12 +70,12 @@ html.theme-dark .chat-main-container:before {
   /* border-top-left-radius: 8px; */
   /* border-bottom-left-radius: 8px; */
 }
-html.theme-dark .left-card-box {
+html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
     var(--color-3),
     rgba(0, 0, 0, 0.5)
-  ) !important;
+  ) !important  ;
 }
 html.theme-dark .creator-name .name.can-click {
   color: var(--color1);
