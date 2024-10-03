@@ -71,7 +71,11 @@ html.theme-dark .chat-main-container:before {
   /* border-bottom-left-radius: 8px; */
 }
 html.theme-dark .left-card-box {
-  background: linear-gradient(to bottom, var(--color-3), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(
+    to bottom,
+    var(--color-3),
+    rgba(0, 0, 0, 0.5)
+  ) !important;
 }
 html.theme-dark .creator-name .name.can-click {
   color: var(--color1);
