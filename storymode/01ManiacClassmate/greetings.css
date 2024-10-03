@@ -76,6 +76,7 @@ html.theme-dark .left-part {
     #941e1e,
     rgba(0, 0, 0, 0)
   ) !important  ;
+  border-radius: 8px;
 }
 html.theme-dark .left-card-box {
   background: rgba(0, 0, 0, 0.5) !important;
