@@ -19,6 +19,14 @@
   .title-main{
     text-shadow: 0px 0px 1rem var(--color-2);  
     font-family: "Sofia", cursive !important;
+    animation: title 1s ease infinite alternate;
+  }
+  @keyframes title {
+    from {
+      text-shadow: 0px 0px 2rem var(--color-2);  
+    } to {
+      text-shadow: 0px 0px 1rem var(--color-3);  
+    }
   }
 </style>
 </head>
@@ -35,7 +43,7 @@
   </audio>
   <div class="carousel" data-carousel>
     <div class="slides" data-carousel-slides-container>
-      <div class="slide slide-main" style="background-color:rgba(0,0,0,.9);background-image: url(https://media.discordapp.net/attachments/1277989671120666747/1290913512578613318/9k.png?ex=66fe3065&is=66fcdee5&hm=e5c409a622bd6fd546c96357ab0ca690808aa42dc443fdb0ac185b152a6eb93b&=&format=webp&quality=lossless);">
+      <div class="slide slide-main" style="background-color:rgba(0,0,0,.8);background-image: url(./assets/cover.jpeg);">
         <h1 class="title title-main"></h1>
         <h6 class="subtitle subtitle-main text"></h6>
         <button class="carousel-button carousel-button_next carousel-btn-continue" data-carousel-button-next>
