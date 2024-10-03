@@ -1,7 +1,7 @@
 {
   "characters": {
     "yuri": {
-      "name": "Yuri",
+      "name": "Yuri Nishimura",
       "defaultLink": "./assets/default.png",
       "crouchLink": "./assets/crouch.png",
       "leaningLink": "./assets/leaning.png"
