@@ -73,7 +73,7 @@ html.theme-dark .chat-main-container:before {
 html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
-    var(--color-3),
+    #941e1e,
     rgba(0, 0, 0, 0.5)
   ) !important  ;
 }
