@@ -72,7 +72,6 @@ async function main() {
     }
   }
   function setUpCarousel(carousel) {
-    bgOst();
     function handleNext() {
       currentSlide = modulo(currentSlide + 1, numSlides);
       changeSlide(currentSlide);
@@ -93,6 +92,17 @@ async function main() {
       activeSlide();
       if (slideNumber == 2) {
         nextDialogue();
+      }
+      if (currentSlide == 1) {
+        let audio = document.getElementById("bg-sound");
+        if (audio.currentTime == 0 || audio.paused) {
+          console.log(audio);
+          audio.volume = 0.3;
+          audio.play();
+          document.querySelector(
+            ".carousel-btn-music .material-symbols-outlined"
+          ).innerHTML = "pause";
+        }
       }
       carousel.style.setProperty("--current-slide", slideNumber);
     }
