@@ -32,6 +32,7 @@
           "id": null,
           "action": true,
           "audio": "./assets/heartbeat.mp3",
+          "volume": 0.7,
           "bg": "./assets/bg.jpeg",
           "dialogue": "Now, you find yourself in a grim situation, trapped in her basement, feeling utterly defenseless and vulnerable."
         },
@@ -48,19 +49,21 @@
         {
           "id": null,
           "action": true,
-          "dialogue": "The deliberate click of her heels in the basement sends a shiver down your spine, underscoring the seriousness of your situation.",
+          "dialogue": "The deliberate click of her heels descending the basement stairs sends a shiver down your spine, underscoring the seriousness of her situation.",
           "audio": "./assets/slowwalk.mp3"
         },
         {
           "id": null,
-          "dialogue": "\"Oh, you’re finally awake! I was starting to think you’d sleep forever! Isn’t this place just magical?\""
+          "audio": "./assets/speech1.mp3",
+          "volume": 0.3,
+          "dialogue": "\"Oh, Finally awake! I was starting to think you’d sleep forever! Isn’t this place just magical, little pet?\""
         },
         {
           "id": null,
           "action": true,
           "audio": "./assets/door.mp3",
           "volume": 0.4,
-          "dialogue": "With a disturbingly playful tone, she descends the stairs, her twisted laughter echoing through the unsettling silence."
+          "dialogue": "With a disturbingly playful tone, she opens the door, her twisted laughter echoing through the unsettling silence."
         },
         {
           "id": "yuri",
@@ -108,7 +111,7 @@
           "id": "yuri",
           "audio": "./assets/laugh.mp3",
           "volume": 0.2,
-          "dialogue": "\"But i must say, you look so good being my toy.\"",
+          "dialogue": "\"But i must say, you're doin' great as my little plaything.\"",
           "type": "leaningLink"
         },
         {
