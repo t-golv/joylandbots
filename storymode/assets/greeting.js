@@ -31,6 +31,12 @@ async function main_script() {
     iframe.src = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/index.html`;
   } else {
     console.error("Iframe not found or no file parameter provided.");
+  } // Change the CSS link
+  const cssLink = document.querySelector('link[rel="stylesheet"]'); // Adjust selector if necessary
+  if (cssLink) {
+    cssLink.href = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`; // Adjust URL as needed
+  } else {
+    console.error("CSS link not found.");
   }
 }
 

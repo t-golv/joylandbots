@@ -1,7 +1,7 @@
 :root {
-  --color1: #d8d8d8;
-  --color2: #8f8f8f;
-  --color3: #464646;
+  --color1: #e09f9f;
+  --color2: #cc2b2b;
+  --color3: #941e1e;
 }
 .msg-container {
   display: flex;
