@@ -21,12 +21,7 @@
           "id": null,
           "action": true,
           "bg": "#",
-          "dialogue": "Two days have passed since you accepted your strange classmate's invitation to spend Halloween at her house."
-        },
-        {
-          "id": null,
-          "action": true,
-          "dialogue": "At first, you thought it would be an opportunity to unravel the mystery behind her enigmatic persona."
+          "dialogue": "Two nights prior, you had naively accepted an invitation to celebrate Halloween at the residence of your peculiar classmate."
         },
         {
           "id": null,
@@ -34,22 +29,22 @@
           "audio": "./assets/heartbeat.mp3",
           "volume": 0.7,
           "bg": "./assets/bg.jpeg",
-          "dialogue": "Now, you find yourself in a grim situation, trapped in her basement, feeling utterly defenseless and vulnerable."
+          "dialogue": "Now, you find yourself entombed in the dungeon-like basement of her twisted domain. The walls seem to breathe with a sinister life of their own, whispering secrets of the darkness she has so masterfully concealed beneath her veneer of normalcy."
         },
         {
           "id": null,
           "action": true,
-          "dialogue": "You had no inkling that she harbored such dark intentions, that her outward strangeness masked a chilling reality."
+          "dialogue": "You had no clue that she harbored such dark intentions, that her outward strangeness masked a chilling reality."
         },
         {
           "id": null,
           "action": true,
-          "dialogue": "As you sit there, the realization sinks in that she is not just eccentric but extremelly dangerous—she has taken things far beyond what you could have imagined."
+          "dialogue": "As you sit there, the realization sinks in that she's not merely peculiar, but the embodiment of madness. She has taken things far beyond what you could have imagined."
         },
         {
           "id": null,
           "action": true,
-          "dialogue": "The deliberate click of her heels descending the basement stairs sends a shiver down your spine, underscoring the seriousness of her situation.",
+          "dialogue": "The deliberate click of her heels descending the basement stairs sends a shiver down your spine, underscoring the seriousness of your situation.",
           "audio": "./assets/slowwalk.mp3"
         },
         {
@@ -63,7 +58,7 @@
           "action": true,
           "audio": "./assets/door.mp3",
           "volume": 0.4,
-          "dialogue": "With a disturbingly playful tone, she opens the door, her twisted laughter echoing through the unsettling silence."
+          "dialogue": "The door creaks open, revealing her distorted smile and haunting giggles, piercing the eerie stillness."
         },
         {
           "id": "yuri",
@@ -72,7 +67,7 @@
         {
           "id": null,
           "action": true,
-          "dialogue": "She crouches down teasingly in front of you and surveys your condition. Her voice is tinged with madness as it echoes into the basement where you're trapped."
+          "dialogue": "She crouches down teasingly in front of you and surveys your condition. Her voice is tinged with amusement as it echoes into the basement where you're trapped."
         },
         {
           "id": "yuri",
@@ -117,18 +112,13 @@
         {
           "id": null,
           "action": true,
-          "dialogue": "She remarks with a chilling calmness, her voice carrying an unsettling blend of dominance and detachment."
-        },
-        {
-          "id": null,
-          "action": true,
-          "dialogue": "Yuri continues to watch you intently, her expression unreadable yet tinged with a hint of perverse satisfaction at your vulnerable state."
+          "dialogue": "With a bone-chilling calm, she speaks, voice a blend of command and disconnection. Yuri's unreadable gaze, hinting a twisted pleasure, remains locked on you, prey caught in her eerie, unwavering stare."
         },
         {
           "id": null,
           "type": "#",
           "action": true,
-          "dialogue": "Will you find a way out of this predicament? Continue the story below."
+          "dialogue": "Can you escape this nightmare? Proceed with the story below..."
         }
       ]
     }
