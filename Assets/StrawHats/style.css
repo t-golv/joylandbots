@@ -1,26 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
-  --color1: #00D0FF;
+  --color1: #00d0ff;
   --font-1: "Irish Grover", system-ui;
 
   --font-2: "Jim Nightshade", cursive;
 
   --font-3: "Roboto Mono", monospace;
-  ;
-
 }
 
 @keyframes arrowAnim {
-
   0%,
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 }
 
@@ -53,7 +50,6 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-
 }
 
 h1 {
@@ -61,36 +57,36 @@ h1 {
 }
 
 h2 {
-  font-size: calc(.9rem + 1.85vw);
+  font-size: calc(0.9rem + 1.85vw);
 }
 
 h3 {
-  font-size: calc(.8rem + 1.65vw);
+  font-size: calc(0.8rem + 1.65vw);
 }
 
 h4 {
-  font-size: calc(.7rem + 1.45vw);
+  font-size: calc(0.7rem + 1.45vw);
 }
 
 h5 {
-  font-size: calc(.6rem + 1.25vw);
+  font-size: calc(0.6rem + 1.25vw);
 }
 
 h6 {
-  font-size: calc(.5rem + 1.05vw);
+  font-size: calc(0.5rem + 1.05vw);
 }
 
 p {
-  font-size: calc(.5rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
   font-weight: 400;
 }
 
 em {
-  font-size: calc(.45rem + .8vw);
+  font-size: calc(0.45rem + 0.8vw);
 }
 
 sub {
-  font-size: calc(.4rem + .6vw);
+  font-size: calc(0.4rem + 0.6vw);
 }
 
 html,
@@ -214,7 +210,7 @@ body {
 .slide-section p,
 .slide-section bold {
   font-weight: 400;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-family: var(--font-3) !important;
   color: black !important;
 }
@@ -252,7 +248,7 @@ body {
 }
 
 .novel-section .novel-images .novel-img {
-  opacity: .3;
+  opacity: 0.3;
   /* min-height: 70px;
   min-width: 70px; */
   height: calc(15vw + 15vh);
@@ -262,17 +258,17 @@ body {
   object-fit: contain;
   object-position: 90% 50%;
   user-drag: none;
-  transform: scale(0.90) translateY(2rem);
+  transform: scale(0.9) translateY(2rem);
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  transition: transform ease-in-out .5s;
+  transition: transform ease-in-out 0.5s;
   -ms-user-select: none;
 }
 
 .novel-dialogues {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: #143448;
   border-radius: 12px;
   border: 3px double var(--color1);
@@ -292,18 +288,17 @@ body {
   font-family: var(--font-3);
   overflow-y: scroll;
   height: 100%;
-  padding: 0 .5rem 1rem;
-
+  padding: 0 0.5rem 1rem;
 }
 
 .novel-dialogues .dialogues-arrow {
   position: absolute;
   bottom: 10px;
-  opacity: .5;
+  opacity: 0.5;
   right: 20px;
   width: 0;
   height: 0;
-  margin: .5rem;
+  margin: 0.5rem;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 20px solid white;
@@ -312,16 +307,16 @@ body {
 }
 
 .novel-dialogues::after {
-  content: '...';
+  content: "...";
   top: -1.5rem;
   position: absolute;
   left: 0;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 100%;
   background-color: var(--color1);
   color: black;
   font-family: var(--font-3);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /* Credits Section */
@@ -338,7 +333,7 @@ body {
 }
 
 .credits-img {
-  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
+  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1728009877102_159d9710.webp);
   width: 15vw;
   height: 15vw;
   border: 3px solid var(--color1);
@@ -374,7 +369,7 @@ body {
 
 .credits-link {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   border-radius: 50%;
   align-items: center;
   text-decoration: none;
@@ -432,7 +427,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   height: 100%;
   z-index: -1;
 }
@@ -480,7 +475,7 @@ body {
 }
 
 .novel-section#luffy .novel-dialogues::after {
-  content: 'Monkey D. Luffy';
+  content: "Monkey D. Luffy";
 }
 
 .novel-section#zoro .novel-images #zoro {
@@ -489,7 +484,7 @@ body {
 }
 
 .novel-section#zoro .novel-dialogues::after {
-  content: 'Roronoa Zoro';
+  content: "Roronoa Zoro";
 }
 
 .novel-section#sanji .novel-images #sanji {
@@ -498,7 +493,7 @@ body {
 }
 
 .novel-section#sanji .novel-dialogues::after {
-  content: 'Vinsmoke Sanji';
+  content: "Vinsmoke Sanji";
 }
 
 .novel-section#nami .novel-images #nami {
@@ -507,7 +502,7 @@ body {
 }
 
 .novel-section#nami .novel-dialogues::after {
-  content: 'Nami';
+  content: "Nami";
 }
 
 .novel-section#usopp .novel-images #usopp {
@@ -525,7 +520,7 @@ body {
 }
 
 .novel-section#brook .novel-dialogues::after {
-  content: 'Brook';
+  content: "Brook";
 }
 .novel-section#robin .novel-images #robin {
   opacity: 1 !important;
@@ -533,5 +528,5 @@ body {
 }
 
 .novel-section#robin .novel-dialogues::after {
-  content: 'Nico Robin';
+  content: "Nico Robin";
 }

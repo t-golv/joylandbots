@@ -1,35 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jim+Nightshade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
-  --color1: #00D0FF;
+  --color1: #00d0ff;
   --font-1: "Irish Grover", system-ui;
 
   --font-2: "Jim Nightshade", cursive;
 
   --font-3: "Roboto Mono", monospace;
-  ;
-
 }
 
 @keyframes arrowAnim {
-
   0%,
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 }
 @keyframes jumpImg {
-
   0% {
-    transform: scale(.5) translateY(10rem);
+    transform: scale(0.5) translateY(10rem);
   }
   50% {
-
     transform: scale(1.1);
   }
   100% {
@@ -65,7 +60,6 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-
 }
 
 h1 {
@@ -73,36 +67,36 @@ h1 {
 }
 
 h2 {
-  font-size: calc(.9rem + 1.85vw);
+  font-size: calc(0.9rem + 1.85vw);
 }
 
 h3 {
-  font-size: calc(.8rem + 1.65vw);
+  font-size: calc(0.8rem + 1.65vw);
 }
 
 h4 {
-  font-size: calc(.7rem + 1.45vw);
+  font-size: calc(0.7rem + 1.45vw);
 }
 
 h5 {
-  font-size: calc(.6rem + 1.25vw);
+  font-size: calc(0.6rem + 1.25vw);
 }
 
 h6 {
-  font-size: calc(.5rem + 1.05vw);
+  font-size: calc(0.5rem + 1.05vw);
 }
 
 p {
-  font-size: calc(.5rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
   font-weight: 400;
 }
 
 em {
-  font-size: calc(.45rem + .8vw);
+  font-size: calc(0.45rem + 0.8vw);
 }
 
 sub {
-  font-size: calc(.4rem + .6vw);
+  font-size: calc(0.4rem + 0.6vw);
 }
 
 html,
@@ -226,7 +220,7 @@ body {
 .slide-section p,
 .slide-section bold {
   font-weight: 400;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-family: var(--font-3) !important;
   color: black !important;
 }
@@ -259,23 +253,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), transparent 200%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    transparent 200%
+  );
 }
 
 .novel-section .novel-images .novel-img {
-  opacity: .8;
+  opacity: 0.8;
   object-fit: contain;
   width: 20%;
   object-position: 90% 50%;
   user-drag: none;
-  transform: scale(.95) translateY(2rem);
+  transform: scale(0.95) translateY(2rem);
   user-select: none;
   -moz-user-select: none;
   mix-blend-mode: multiply;
-  max-width: 50vh; 
+  max-width: 50vh;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  transition: transform ease-in-out .5s, background 2s ease;
+  transition: transform ease-in-out 0.5s, background 2s ease;
   -ms-user-select: none;
   z-index: 1;
 }
@@ -300,15 +298,18 @@ body {
   font-family: var(--font-3);
   overflow-y: scroll;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
-  padding: .5rem .5rem 1.5rem;
-
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  padding: 0.5rem 0.5rem 1.5rem;
 }
 
 .novel-dialogues .dialogues-arrow-container {
   position: absolute;
   bottom: 0;
-  opacity: .5;
+  opacity: 0.5;
   right: 0;
   width: 10vw;
   min-width: 50px;
@@ -317,18 +318,17 @@ body {
   justify-content: center;
   height: 25vh;
   cursor: pointer;
-  
 }
 .novel-dialogues .dialogues-arrow {
   font-size: 3rem;
   animation: arrowAnim 2s infinite;
 }
 .novel-dialogues::after {
-  content: 'Narrator:';
+  content: "Narrator:";
   top: -1.7rem;
   position: absolute;
   left: 0;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 100%;
   background-color: gray;
   color: black;
@@ -349,7 +349,7 @@ body {
 }
 
 .credits-img {
-  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
+  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1728009877102_159d9710.webp);
   width: 15vw;
   height: 15vw;
   border: 3px solid var(--color1);
@@ -385,7 +385,7 @@ body {
 
 .credits-link {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   border-radius: 50%;
   align-items: center;
   text-decoration: none;
@@ -443,7 +443,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   height: 100%;
   z-index: -1;
 }
@@ -484,47 +484,53 @@ body {
     top: -2px;
   }
 }
-@keyframes pulse{
+@keyframes pulse {
   from {
-    background-size:80% 80%;
+    background-size: 80% 80%;
   }
   to {
-    background-size:100% 100%;
+    background-size: 100% 100%;
   }
 }
 .novel-section .novel-img.active {
   opacity: 1 !important;
-  transform: scale(100%) translateY(0);   background: radial-gradient(farthest-side,rgba(255, 255, 255, 0.5), transparent) center no-repeat;
+  transform: scale(100%) translateY(0);
+  background: radial-gradient(
+      farthest-side,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    )
+    center no-repeat;
   mix-blend-mode: normal;
-  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),pulse .5s linear infinite alternate;
+  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+    pulse 0.5s linear infinite alternate;
   z-index: 2;
 }
 
 .novel-section#luffy .novel-dialogues::after {
-  content: 'Monkey D. Luffy';
+  content: "Monkey D. Luffy";
 }
 
 .novel-section#zoro .novel-dialogues::after {
-  content: 'Roronoa Zoro';
+  content: "Roronoa Zoro";
 }
 
 .novel-section#sanji .novel-dialogues::after {
-  content: 'Vinsmoke Sanji';
+  content: "Vinsmoke Sanji";
 }
 
 .novel-section#nami .novel-dialogues::after {
-  content: 'Nami';
+  content: "Nami";
 }
 
 .novel-section#usopp .novel-dialogues::after {
   content: 'Sogeking "God" Usopp';
 }
 
-
 .novel-section#brook .novel-dialogues::after {
-  content: 'Brook';
+  content: "Brook";
 }
 
 .novel-section#robin .novel-dialogues::after {
-  content: 'Nico Robin';
+  content: "Nico Robin";
 }

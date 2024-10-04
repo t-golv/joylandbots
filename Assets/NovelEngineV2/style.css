@@ -1,27 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @keyframes arrowAnim {
-
   0%,
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 }
 
 @keyframes jumpImg {
-
   0% {
-    transform: scale(.5) translateY(10rem);
+    transform: scale(0.5) translateY(10rem);
   }
 
   50% {
-
     transform: scale(1.1);
   }
 
@@ -66,44 +61,43 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-
 }
 
 h1 {
-  font-size: calc(1rem + 2vw);  
+  font-size: calc(1rem + 2vw);
 }
 
 h2 {
-  font-size: calc(.9rem + 1.85vw);  
+  font-size: calc(0.9rem + 1.85vw);
 }
 
 h3 {
-  font-size: calc(.8rem + 1.65vw);  
+  font-size: calc(0.8rem + 1.65vw);
 }
 
 h4 {
-  font-size: calc(.7rem + 1.45vw);
+  font-size: calc(0.7rem + 1.45vw);
 }
 
 h5 {
-  font-size: calc(.6rem + 1.25vw);
+  font-size: calc(0.6rem + 1.25vw);
 }
 
 h6 {
-  font-size: calc(.5rem + 1.05vw);
+  font-size: calc(0.5rem + 1.05vw);
 }
 
 p {
-  font-size: calc(.5rem + .8vw);
+  font-size: calc(0.5rem + 0.8vw);
   font-weight: 400;
 }
 
 em {
-  font-size: calc(.45rem + .8vw);
+  font-size: calc(0.45rem + 0.8vw);
 }
 
 sub {
-  font-size: calc(.4rem + .6vw);
+  font-size: calc(0.4rem + 0.6vw);
 }
 
 html,
@@ -176,8 +170,8 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0,0,0,0.8);
-  background-blend-mode:color;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
   flex: 0 0 100%;
   display: flex;
   align-items: center;
@@ -192,11 +186,15 @@ body {
   animation: fade-in 1s ease-in;
 }
 .slide-main {
-  background-image: linear-gradient(to top, var(--color-2) -100%, transparent 100%);
+  background-image: linear-gradient(
+    to top,
+    var(--color-2) -100%,
+    transparent 100%
+  );
 }
 .title {
   color: var(--color-1);
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 /* slide header */
 .slide-header {
@@ -215,16 +213,16 @@ body {
   color: var(--color-1);
 }
 .slide-header em {
-  color:gray;
+  color: gray;
 }
 /* slide section */
 .slide-section {
   top: 0%;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, .5); 
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: 100% 100%;
   backdrop-filter: blur(1rem);
-  background-blend-mode: multiply; 
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   overflow-y: scroll;
   min-height: 200px;
@@ -241,7 +239,7 @@ body {
 .slide-section p,
 .slide-section bold {
   font-weight: 400;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-family: serif;
 }
 
@@ -264,7 +262,11 @@ body {
   justify-content: end;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent 200%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    transparent 200%
+  );
 }
 .novel-overlay {
   width: 100vw;
@@ -279,8 +281,14 @@ body {
 .novel-item {
   width: 40vh;
   padding: 2rem;
-  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.5), transparent) center no-repeat;
-  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1), pulse .5s linear infinite alternate;
+  background: radial-gradient(
+      farthest-side,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    )
+    center no-repeat;
+  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+    pulse 0.5s linear infinite alternate;
   object-fit: cover;
   height: 40vh;
   position: absolute;
@@ -290,8 +298,8 @@ body {
   z-index: 4;
   display: none;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .novel-images {
   width: 100vw;
@@ -302,38 +310,38 @@ body {
   align-items: flex-end;
 }
 .novel-section .novel-images .novel-img {
-  opacity: .8;
+  opacity: 0.8;
   object-fit: cover;
   width: 20%;
   height: 100%;
   flex: 1 1 100%;
-  transform: scale(.95) translateY(2rem);
+  transform: scale(0.95) translateY(2rem);
   display: none;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  mix-blend-mode: multiply; 
+  mix-blend-mode: multiply;
   max-width: 50vh;
   -webkit-user-drag: none;
   -webkit-user-select: none;
-  transition: transform ease-in-out .5s, background 2s ease;
+  transition: transform ease-in-out 0.5s, background 2s ease;
   z-index: 1;
 }
 
 .novel-dialogues {
-    background-color: rgba(0, 0, 0, .5);
-    /* backdrop-filter: blur(1rem); */
-    position: relative;
-    width: 100vw;
-    height: 30vh;
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.transparenttextures.com%2Fpatterns%2Fasfalt-dark.png&f=1&nofb=1&ipt=f90876c444cf6ecbed0b9d3746f4897b1214a1dfcec4512648d5078f49adc183&ipo=images);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 200px;
-    background-blend-mode: overlay;
-    z-index: 5;
-    min-height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* backdrop-filter: blur(1rem); */
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.transparenttextures.com%2Fpatterns%2Fasfalt-dark.png&f=1&nofb=1&ipt=f90876c444cf6ecbed0b9d3746f4897b1214a1dfcec4512648d5078f49adc183&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 200px;
+  background-blend-mode: overlay;
+  z-index: 5;
+  min-height: 90px;
 }
 
 .novel-dialogues bold {
@@ -347,15 +355,18 @@ body {
   font-family: var(--font-1);
   overflow-y: scroll;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
   padding: 1.5vw 2vw 1.5rem;
-
 }
 
 .novel-dialogues .dialogues-arrow-container {
   position: absolute;
   bottom: 0;
-  opacity: .5;
+  opacity: 0.5;
   right: 0;
   width: 10vw;
   min-width: 50px;
@@ -364,12 +375,11 @@ body {
   justify-content: center;
   height: 25vh;
   cursor: pointer;
-
 }
 
 .novel-dialogues .dialogues-arrow {
   font-size: 3rem;
-    user-drag: none;
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -377,12 +387,12 @@ body {
 }
 
 .novel-dialogues::after {
-  content: '⠀';
+  content: "⠀";
   top: -2rem;
   position: absolute;
   left: 0;
-  padding: .5rem .5rem;
-    font-size: calc(.45rem + .8vw);
+  padding: 0.5rem 0.5rem;
+  font-size: calc(0.45rem + 0.8vw);
   background-color: #111;
   text-transform: uppercase;
   opacity: 0;
@@ -393,7 +403,7 @@ body {
 /* Credits Section */
 
 .credits-img {
-  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1724944664799_afc77afc.webp);
+  content: url(https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1728009877102_159d9710.webp);
   width: 15vw;
   height: 15vw;
   border: 5px double var(--color-1);
@@ -432,13 +442,13 @@ a {
   color: white;
   padding: 0 2rem;
   z-index: 100;
-  text-shadow: 0px 0px .5rem rgba(0, 0, 0, 0.05);
+  text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.05);
   font-family: var(--font-1);
 }
 
 .credits-link {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   /* border-radius: 50%; */
   align-items: center;
   text-decoration: none;
@@ -462,7 +472,6 @@ a {
   transform: rotate(-90deg);
 }
 
-
 .card-credits:hover h5 {
   background-color: var(--color-1) !important;
   color: black !important;
@@ -471,12 +480,12 @@ a {
 .credits-svg {
   position: absolute;
   top: -10%;
-  background-color: rgba(137, 20, 255, 0.1); 
-  mix-blend-mode: color-dodge;  
+  background-color: rgba(137, 20, 255, 0.1);
+  mix-blend-mode: color-dodge;
   border-radius: 50%;
   left: -10%;
   z-index: 0;
-} 
+}
 
 .card-credits:hover .credits-svg {
   mix-blend-mode: darken;
@@ -499,7 +508,6 @@ a {
 }
 
 @keyframes rotate {
-
   0%,
   100% {
     stroke-dashoffset: 5%;
@@ -532,7 +540,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   height: 100%;
   z-index: -1;
 }
@@ -588,8 +596,14 @@ a {
   opacity: 1 !important;
   transform: scale(100%) translateY(0);
   mix-blend-mode: normal;
-  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.5), transparent) center no-repeat;
-  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1), pulse .5s linear infinite alternate;
+  background: radial-gradient(
+      farthest-side,
+      rgba(255, 255, 255, 0.5),
+      transparent
+    )
+    center no-repeat;
+  animation: jumpImg 1s cubic-bezier(0.075, 0.82, 0.165, 1),
+    pulse 0.5s linear infinite alternate;
   z-index: 2;
 }
 /* .novel-section#name .novel-dialogues::after {
