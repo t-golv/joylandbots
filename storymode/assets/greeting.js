@@ -33,10 +33,10 @@ async function main_script() {
     console.error("Iframe not found or no file parameter provided.");
   } // Change the CSS link
   const cssLink = document.querySelector('link[rel="stylesheet"]'); // Adjust selector if necessary
-  if (cssLink) {
+  if (iframe && dataParam) {
     cssLink.href = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`; // Adjust URL as needed
   } else {
-    console.error("CSS link not found.");
+    cssLink.href = `https://t-golv.github.io/joylandbots/storymode/assets/greetings.css`; // Adjust URL as needed
   }
 }
 
