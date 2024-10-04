@@ -1,7 +1,7 @@
 :root {
-  --color1: #e09f9f;
-  --color2: #cc2b2b;
-  --color3: #941e1e;
+  --color1: #eb6d6d;
+  --color2: #da3636;
+  --color3: #a02929;
 }
 .msg-container {
   display: flex;
@@ -33,21 +33,24 @@
   border-radius: 0 6px 6px 6px;
   max-height: 450px;
 }
-html.theme-dark .markdown-body strong {
+html.theme-dark .markdown-body strong,
+html.theme-default .markdown-body p,
+html.theme-default .markdown-body hr {
   color: var(--color2);
 }
-html.theme-dark .markdown-body em {
+html.theme-dark .markdown-body em,
+html.theme-default .markdown-body strong {
   color: var(--color3);
 }
 html.theme-dark .markdown-body p,
-html.theme-dark .markdown-body hr {
+html.theme-dark .markdown-body hr,
+html.theme-default .markdown-body em {
   color: var(--color1);
   border-color: var(--color1);
 }
-html.theme-dark .body-text {
+html.theme-default .body-text {
   border: 1px solid var(--color2) !important;
-  box-shadow: 0px 0px 6px 0 var(--color3);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(6px);
 }
 html.theme-dark .chat-main-container:before {
@@ -73,8 +76,16 @@ html.theme-dark .chat-main-container:before {
 html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
-    #941e1e,
+    #a02929,
     rgba(0, 0, 0, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-default .left-part {
+  background: linear-gradient(
+    120deg,
+    #eb6d6d,
+    rgba(255, 255, 255, 0)
   ) !important  ;
   border-radius: 8px;
 }
@@ -82,6 +93,11 @@ html.theme-dark .left-card-box {
   background: rgba(0, 0, 0, 0.5) !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
-html.theme-dark .creator-name .name.can-click {
+
+html.theme-default .left-card-box {
+  background: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+html .creator-name .name.can-click {
   color: var(--color1);
 }
