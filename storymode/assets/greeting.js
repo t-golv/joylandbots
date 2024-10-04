@@ -32,7 +32,7 @@ async function main_script() {
   } else {
     console.error("Iframe not found or no file parameter provided.");
   } // Change the CSS link
-  const cssLink = document.querySelector('link[rel="stylesheet"]'); // Adjust selector if necessary
+  const cssLink = greeting.querySelector('link[rel="stylesheet"]'); // Adjust selector if necessary
   if (iframe && dataParam) {
     cssLink.href = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`; // Adjust URL as needed
   } else {
