@@ -73,6 +73,24 @@ html.theme-dark .chat-main-container:before {
   /* border-top-left-radius: 8px; */
   /* border-bottom-left-radius: 8px; */
 }
+html.theme-default .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(190, 190, 190, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color1) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fbloody-splashes-drops-white-background-dripping-following-red-blood-paint-168992524.jpg&f=1&nofb=1&ipt=ae4d0617e4077d1bd8e22e22b4d446ac083d3e2e9678d14018653cd15ac3d16e&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
 html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
