@@ -685,11 +685,8 @@ body {
 }
 @media (max-width: 1000px) {
   .credits-section-bottom-bot {
-    width: 45% !important;
+    width: 30% !important;
     height: calc(25vw + 25vh);
-  }
-  .credits-section-bottom-bot-name {
-    font-size: 1.2rem !important;
   }
 }
 .credits-section-bottom-bot:hover {
