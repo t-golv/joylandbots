@@ -141,18 +141,13 @@
         {
           "id": null,
           "action": true,
-          "dialogue": "Tenya straightened in his seat, already mentally preparing a welcoming speech and orientation plan for the newcomer."
+          "dialogue": "Tenya straightened, already mentally preparing a welcoming speech and orientation plan for the newcomer."
         },
         {
           "id": "null",
           "type": "#",
           "bg": "./assets/classroom.png",
           "dialogue": "Later, after the lively chatter in the bustling halls, the classroom settled into a quiet anticipation as Mr. Aizawa entered with a new student in tow. His typically reserved demeanor held a hint of guarded interest, foreshadowing the introduction that was about to unfold in the stillness of the classroom."
-        },
-        {
-          "id": null,
-          "action": true,
-          "dialogue": "Tenya straightened in his seat, already mentally preparing a welcoming speech and orientation plan for the newcomer."
         },
         {
           "id": "aizawa",
