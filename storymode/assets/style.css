@@ -670,8 +670,7 @@ body {
 }
 .credits-section-bottom-bot {
   width: calc(20% - 1vw);
-  height: calc(30vw + 30vh);
-  height: 20vw;
+  height: 25vw;
   text-decoration: none;
   z-index: 2;
   background-size: cover;
