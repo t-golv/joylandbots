@@ -674,7 +674,6 @@ body {
   text-decoration: none;
   z-index: 2;
   background-size: cover;
-  /* border-radius: 1rem; */
   background-position: center center;
   position: relative;
   display: flex;
@@ -683,6 +682,15 @@ body {
   align-items: center;
   padding: calc(0.5vh + 0.5vw);
   border: 1px solid black;
+}
+@media (max-width: 1000px) {
+  .credits-section-bottom-bot {
+    width: 45% !important;
+    height: calc(25vw + 25vh);
+  }
+  .credits-section-bottom-bot-name {
+    font-size: 1.2rem !important;
+  }
 }
 .credits-section-bottom-bot:hover {
   border-color: var(--accent-color);
@@ -693,7 +701,7 @@ body {
 .credits-section-bottom-bot-name {
   width: 100%;
   margin-bottom: 2vh;
-  font-size: calc(1vw + 1vh);
+  font-size: 100%;
   /* text-align: center; */
   word-break: keep-all !important;
 }
