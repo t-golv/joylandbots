@@ -7,26 +7,20 @@
 <title>Untitled</title>
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kiwi+Maru:wght@300;400;500&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 
   :root {
-    --color-1: #e09f9f;
-    --color-2: #cc2b2b;
-    --color-3: #941e1e;
-    --color-4: #CE96A6;
-    --color-5: #CE84AD;
+    --color-1: #E09F7D;
+    --color-2: #EF5D60;
+    --color-3: #EC4067;
+    --color-4: #A01A7D;
+    --color-5: #311847;
   }
   .title-main{
     text-shadow: 0px 0px 1rem var(--color-2);  
-    font-family: "Sofia", cursive !important;
-    animation: title 1s ease infinite alternate;
-  }
-  @keyframes title {
-    from {
-      text-shadow: 0px 0px 2rem var(--color-2);  
-    } to {
-      text-shadow: 0px 0px 1rem var(--color-3);  
-    }
+    font-family: "Sixtyfour Convergence", sans-serif !important;
+    margin-bottom: 2vh;
+    text-align: center;
   }
 </style>
 </head>
@@ -43,7 +37,7 @@
   </audio>
   <div class="carousel" data-carousel>
     <div class="slides" data-carousel-slides-container>
-      <div class="slide slide-main" style="background-color:rgba(0,0,0,.8);background-image: url(./assets/cover.jpeg);">
+      <div class="slide slide-main" style="background-color:rgba(0,0,0,.8);background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F105%2F1053415.jpg&f=1&nofb=1&ipt=84a0890f7a8b0056f560ab6eb380c3e14d02280a857b397be60050a5b96e0a4f&ipo=images);">
         <h1 class="title title-main"></h1>
         <h6 class="subtitle subtitle-main text"></h6>
         <button class="carousel-button carousel-button_next carousel-btn-continue" data-carousel-button-next>
@@ -52,7 +46,7 @@
 
         <sub>Or press "Space" to go to the next</sub>
         <audio id="bg-sound"  loop>
-          <source src="./assets/basementbg.mp3" type="audio/mpeg" />
+          <source src="./assets/bg-sound.mp3" type="audio/mpeg" />
         </audio>
       </div>
 

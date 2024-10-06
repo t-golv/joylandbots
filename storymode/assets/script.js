@@ -60,6 +60,7 @@ async function main() {
 
     if (title) {
       title.innerHTML = RPG.story[chapter].title;
+      document.title = RPG.story[chapter].title;
     }
     if (subtitle) {
       subtitle.setAttribute("data-text", RPG.story[chapter].subtitle);
@@ -96,7 +97,6 @@ async function main() {
       if (currentSlide == 1) {
         let audio = document.getElementById("bg-sound");
         if (audio.currentTime == 0 || audio.paused) {
-          console.log(audio);
           audio.volume = 0.3;
           audio.play();
           document.querySelector(
@@ -242,16 +242,12 @@ async function main() {
         document.querySelector(".novel-section").removeAttribute("id");
         document.querySelector(".novel-section").id = currentDialogue.id;
         function showPhrase() {
-          let typeAudio = document.querySelector("#audio-click");
-          typeAudio.volume = 0.5;
           if (index < currentDialogue.dialogue.length && !typing) {
             typing = true;
             paragraphElement.textContent += currentDialogue.dialogue[index];
             index++;
-            typeAudio.play();
             setTimeout(() => {
               typing = false; // Allow next character to be typed
-              typeAudio.playbackRate = randomPlaybackSpeed();
               showPhrase(); // Call showPhrase again
             }, 30); // Adjust typing speed here
           } else {
@@ -262,11 +258,11 @@ async function main() {
             paragraphElement.textContent = currentDialogue.dialogue;
           }
         }
-
+        let typeAudio = document.querySelector("#audio-click");
+        typeAudio.volume = 0.5;
+        typeAudio.play();
         showPhrase();
-        // paragraphElement.innerHTML = currentDialogue.dialogue;
       } else {
-        // quando os dialogos chegarem no maximo vai para proximo slide
         let imgs = document.querySelectorAll(".novel-img");
         imgs.forEach((img) => (img.style.display = "none"));
         handleNext();
@@ -448,7 +444,6 @@ async function main() {
   function bgOst() {
     let audio = document.getElementById("bg-sound");
     if (audio.currentTime == 0 || audio.paused) {
-      console.log(audio);
       audio.volume = 0.3;
       audio.play();
       document.querySelector(

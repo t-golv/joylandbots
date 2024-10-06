@@ -1,0 +1,124 @@
+:root {
+  --color-1: #e09f7d;
+  --color-2: #ef5d60;
+  --color-3: #ec4067;
+  --color-4: #a01a7d;
+  --color-5: #311847;
+}
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 450px;
+  border-radius: 0 6px 6px 6px;
+}
+.msg-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+  text-align: center;
+  width: 100%;
+}
+.msg-greeting h1 {
+  color: var(--color-2);
+}
+.msg-greeting iframe {
+  width: 100%;
+  height: 55vh;
+  border-radius: 0 6px 6px 6px;
+  max-height: 450px;
+}
+html.theme-dark .markdown-body strong,
+html.theme-default .markdown-body p,
+html.theme-default .markdown-body hr {
+  color: var(--color-2);
+}
+html.theme-dark .markdown-body em,
+html.theme-default .markdown-body strong {
+  color: var(--color-3);
+}
+html.theme-dark .markdown-body p,
+html.theme-dark .markdown-body hr,
+html.theme-default .markdown-body em {
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+html.theme-default .body-text {
+  border: 1px solid var(--color-2) !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .body-text {
+  border: 1px solid var(--color-2) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-blend-mode: multiply !important;
+  background-image: linear-gradient(to bottom, var(--color-2) 0%, black 100%),
+    url(https://i.gifer.com/Wbi7.gif) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* border-top-left-radius: 8px; */
+  /* border-bottom-left-radius: 8px; */
+}
+html.theme-default .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(190, 190, 190, 0.5) !important;
+  background-blend-mode: multiply !important;
+  background-image: linear-gradient(
+      to bottom,
+      var(--color-1) 0%,
+      transparent 100%
+    ),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgifdb.com%2Fimages%2Fhigh%2Fanimated-pink-hearts-and-snowflakes-fall-down-8vo4gzpi57nuyyxe.gif&f=1&nofb=1&ipt=3b211308af6b2abeb1ae8f34952e0c7bc65201c02dcc540f62b98e95eb3278fc&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+html.theme-dark .left-part {
+  background: linear-gradient(
+    to bottom,
+    var(--color-3),
+    rgba(0, 0, 0, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-dark .left-card-box {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+html.theme-default .left-card-box {
+  background: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+html .creator-name .name.can-click {
+  color: var(--color-1);
+}

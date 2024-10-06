@@ -32,12 +32,19 @@ async function main_script() {
   } else {
     console.error("Iframe not found or no file parameter provided.");
   } // Change the CSS link
-  const cssLink = greeting.querySelector('link[rel="stylesheet"]'); // Adjust selector if necessary
-  if (iframe && dataParam) {
-    cssLink.href = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`; // Adjust URL as needed
-  } else {
-    cssLink.href = `https://t-golv.github.io/joylandbots/storymode/assets/greetings.css`; // Adjust URL as needed
+  const cssLink = greeting.querySelector('link[rel="stylesheet"]');
+
+  async function checkAndSetCSSLink() {
+    const response = await fetch(
+      `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`
+    );
+    if (response.ok) {
+      cssLink.href = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/greetings.css`; // Set the href to the dynamically generated URL
+    } else {
+      cssLink.href = `https://t-golv.github.io/joylandbots/storymode/assets/greetings.css`; // Fallback URL
+    }
   }
+  checkAndSetCSSLink();
 }
 
 // Execute the script

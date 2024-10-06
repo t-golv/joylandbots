@@ -1,0 +1,123 @@
+{
+  "characters": {
+    "yuko": {
+      "name": "Yuko",
+      "defaultLink": "./assets/yuko.png",
+      "sittingLink": "./assets/yukositting.png"
+    },
+    "ayaka": {
+      "name": "Ayaka",
+      "defaultLink": "./assets/ayaka.png"
+    },
+    "miku": {
+      "name": "Miku",
+      "defaultLink": "./assets/miku.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Popular Band",
+      "subtitle": "Your School's Popular Band",
+      "about": {
+        "title": "Your School's Popular Band",
+        "paragraph": "In the heart of the school's music department, the sweet symphony of three girls filled the air. Meet Yuko, the soulful songbird with a penchant for emotional ballads; Ayaka, the spunky guitarist with a flair for rock riffs; and Miku, the rhythmic drummer with a heartbeat that never missed a beat. Together, they were the Solstice Symphony, a band that had captured the attention of their peers and beyond with their infectious energy and unparalleled talent.",
+        "image": "https://media.discordapp.net/attachments/1132902792999215135/1292399907918974986/2Q.png?ex=670398b5&is=67024735&hm=0004fefaa126bdb00b5c087d2b9a77f872f14644e162329443214d7f5389dab8&=&format=webp&quality=lossless&width=415&height=624"
+      },
+      "dialogues": [
+        {
+          "id": "null",
+          "type": "#",
+          "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F105%2F1053415.jpg&f=1&nofb=1&ipt=84a0890f7a8b0056f560ab6eb380c3e14d02280a857b397be60050a5b96e0a4f&ipo=images",
+          "dialogue": "One fateful afternoon, while you were lost in the rhythmic sanctuary of the music classroom, your solitary piano session was brought to a sudden pause."
+        },
+        {
+          "id": null,
+          "audio": "./assets/door.mp3",
+          "volume": 0.7,
+          "dialogue": "The door creaked open, and in stumbled Yuko, her eyes widening with surprise at the sound of unfamiliar melodies emanating from the instrument."
+        },
+        {
+          "id": null,
+          "action": true,
+          "audio": "#",
+          "dialogue": "Yuko, the band's cheerful leader and singer, busts in doing some dance moves like she's in a music video."
+        },
+        {
+          "id": "yuko",
+          "dialogue": "\"Woah, what's up with this song, it's lit!\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Ayaka, the guitarist with a bit of an attitude, pokes her head in, eyeing you like you're some kind of intruder."
+        },
+        {
+          "id": "ayaka",
+          "dialogue": "\"Who's the newbie playing?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Miku, the shy drummer, comes in too, looking kinda proud of the whole situation."
+        },
+        {
+          "id": "miku",
+          "dialogue": "\"Looks like we found a promising one.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Yuko comes over and gets all up in your business, smiling like you're her new bestie."
+        },
+        {
+          "id": "yuko",
+          "type": "sittingLink",
+          "dialogue": "\"Hey, you're amazing! What's your deal?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Yuko's practically on top of you, her enthusiasm spilling over."
+        },
+        {
+          "id": "yuko",
+          "type": "sittingLink",
+          "dialogue": "\"Do you mind if we crash your solo gig? We've got a little something we'd love to chat about?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She glances at Ayaka and Miku."
+        },
+        {
+          "id": "yuko",
+          "dialogue": "\"Our band's looking for an extra member, and you seem like the perfect fit.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Ayaka swaggers closer, looking you up and down like you're her next challenge."
+        },
+        {
+          "id": "ayaka",
+          "dialogue": "\"Yeah, we wanna see if you can lay down some sick beats that'll keep our toes tappin'.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Miku nods, playing it cool, but you can tell she's into the idea..."
+        },
+        {
+          "id": "miku",
+          "dialogue": "\"And maybe you could help us get our act together?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "The girls surround you as they wait for your answer, continue below..."
+        }
+      ]
+    }
+  },
+  "creators": [{ "userId": "8Ad2r", "badge": "Creator", "color": "#ec4067" }]
+}
