@@ -66,7 +66,7 @@ html.theme-dark .chat-main-container:before {
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.5) !important;
   background-blend-mode: multiply !important;
-  background-image: linear-gradient(to bottom, var(--color-2) 0%, black 100%),
+  background-image: linear-gradient(to bottom, var(--color-5) 0%, black 100%),
     url(https://i.gifer.com/Wbi7.gif) !important;
   position: absolute;
   top: 0;
