@@ -21,13 +21,13 @@
       "about": {
         "title": "Your School's Popular Band",
         "paragraph": "In the heart of the school's music department, the sweet symphony of three girls filled the air. Meet Yuko, the soulful songbird with a penchant for emotional ballads; Ayaka, the spunky guitarist with a flair for rock riffs; and Miku, the rhythmic drummer with a heartbeat that never missed a beat. Together, they were the Solstice Symphony, a band that had captured the attention of their peers and beyond with their infectious energy and unparalleled talent.",
-        "image": "https://media.discordapp.net/attachments/1132902792999215135/1292399907918974986/2Q.png?ex=670398b5&is=67024735&hm=0004fefaa126bdb00b5c087d2b9a77f872f14644e162329443214d7f5389dab8&=&format=webp&quality=lossless&width=415&height=624"
+        "image": "./assets/yuko2.png"
       },
       "dialogues": [
         {
           "id": null,
           "type": "#",
-          "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F105%2F1053415.jpg&f=1&nofb=1&ipt=84a0890f7a8b0056f560ab6eb380c3e14d02280a857b397be60050a5b96e0a4f&ipo=images",
+          "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F04%2F10%2F323436-anime-piano-classroom.jpg&f=1&nofb=1&ipt=0049bdad770eecca2f7e6a82dd656ab3571dfdb2db127ce801b4b0f970b79f2f&ipo=images",
           "dialogue": "One fateful afternoon, while you were lost in the rhythmic sanctuary of the music classroom, your solitary piano session was brought to a sudden pause."
         },
         {
