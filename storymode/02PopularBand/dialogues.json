@@ -16,10 +16,10 @@
   },
   "story": {
     "chapter1": {
-      "title": "Popular Band",
-      "subtitle": "Your School's Popular Band",
+      "title": "Heartstrings",
+      "subtitle": "The popular band at your school",
       "about": {
-        "title": "Your School's Popular Band",
+        "title": "Heartstrings",
         "paragraph": "In the heart of the school's music department, the sweet symphony of three girls filled the air. Meet Yuko, the soulful songbird with a penchant for emotional ballads; Ayaka, the spunky guitarist with a flair for rock riffs; and Miku, the rhythmic drummer with a heartbeat that never missed a beat. Together, they were the Solstice Symphony, a band that had captured the attention of their peers and beyond with their infectious energy and unparalleled talent.",
         "image": "./assets/yuko2.png"
       },
@@ -40,7 +40,7 @@
           "id": null,
           "action": true,
           "audio": "#",
-          "dialogue": "Yuko, the band's cheerful leader and singer, busts in doing some dance moves like she's in a music video."
+          "dialogue": "Yuko, the Heartstrings's cheerful leader and singer, busts in doing some dance moves like she's in a music video."
         },
         {
           "id": "yuko",
