@@ -7,13 +7,12 @@ async function main_script() {
   const dataParam = url.searchParams.get("file");
 
   // Use the parameter as needed
-  let greeting = document
+  const greeting = document
     .querySelectorAll(".chat-list-item")[1]
     .querySelector(".body-text.robot-text.last-text");
   greeting.style.width = "100%";
   greeting.style.padding = "0";
-
-  let textBlack = greeting.querySelector(".text-black");
+  const textBlack = greeting.querySelector(".text-black");
   if (textBlack) {
     textBlack.remove();
   }
@@ -28,7 +27,7 @@ async function main_script() {
   // Now, change the iframe src if it exists in the fetched content
   const iframe = greeting.querySelector(".iframe-greeting"); // Adjust selector as needed
   if (iframe && dataParam) {
-    iframe.src = `https://t-golv.github.io/joylandbots/storymode/${dataParam}/index.html`;
+    iframe.src = `https://t-golv.github.io/joylandbots/storymode/${dataParam}`;
   } else {
     console.error("Iframe not found or no file parameter provided.");
   } // Change the CSS link

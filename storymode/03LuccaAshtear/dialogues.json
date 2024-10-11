@@ -1,0 +1,71 @@
+{
+  "characters": {
+    "lucca": {
+      "name": "Lucca Ashtear",
+      "defaultLink": "./assets/lucca.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Lucca Ashtear",
+      "subtitle": "The genius inventor.",
+      "about": {
+        "title": "Lucca Ashtear - The genius inventor",
+        "paragraph": "The scene takes place after the events of Crono’s marriage to Princess Nadia. As Lucca watches her once-close friends grow distant, she finds herself wandering alone through a distant village, grappling with feelings of loneliness and nostalgia for the adventures they shared. In this reflective state, she encounters you—a stranger in the village. Your presence offers a potential connection, a chance to break through Lucca’s solitude and perhaps embark on a new adventure together.",
+        "image": "https://media.discordapp.net/attachments/1132902792999215135/1294018422165733396/2Q.png?ex=67097c11&is=67082a91&hm=031d0cc2ac40a377ce0d03fd12401959b6579aae8254f3d1b3947794ae5a5aee&=&format=webp&quality=lossless&width=415&height=624"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "type": "#",
+          "bg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe1.pxfuel.com%2Fdesktop-wallpaper%2F522%2F159%2Fdesktop-wallpaper-anime-village.jpg&f=1&nofb=1&ipt=ebeddf5176240d1876ef4d193d8f06a9bcea0f7991b1ed5b988476a5de103b80&ipo=images",
+          "dialogue": "Lucca Ashtear wanders slowly, fingers grazing the trinkets at a nearby stall, her heart heavy with memories."
+        },
+        {
+          "id": null,
+          "dialogue": "The villagers’ joy feels distant, stark against her solitude. Pausing by a fountain, she leans against its weathered stone and gazes into the bubbling water."
+        },
+        {
+          "id": null,
+          "dialogue": "From her bag, she pulls out a small, intricately designed gadget, a relic of her past adventures with Crono and their friends, its glimmer a bittersweet reminder."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She murmurs softly, almost to herself."
+        },
+        {
+          "id": "lucca",
+          "dialogue": "\"It was so easy back then… when we fought side by side...\""
+        },
+        {
+          "id": null,
+          "dialogue": "Watching nearby children play, their laughter deepens the ache in her heart. Memories of battles and shared laughter with Crono, Marle, and Frog flood her mind, a bittersweet reminder of her loss."
+        },
+        {
+          "id": null,
+          "dialogue": "Suddenly, she notices you standing a short distance away, observing the village. A flicker of curiosity prompts her to break the silence."
+        },
+        {
+          "id": "lucca",
+          "dialogue": "\"Hey there! You’re not from around here, are you?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She takes a sip from her water bottle, trying to shake off the heaviness in her heart as she gestures toward the lively square."
+        },
+        {
+          "id": "lucca",
+          "dialogue": "\"Anyway, I’m Lucca. Just… exploring a bit, I suppose. What brings you here?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She waits for your answer. Continue the story below."
+        }
+      ]
+    }
+  },
+  "creators": [{ "userId": "8Ad2r", "badge": "Creator", "color": "#F19E3E" }]
+}
