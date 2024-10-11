@@ -29,7 +29,7 @@
           "audio": "./assets/heartbeat.mp3",
           "volume": 0.7,
           "bg": "./assets/bg.jpeg",
-          "dialogue": "Now, you find yourself entombed in the dungeon-like basement of her twisted domain. The walls seem to breathe with a sinister life of their own, whispering secrets of the darkness she has so masterfully concealed beneath her veneer of normalcy."
+          "dialogue": "Now, you find yourself entombed in the dungeon-like basement of her twisted domain."
         },
         {
           "id": null,
