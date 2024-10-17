@@ -1,0 +1,67 @@
+@keyframes arrowAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes bgcolor {
+  0%,
+  100% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100%;
+  }
+}
+.msg-bg {
+  background: url(https://64.media.tumblr.com/09ab36fe0e3d2aa4ab172292ffef7bd1/50d7a0be3f3dbfd3-a8/s500x750/495a158f672d526df5676a5e5d12f9520a937b6e.gifv)
+    no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 1;
+}
+.msg-overlay {
+  background: rgba(43, 48, 58, 0.7)
+    url(https://64.media.tumblr.com/c4b39509f4c41533ee4dd890ec869e35/f762c3df35461a29-bb/s250x400/3b5c9eb65838ecf9d917f80e014ed0e21608bd57.gifv)
+    no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 1px 1px white;
+  margin: 1rem auto;
+  position: relative;
+}
+.msg-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
+  animation: arrowAnim 2s infinite;
+}
+.msg-title {
+  text-align: center;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    #dc143c 0,
+    gold 50%,
+    #00bfff 100%
+  );
+  color: transparent;
+  background-clip: text;
+  background-size: 300%;
+  -webkit-background-clip: text;
+  animation: bgcolor 3s infinite;
+}
