@@ -1,0 +1,126 @@
+:root {
+  --color1: #eb6d6d;
+  --color2: #da3636;
+  --color3: #a02929;
+}
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 450px;
+  border-radius: 0 6px 6px 6px;
+}
+.msg-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: var(--color1);
+  text-align: center;
+  width: 100%;
+}
+.msg-greeting h1 {
+  color: var(--color2);
+}
+.msg-greeting iframe {
+  width: 100%;
+  height: 55vh;
+  border-radius: 0 6px 6px 6px;
+  max-height: 450px;
+}
+html.theme-dark .markdown-body strong,
+html.theme-default .markdown-body p,
+html.theme-default .markdown-body hr {
+  color: var(--color2);
+}
+html.theme-dark .markdown-body em,
+html.theme-default .markdown-body strong {
+  color: var(--color3);
+}
+html.theme-dark .markdown-body p,
+html.theme-dark .markdown-body hr,
+html.theme-default .markdown-body em {
+  color: var(--color1);
+  border-color: var(--color1);
+}
+html.theme-default .body-text {
+  border: 1px solid var(--color2) !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .body-text {
+  border: 1px solid var(--color2) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color1) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FzssZWYp5dP0AAAAC%2Fblood.gif&f=1&nofb=1&ipt=e0297ad51b18d345abc7183ed23c7aa460f3c3429bcd59ff9b140b602a640910&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* border-top-left-radius: 8px; */
+  /* border-bottom-left-radius: 8px; */
+}
+html.theme-default .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(190, 190, 190, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color1) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fbloody-splashes-drops-white-background-dripping-following-red-blood-paint-168992524.jpg&f=1&nofb=1&ipt=ae4d0617e4077d1bd8e22e22b4d446ac083d3e2e9678d14018653cd15ac3d16e&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+html.theme-dark .left-part {
+  background: linear-gradient(
+    to bottom,
+    #a02929,
+    rgba(0, 0, 0, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-default .left-part {
+  background: linear-gradient(
+    120deg,
+    #eb6d6d,
+    rgba(255, 255, 255, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-dark .left-card-box {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+html.theme-default .left-card-box {
+  background: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+html .creator-name .name.can-click {
+  color: var(--color1);
+}

@@ -1,14 +1,5 @@
 .novel-dialogues {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom, #607792, #222738) !important;
-  border: 3px double var(--color-2);
-  position: absolute;
-  width: 100vw;
-  height: 30vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 200px;
-  background-blend-mode: overlay;
-  z-index: 5;
-  min-height: 90px;
+  border: 0px double var(--color-2) !important;
 }
