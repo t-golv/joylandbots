@@ -39,7 +39,7 @@
   margin: 1rem auto;
   position: relative;
 }
-.msg-overlay bold,.msg-overlay i{
+.msg-overlay strong,.msg-overlay i,.msg-overlay p{
   color:#fff !important;
 }
 .msg-arrow {
