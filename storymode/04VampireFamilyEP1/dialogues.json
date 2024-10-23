@@ -4,7 +4,9 @@
       "name": "Evangeline Luxmort",
       "defaultLink": "./assets/Evangeline2.png",
       "crossingArmsLink": "./assets/Evangeline4.png",
-      "standingLink": "./assets/Evangeline2.png"
+      "standingLink": "./assets/Evangeline2.png",
+      "standingLink2": "./assets/Evangeline3.png",
+      "standingLink3": "./assets/Evangeline5.png"
     }
   },
   "story": {
@@ -59,6 +61,135 @@
         {
           "id": "evangeline",
           "dialogue": "\"Try to keep up, puppy.\""
+        }
+      ]
+    },
+    "chapter2": {
+      "title": "Evangeline Luxmort",
+      "subtitle": "Chapter 2",
+      "about": {
+        "title": "Chapter 2: Two Unlikely Trick-or-Treaters",
+        "paragraph": "n Chapter 2, you and Evangeline continue your journey through the lively festival. Though she tries to maintain her arrogance, moments of reluctant charm peek through her demeanor as she navigates the festivities, revealing a subtle struggle between her pride and the enjoyment around her. <br><br>Type 'Chapter 3', when you feel like, to explore the next part of the story",
+        "image": "./assets/ep1-chap1-about.png"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep1-chap2-bg.jpeg",
+          "dialogue": "You walk alongside Evangeline through the festival, an unlikely pair of trick-or-treaters."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Though her arrogance remains, there’s something oddly charming about the way she carries herself, despite being clearly uncomfortable with the event."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Every so often, you glance her way and notice a flicker of amusement, quickly masked by her usual coldness."
+        },
+        {
+          "type": "standingLink2",
+          "id": "evangeline",
+          "dialogue": "\"I don’t see the appeal in this... tradition. Bloodthralls are so easily amused by sweets and costumes.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She approaches a house with grim decor, hesitating for a moment."
+        },
+        {
+          "id": "evangeline",
+          "type": "standingLink2",
+
+          "dialogue": "\"You knock. I’m not here to beg for candy.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "When the door opens and you’re given candy, she scoffs."
+        },
+        {
+          "id": "evangeline",
+          "type": "standingLink2",
+
+          "dialogue": "\"See? Pathetic. But I suppose even this has its... moments...\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "As you continue, she glances at you, her tone slightly softer."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Don’t get any ideas, puppy. Your company is just for tonight.\""
+        }
+      ]
+    },
+    "chapter3": {
+      "title": "Evangeline Luxmort",
+      "subtitle": "Chapter 3",
+      "about": {
+        "title": "Chapter 3: Halloween Festival Encounter",
+        "paragraph": "In Chapter 3, you and Evangeline venture into a secluded area of the kingdom, away from the festival's lively chaos. The atmosphere shifts, enveloping you both in a serene quietness that feels almost sacred. As the tension of the night begins to ease, you notice a subtle change in Evangeline; her usual aloofness softens, revealing a hint of curiosity. The shared adventure has forged a delicate bond, and the air is thick with unspoken words as you both take a moment to breathe in the stillness.",
+        "image": "./assets/ep1-chap1-about.png"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep1-chap3-bg.jpeg",
+          "dialogue": "After several stops, you and Evangeline find yourselves in a quieter part of the kingdom, far from the bustling festival."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "The night feels heavier here, more intimate. The coldness in Evangeline’s demeanor begins to thaw, though she still maintains her distance."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "However, the shared experience of trick-or-treating has shifted something in the air between you two."
+        },
+        {
+          "type": "standingLink3",
+          "id": "evangeline",
+          "dialogue": "\"Strange, isn’t it? A vampire and a Bloodthrall... wasting time like this.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She looks up at the dark sky, her voice softer now."
+        },
+        {
+          "id": "evangeline",
+          "type": "standingLink3",
+
+          "dialogue": "\"I’ve walked these streets alone for so long. Tonight feels... different.?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She glances at you with a slight smirk."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Don’t think this changes anything, though. I’m still above this nonsense...\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "There’s a pause, and for the first time, her voice carries a hint of sincerity."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"But... perhaps it’s not the worst way to spend a night.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Now you can choose to follow hidden plots in the EPISODE 2 or follow this story in your own way by chatting below..."
         }
       ]
     }
