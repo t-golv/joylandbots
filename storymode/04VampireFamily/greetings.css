@@ -1,7 +1,9 @@
 :root {
-  --color1: #eb6d6d;
-  --color2: #da3636;
-  --color3: #a02929;
+  --color-1: #ff2c55;
+  --color-2: #e2294f;
+  --color-3: #c41e3d;
+  --color-4: #7d1128;
+  --color-5: #3c0919;
 }
 .msg-container {
   display: flex;
@@ -65,7 +67,7 @@ html.theme-dark .chat-main-container:before {
   background-color: rgba(0, 0, 0, 0.8) !important;
   background-blend-mode: color !important;
   background-image: linear-gradient(to top, var(--color1) 0%, transparent 100%),
-    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.com%2FzssZWYp5dP0AAAAC%2Fblood.gif&f=1&nofb=1&ipt=e0297ad51b18d345abc7183ed23c7aa460f3c3429bcd59ff9b140b602a640910&ipo=images) !important;
+    url(https://cdn.discordapp.com/attachments/1132902792999215135/1298523963785351209/anime_art_of_A_goth_girl_long__17.jpeg?ex=6719e02e&is=67188eae&hm=2a1c4034fbf316d949d92ac7bdb8df9bac3f2dbf60ab3c6e7a499810e12309b7&) !important;
   position: absolute;
   top: 0;
   left: 0;
