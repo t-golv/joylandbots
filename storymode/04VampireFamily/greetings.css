@@ -66,8 +66,8 @@ html.theme-dark .chat-main-container:before {
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.8) !important;
   background-blend-mode: color !important;
-  background-image: linear-gradient(to top, var(--color-1) 0%, transparent 100%),
-    url(./assets/test.jpeg) !important;
+  background-image: linear-gradient(to top, var(--color-5) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.gifer.com%2F6zjx.gif&f=1&nofb=1&ipt=5180647dc1a69258198141ee6ecd5d12cbb45143d1b6f508d66c31315476f9fb&ipo=images) !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +87,7 @@ html.theme-default .chat-main-container:before {
   background-color: rgba(190, 190, 190, 0.8) !important;
   background-blend-mode: color !important;
   background-image: linear-gradient(to top, var(--color-1) 0%, transparent 100%),
-    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fbloody-splashes-drops-white-background-dripping-following-red-blood-paint-168992524.jpg&f=1&nofb=1&ipt=ae4d0617e4077d1bd8e22e22b4d446ac083d3e2e9678d14018653cd15ac3d16e&ipo=images) !important;
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.gifer.com%2F6zjx.gif&f=1&nofb=1&ipt=5180647dc1a69258198141ee6ecd5d12cbb45143d1b6f508d66c31315476f9fb&ipo=images) !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -101,7 +101,7 @@ html.theme-default .chat-main-container:before {
 html.theme-dark .left-part {
   background: linear-gradient(
     to bottom,
-    #a02929,
+    var(--color-4),
     rgba(0, 0, 0, 0)
   ) !important  ;
   border-radius: 8px;
@@ -109,7 +109,7 @@ html.theme-dark .left-part {
 html.theme-default .left-part {
   background: linear-gradient(
     120deg,
-    #eb6d6d,
+    var(--color-1),
     rgba(255, 255, 255, 0)
   ) !important  ;
   border-radius: 8px;
