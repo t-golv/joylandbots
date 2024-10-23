@@ -5,6 +5,10 @@
   --color-4: #7d1128;
   --color-5: #3c0919;
 }
+#markdown-btn {
+  border-color: var(--color-3) !important;
+  color: var(--color-3) !important;
+}
 .msg-container {
   display: flex;
   justify-content: center;
