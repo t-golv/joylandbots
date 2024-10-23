@@ -603,14 +603,24 @@ body {
   mix-blend-mode: screen;
   opacity: 0.5;
 }
-.credits-section-link-2 {
-  border-radius: 1rem 1rem 0 0;
-  background-color: var(--accent-color) !important;
-  color: white;
-  display: none;
-  z-index: 50 !important;
+.credits-section-top-links2-container {
   position: absolute;
+  display: flex;
   bottom: 0;
+  z-index: 50 !important;
+  gap: 1rem;
+}
+.credits-section-link-2 {
+  background-color: var(--color-4) !important;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 1rem var(--color-4);
+  color: white;
+  z-index: 51 !important;
+  border: 2px solid var(--color-3);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: none;
 }
 .credits-section-link-2:hover {
   box-shadow: inset 10rem 10rem 1rem 1rem rgba(0, 0, 0, 0.5);

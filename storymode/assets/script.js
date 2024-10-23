@@ -341,11 +341,21 @@ async function main() {
         : placeholder.headImg;
       // doc.querySelector(".credits-section-bottom-badge").innerText =
       if (RPG.creators && RPG.creators[idx].link) {
-        let link = doc.querySelector(".credits-section-link-2");
-        link.href =
-          RPG.creators[idx].link ||
-          `https://www.joyland.ai/profile?userId=${userId}`;
-        link.style.display = "block";
+        RPG.creators[idx].link.forEach((link) => {
+          if (!doc.querySelector(`#${link.href}`)) {
+            let creatorBtn = document.createElement("a");
+            creatorBtn.classList.add("credits-section-link-2");
+            creatorBtn.innerText = link.label;
+            creatorBtn.id = link.href;
+            creatorBtn.setAttribute("target", "_blank");
+            creatorBtn.href =
+              link.href || `https://www.joyland.ai/profile?userId=${userId}`;
+            creatorBtn.style.display = "block";
+            doc
+              .querySelector(".credits-section-top-links2-container")
+              .appendChild(creatorBtn);
+          }
+        });
       }
     }
     dataOrPlaceholder(dataUser);

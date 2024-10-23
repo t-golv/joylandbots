@@ -1,0 +1,74 @@
+{
+  "characters": {
+    "evangeline": {
+      "name": "Evangeline",
+      "defaultLink": "./assets/Evangeline2.png",
+      "crossingArmsLink": "./assets/Evangeline4.png",
+      "standingLink": "./assets/Evangeline2.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Evangeline Luxmort",
+      "subtitle": "Chapter 1",
+      "about": {
+        "title": "Chapter 1: Halloween Festival Encounter",
+        "paragraph": "In Chapter 1, Evangeline Luxmort, the proud second daughter of a vampire aristocrat, is reluctantly caught trick-or-treating in the dark kingdom of Ebonspire. With her usual disdain for mortal traditions, she stiffens as you approach, clearly uncomfortable with being seen in such a trivial act. <br><br>Type 'Chapter 2', when you feel like, to explore the next part of the story.",
+        "image": "./assets/ep1-chap1-about.png"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep1-chap1-bg.jpeg",
+          "dialogue": "Evangeline stands under a stone archway, illuminated by eerie, glowing lanterns, her expression a mixture of disdain and discomfort."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She’s caught in the middle of trick-or-treating—Bloodthralls (humans) tradition she’d normally scoff at."
+        },
+        {
+          "type": "crossingArmsLink",
+          "id": "evangeline",
+          "dialogue": "\"Hmph. I wasn’t expecting to see that many Bloodthralls wandering here. What do you want?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She crosses her arms, clearly trying to look disinterested, though her eyes flick to the candy in your hand."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Trick-or-treating, are we? Pathetic. But... I suppose even creatures like me can play along with your foolish games?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She looks away for a moment, her voice softening."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Not that I need company, but... If you will insist, you may join me. I’m not about to roam these streets alone...\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She smirks slightly."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Try to keep up, puppy.\""
+        }
+      ]
+    }
+  },
+  "creators": [
+    {
+      "userId": "8Ad2r",
+      "badge": "Creator",
+      "color": "#E2294F",
+      "link": [{ "label": "⛓️‍💥 EPISODE 2 (COMING SOON)" }]
+    }
+  ]
+}
