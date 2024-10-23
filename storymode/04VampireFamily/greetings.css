@@ -56,7 +56,7 @@ html.theme-default .body-text {
   backdrop-filter: blur(6px);
 }
 html.theme-dark .body-text {
-  border: 1px solid var(--color-2) !important;
+  border: 1px solid var(--color-5) !important;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
 }
