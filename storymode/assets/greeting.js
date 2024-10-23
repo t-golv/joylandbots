@@ -9,9 +9,24 @@ async function main_script() {
 
   // Use the parameter as needed
   const greetingElements = document.querySelectorAll(
-    ".body-text.robot-text.last-text:has(#markdown-btn)"
+    `.body-text.robot-text.last-text:has(#markdown-btn)`
   );
-  const greeting = greetingElements[greetingElements.length - 1];
+
+  const filteredGreeting = Array.from(greetingElements).filter((greeting) => {
+    const markdownBtn = greeting.querySelector("#markdown-btn");
+    return markdownBtn && markdownBtn.classList.contains(dataParamHtml); // Checking if it has the class from dataParamHtml
+  });
+
+  // Check if filteredGreeting has any elements
+  if (filteredGreeting.length > 0) {
+    greeting = filteredGreeting[0]; // If there's a match, use the first one
+  } else {
+    greeting = greetingElements[0]; // Fallback to the first greetingElement if no match
+  }
+
+  console.log(greeting); // This will log the result
+
+  // const greeting = greetingElements[greetingElements.length - 1];
   greeting.style.width = "100%";
   greeting.style.padding = "0";
   const textBlack = greeting.querySelector(".text-black");
