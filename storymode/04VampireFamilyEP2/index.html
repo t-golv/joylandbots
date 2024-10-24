@@ -1,0 +1,140 @@
+<head></head>
+<!-- Import font-awesome somewhere in the HTML -->
+
+<link rel="stylesheet" type="text/css" href="../assets/style.css">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<title>Untitled</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+
+
+
+  :root {
+    --color-1: #ff597a;
+  --color-2: #e2294f;
+  --color-3: #c41e3d;
+  --color-4: #7d1128;
+  --color-5: #3c0919;
+  }
+  .title-main{
+    text-shadow: 0px 0px 1rem var(--color-2);  
+    font-family:  "Galada", sans-serif !important;
+    animation: title 1s ease infinite alternate;
+  }
+  @keyframes title {
+    from {
+      text-shadow: 0px 0px 2rem var(--color-2);  
+    } to {
+      text-shadow: 0px 0px 1rem var(--color-3);  
+    }
+  }
+</style>
+</head>
+<body class="chapter1">
+  <audio id="transition-slide-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/12/29/audio_2fd079020a.mp3" type="audio/mpeg" />
+  </audio>
+  
+  <audio id="transition-dialogue-audio">
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_160c87d772.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="audio-click" loop >
+    <source src="./assets/scaryviolins.mp3" type="audio/mpeg" />
+  </audio>
+  <div class="carousel" data-carousel>
+    <div class="slides" data-carousel-slides-container>
+      <div class="slide slide-main" style="background-color:rgba(0,0,0,.8);background-image: url(./assets/ep2-chap1-cover.jpeg);">
+        <sub style="text-transform: uppercase;font-family: monospace;">Episode 2</sub>
+        <h1 class="title title-main"></h1>
+        <h6 style="text-transform: uppercase;font-family: monospace;color:rgba(255, 255, 255, 0.65);" class="subtitle subtitle-main text"></h6>
+        <button class="carousel-button carousel-button_next carousel-btn-continue" style="color:var(--color-1);border-color: var(--color-1);" data-carousel-button-next>
+          continue
+        </button>
+
+        <sub>Or press "Space" to go to the next</sub>
+        <audio id="bg-sound"  loop>
+          <source src="./assets/horror-ambience.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="slide slide-main">
+                <main class="main-container">  <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+          </button>
+
+        </header>
+          <aside>
+            <img src="" class="aside-image" />
+          </aside>
+        <section class="slide-section">
+        
+          <div class="main-content">
+
+            <h5 style="font-family: 'Galada', sans-serif;" class="title title-about"></h5>
+            <hr/>
+            <p class="about"></p>
+            <button class="carousel-button carousel-button_next carousel-btn-continue" data-carousel-button-next>
+              continue
+            </button>
+          </section>
+        </main>
+        </div>
+
+
+      <div class="slide slide-main"
+        style="background-image: url();">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+          </button>
+          <button class="carousel-button carousel-btn-music">
+            <span class="material-symbols-outlined">
+              headphones
+              </span>
+          </button>
+        </header>
+        <section class="novel-section">
+          <audio id="voice">
+            <source src="" type="audio/mpeg" />
+          </audio>
+ 
+          <img id="novel-overlay" class="novel-overlay" />
+          <img id="novel-item" class="novel-item" />
+          <div class="novel-images">
+            <img src="" id="img1" class="novel-img" />
+          </div>
+          <span class="novel-dialogues-name"></span>
+          <div class="novel-dialogues">
+            <p></p>
+            <div class="dialogues-arrow-container">
+              <span class="material-symbols-outlined dialogues-arrow">
+                arrow_drop_down
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Credits -->
+      <div class="slide slide-main">
+        <header class="slide-header">
+          <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+            <span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+          </button>
+        </header>
+        <main class="credits-main" ></main>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="../assets/script.js"></script>
+</body>

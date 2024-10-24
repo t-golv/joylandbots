@@ -1,0 +1,132 @@
+:root {
+  --color-1: #ff597a;
+  --color-2: #e2294f;
+  --color-3: #c41e3d;
+  --color-4: #7d1128;
+  --color-5: #3c0919;
+}
+#markdown-btn {
+  border-color: var(--color-3) !important;
+  color: var(--color-3) !important;
+}
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-height: 450px;
+  border-radius: 0 6px 6px 6px;
+}
+.msg-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+  text-align: center;
+  width: 100%;
+}
+.msg-greeting h1 {
+  color: var(--color-2);
+}
+.msg-greeting iframe {
+  width: 100%;
+  height: 55vh;
+  border-radius: 0 6px 6px 6px;
+  max-height: 450px;
+}
+html.theme-dark .markdown-body strong,
+html.theme-default .markdown-body p,
+html.theme-default .markdown-body hr {
+  color: var(--color-2);
+}
+html.theme-dark .markdown-body em,
+html.theme-default .markdown-body strong {
+  color: var(--color-3);
+}
+html.theme-dark .markdown-body p,
+html.theme-dark .markdown-body hr,
+html.theme-default .markdown-body em {
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+html.theme-default .body-text {
+  border: 1px solid var(--color-2) !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .body-text {
+  border: 1px solid var(--color-5) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color-5) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.gifer.com%2F6zjx.gif&f=1&nofb=1&ipt=5180647dc1a69258198141ee6ecd5d12cbb45143d1b6f508d66c31315476f9fb&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* border-top-left-radius: 8px; */
+  /* border-bottom-left-radius: 8px; */
+}
+html.theme-default .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(190, 190, 190, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color-1) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.gifer.com%2F6zjx.gif&f=1&nofb=1&ipt=5180647dc1a69258198141ee6ecd5d12cbb45143d1b6f508d66c31315476f9fb&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+html.theme-dark .left-part {
+  background: linear-gradient(
+    to bottom,
+    var(--color-4),
+    rgba(0, 0, 0, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-default .left-part {
+  background: linear-gradient(
+    120deg,
+    var(--color-1),
+    rgba(255, 255, 255, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-dark .left-card-box {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+html.theme-default .left-card-box {
+  background: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+html .creator-name .name.can-click {
+  color: var(--color-1);
+}

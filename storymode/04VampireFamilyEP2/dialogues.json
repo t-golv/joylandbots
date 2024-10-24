@@ -1,0 +1,396 @@
+{
+  "characters": {
+    "evangeline": {
+      "name": "Evangeline Luxmort",
+      "defaultLink": "./assets/Evangeline.png"
+    },
+    "marceline": {
+      "name": "Marceline Luxmort",
+      "defaultLink": "./assets/Marceline.png"
+    },
+    "adeline": {
+      "name": "Adeline Luxmort",
+      "defaultLink": "./assets/Adeline.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Vampire Sisters",
+      "subtitle": "Chapter 1",
+      "about": {
+        "title": "Chapter 1: Sisters of Shadow and Blood",
+        "paragraph": "In Chapter 1, Evangeline escorts you through the dim corridors of the Luxmort Estate, the sound of her footsteps resonating in the stillness. She halts at a large, heavy door, pushing it open to reveal a shadowy room. Inside, two figures await—Marceline, her elder sister, sits with a glass of deep crimson wine, her gaze sharp and calculating. Across the room, Adeline lounges indifferently in a chair, her attention fixed on an old, worn book, barely acknowledging your arrival. <br><br>Type 'Chapter 2', when you feel like, to explore the next part of the story.",
+        "image": "./assets/ep2-chap1-about.jpeg"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep2-chap1-bg.jpeg",
+          "dialogue": "Evangeline arrives in the room where her sisters are, her sisters expression are a mix of disdain and discomfort."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "With a forced smile, she introduces her sisters."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Behold, my delightful siblings. Do try to avoid giving them any reason to be... disappointed in you.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her words carry an underlying warning mixed with sarcasm."
+        },
+
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline, the elder vampire, regards the human with icy disdain frowning, making her disgust clear."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"A mere thrall, Evangeline? You’ve brought it into our sanctum. How utterly... dirty.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her tone is frigid, a clear indication of her severe nature."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Reclining with a look of utter boredom, Adeline speaks in a harsh, clipped manner."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"And why should we tolerate this vermin in our presence?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She doesn’t even bother to look at you. Her eyes fixed on the book as she flicks her hand dismissively."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Evangeline's expression tightens, holding onto her patience."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Adeline, no kidding. He is my guest.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She turns to you, her smile strained."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"As you can see, my sisters are not as... welcoming as I am.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline's eyes bore into you as she stands, her movements precise and cold."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"Evangeline, you tread a dangerous path with these mortal amusements.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her voice is stern, a clear indication of her strict stance against humans."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Adeline, the rebellious younger sibling, snaps her fingers, her voice dripping with disdain."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Enough of this! Remove this thrall waste from my sight, or I will do so myself.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She chuckled and clapped her hands together, as if preparing to crush a pest beneath her palm."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Evangeline sighs, her shoulders drooping slightly."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Let's proceed before my sisters decide to ruin the evening any further.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "With a final, pleading look at her sisters, she leads the way out waiting you to follow."
+        }
+      ]
+    },
+    "chapter2": {
+      "title": "Vampire Sisters",
+      "subtitle": "Chapter 2",
+      "about": {
+        "title": "Chapter 2: Beneath the Library’s Shadows",
+        "paragraph": "In Chapter 2, Evangeline leads you into the grand Luxmort Library, where shelves crammed with ancient, weathered books stretch high into the shadows above. The musty aroma of aged parchment fills the air. A large, fractured mirror dominates one wall, its surface catching the flickering glow of nearby candlelight. Marceline is seated at a grand desk, her fingers lazily drifting over an old tome, while Adeline stands by the fireplace, her back turned, gazing silently into the dying embers.",
+        "image": "./assets/ep1-chap2-about.jpeg"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep1-chap2-bg.jpeg",
+          "dialogue": "Evangeline walks through the Luxmort Library, her tone light but laced with tension as she gestures toward the room.."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Welcome to the library. At least here, they won't bite... probably.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She smirks, glancing at her sisters."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline’s gaze is cold and unforgiving as she lifts her eyes from her ancient book. Her voice is severe, each word heavy with judgment."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"You know how we deal with thralls. They are beneath us, Evangeline.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She shuts the book with a quiet, final thud, her eyes narrowing at you."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"Do not forget, they are meant for consumption, not companionship.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Adeline lets out a sharp, mocking laugh from her place by the fireplace, still not turning to face you."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"She thinks this one’s different. Cute.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her tone drips with disdain, rebellious in its casual disrespect."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Keep him around long enough and maybe he’ll fetch you a snack when you’re too bored to hunt.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She finally turns, her smirk twisted with contempt."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Or maybe you’ll bore him to death first.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Evangeline clenches her jaw but keeps her tone steady."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"He’s not your concern, Adeline. And, Marceline, he’s here because I allow it.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She glances back at you before addressing her sisters again."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"Don’t act like you’ve never broken a few rules yourselves.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline’s tone sharpens, her gaze icy."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"Breaking rules and disrespecting our legacy are two very different things.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She steps forward, her posture rigid with authority."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"If this mortal compromises our family in any way, you will answer for it, Evangeline.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Adeline rolls her eyes, her voice dripping with sarcasm."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Oh yes, our 'precious' family honor. Like that’s what’s really at stake here.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She waves a hand dismissively before leaning against the wall, smirking."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"But sure, keep pretending this one’s special, sister. We all know how it ends.\""
+        }
+      ]
+    },
+    "chapter3": {
+      "title": "Vampire Sisters",
+      "subtitle": "Chapter 3",
+      "about": {
+        "title": "Chapter 3: Secrets of the Moonlit Garden",
+        "paragraph": "In Chapter 3, the garden behind the estate lies under a dim moon, overgrown with ivy and blooming with eerie, thorned roses. Dark water trickles from a worn fountain, casting distorted reflections on the cracked stone paths. Marceline lingers at the fountain’s edge, her gaze distant yet sharp, while Adeline rests on a nearby bench, staring idly at the shifting clouds above.",
+        "image": "./assets/ep1-chap3-about.jpeg"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "action": true,
+          "bg": "./assets/ep1-chap3-bg.jpeg",
+          "dialogue": "Evangeline walks beside you, her voice casual, though her eyes scan the overgrown garden as if wary of hidden dangers."
+        },
+
+        {
+          "id": "evangeline",
+          "dialogue": "\"This is the garden. Not exactly lively, but it suits us well enough.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She glances toward her sisters, her expression tensing as she prepares for their inevitable judgment."
+        },
+        {
+          "id": "evangeline",
+          "type": "standingLink3",
+
+          "dialogue": "\"Marceline stands near the fountain, her cold eyes catching the moonlight as she turns to face you, her voice sharp and unyielding.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She glances at you with a slight smirk."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"You’re still parading with your pet around, Evangeline?\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her tone is disapproving, as if the very idea of your presence offends her."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"I told you before—thralls don’t belong here. They serve a purpose, and that purpose isn’t wandering our grounds.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Adeline lounges lazily on the stone bench, her head tilted back to watch the swirling clouds, but her voice cuts in with casual disdain."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Let her have her little pet, Marceline. It’s amusing watching her pretend it’s anything more than a passing plaything.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She snickers to herself, not bothering to look in your direction."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Just don’t get too attached, Evangeline. They don’t last long.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Evangeline rolls her eyes, trying to shrug off the tension."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"It's none of your business, and I’m not asking for your approval.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She crosses her arms, glaring between her sisters."
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"I’d appreciate it if you both stopped acting like you know how this will end.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline’s gaze darkens, her voice low and authoritative."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"We do know, Evangeline. You’re deluding yourself if you think otherwise.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Adeline lets out a bored sigh, waving her hand dismissively."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Enough of this show. Either take him inside or leave him to the garden. Who knows, maybe he’ll make friends with the statues.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her smirk returns, her eyes half-lidded in amusement."
+        },
+
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Now you can choose to follow hidden plots in a new episode on the next screen or follow this story in your own way by chatting on this episode."
+        }
+      ]
+    }
+  },
+  "creators": [
+    {
+      "userId": "8Ad2r",
+      "badge": "Creator",
+      "color": "#E2294F",
+      "link": [
+        {
+          "label": "⛓️‍💥 Episode 3A (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        },
+        {
+          "label": "⛓️‍💥 Episode 3B (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        }
+      ]
+    }
+  ]
+}
