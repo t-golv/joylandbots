@@ -22,6 +22,7 @@
         {
           "id": null,
           "action": true,
+          "overlay": "https://i.gifer.com/7dDt.gif",
           "bg": "./assets/ep1-chap1-bg.jpeg",
           "dialogue": "Evangeline stands under a stone archway, illuminated by eerie, glowing lanterns, her expression a mixture of disdain and discomfort."
         },
@@ -70,7 +71,7 @@
       "about": {
         "title": "Chapter 2: Two Unlikely Trick-or-Treaters",
         "paragraph": "n Chapter 2, you and Evangeline continue your journey through the lively festival. Though she tries to maintain her arrogance, moments of reluctant charm peek through her demeanor as she navigates the festivities, revealing a subtle struggle between her pride and the enjoyment around her. <br><br>Type 'Chapter 3', when you feel like, to explore the next part of the story",
-        "image": "./assets/ep1-chap1-about.png"
+        "image": "./assets/ep1-chap2-about.jpeg"
       },
       "dialogues": [
         {
@@ -133,7 +134,7 @@
       "about": {
         "title": "Chapter 3: Halloween Festival Encounter",
         "paragraph": "In Chapter 3, you and Evangeline venture into a secluded area of the kingdom, away from the festival's lively chaos. The atmosphere shifts, enveloping you both in a serene quietness that feels almost sacred. As the tension of the night begins to ease, you notice a subtle change in Evangeline; her usual aloofness softens, revealing a hint of curiosity. The shared adventure has forged a delicate bond, and the air is thick with unspoken words as you both take a moment to breathe in the stillness.",
-        "image": "./assets/ep1-chap1-about.png"
+        "image": "./assets/ep1-chap3-about.jpeg"
       },
       "dialogues": [
         {
