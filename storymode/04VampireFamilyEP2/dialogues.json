@@ -7,7 +7,8 @@
     "marceline": {
       "name": "Marceline Luxmort",
       "defaultLink": "./assets/Marceline.png",
-      "rollingEyes": "./assets/Marceline2.png"
+      "link2": "./assets/Marceline2.png",
+      "link3": "./assets/Marceline3.png"
     },
     "adeline": {
       "name": "Adeline Luxmort",
@@ -98,7 +99,7 @@
         },
         {
           "id": "marceline",
-          "type": "rollingEyes",
+          "type": "link2",
           "dialogue": "\"Evangeline, you tread a dangerous path with these mortal amusements.\""
         },
         {
@@ -142,13 +143,13 @@
       "about": {
         "title": "Chapter 2: Beneath the Library’s Shadows",
         "paragraph": "In Chapter 2, Evangeline leads you into the grand Luxmort Library, where shelves crammed with ancient, weathered books stretch high into the shadows above. The musty aroma of aged parchment fills the air. A large, fractured mirror dominates one wall, its surface catching the flickering glow of nearby candlelight. Marceline is seated at a grand desk, her fingers lazily drifting over an old tome, while Adeline stands by the fireplace, her back turned, gazing silently into the dying embers.",
-        "image": "./assets/ep1-chap2-about.jpeg"
+        "image": "./assets/ep2-chap2-about.png  "
       },
       "dialogues": [
         {
           "id": null,
           "action": true,
-          "bg": "./assets/ep1-chap2-bg.jpeg",
+          "bg": "./assets/ep2-chap2-bg.jpeg",
           "dialogue": "Evangeline walks through the Luxmort Library, her tone light but laced with tension as she gestures toward the room.."
         },
         {
@@ -176,6 +177,8 @@
         },
         {
           "id": "marceline",
+          "type": "link3",
+
           "dialogue": "\"Do not forget, they are meant for consumption, not companionship.\""
         },
         {
@@ -230,6 +233,8 @@
         },
         {
           "id": "marceline",
+          "type": "link2",
+
           "dialogue": "\"Breaking rules and disrespecting our legacy are two very different things.\""
         },
         {
@@ -267,13 +272,13 @@
       "about": {
         "title": "Chapter 3: Secrets of the Moonlit Garden",
         "paragraph": "In Chapter 3, the garden behind the estate lies under a dim moon, overgrown with ivy and blooming with eerie, thorned roses. Dark water trickles from a worn fountain, casting distorted reflections on the cracked stone paths. Marceline lingers at the fountain’s edge, her gaze distant yet sharp, while Adeline rests on a nearby bench, staring idly at the shifting clouds above.",
-        "image": "./assets/ep1-chap3-about.jpeg"
+        "image": "./assets/ep2-chap3-about.jpeg"
       },
       "dialogues": [
         {
           "id": null,
           "action": true,
-          "bg": "./assets/ep1-chap3-bg.jpeg",
+          "bg": "./assets/ep2-chap3-bg.jpeg",
           "dialogue": "Evangeline walks beside you, her voice casual, though her eyes scan the overgrown garden as if wary of hidden dangers."
         },
 
@@ -287,10 +292,9 @@
           "dialogue": "She glances toward her sisters, her expression tensing as she prepares for their inevitable judgment."
         },
         {
-          "id": "evangeline",
-          "type": "standingLink3",
-
-          "dialogue": "\"Marceline stands near the fountain, her cold eyes catching the moonlight as she turns to face you, her voice sharp and unyielding.\""
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline stands near the fountain, her cold eyes catching the moonlight as she turns to face you, her voice sharp and unyielding."
         },
         {
           "id": null,
@@ -299,6 +303,8 @@
         },
         {
           "id": "marceline",
+          "type": "link3",
+
           "dialogue": "\"You’re still parading with your pet around, Evangeline?\""
         },
         {
@@ -384,6 +390,10 @@
       "badge": "Creator",
       "color": "#E2294F",
       "link": [
+        {
+          "label": "⛓️‍💥 Episode 1 (Previous)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        },
         {
           "label": "⛓️‍💥 Episode 3A (COMING SOON)",
           "href": "https://www.joyland.ai/profile?userId=8Ad2r"
