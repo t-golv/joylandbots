@@ -200,7 +200,12 @@
       "userId": "8Ad2r",
       "badge": "Creator",
       "color": "#E2294F",
-      "link": [{ "label": "⛓️‍💥 EPISODE 2 (COMING SOON)" }]
+      "link": [
+        {
+          "label": "⛓️‍💥 EPISODE 2 (Vampire Sisters)",
+          "href": "https://www.joyland.ai/chat?botId=bDj6B"
+        }
+      ]
     }
   ]
 }

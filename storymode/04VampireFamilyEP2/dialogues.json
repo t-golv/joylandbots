@@ -6,7 +6,8 @@
     },
     "marceline": {
       "name": "Marceline Luxmort",
-      "defaultLink": "./assets/Marceline.png"
+      "defaultLink": "./assets/Marceline.png",
+      "rollingEyes": "./assets/Marceline2.png"
     },
     "adeline": {
       "name": "Adeline Luxmort",
@@ -97,6 +98,7 @@
         },
         {
           "id": "marceline",
+          "type": "rollingEyes",
           "dialogue": "\"Evangeline, you tread a dangerous path with these mortal amusements.\""
         },
         {
