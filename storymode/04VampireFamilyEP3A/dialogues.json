@@ -1,0 +1,95 @@
+{
+  "characters": {
+    "adeline": {
+      "name": "Adeline Luxmort",
+      "defaultLink": "./assets/Adeline.png",
+      "link2": "./assets/Adeline2.png",
+      "link3": "./assets/Adeline3.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Adeline's Ritual",
+      "subtitle": "You’ve been captured by Adeline",
+      "about": {
+        "title": "You’ve been captured by Adeline",
+        "paragraph": "Adeline drags you to a dark chamber beneath the Luxmort estate, where ancient runes glow faintly on a jagged altar. The air is thick with dampness and magic. Without hesitation, she shoves you onto the cold stone, binding your wrists with enchanted chains. Her eyes gleam with cruel intent.",
+        "image": "./assets/ep3a-chap1-about.jpeg"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "bg": "./assets/ep3a-chap1-bg.jpeg",
+          "action": true,
+          "dialogue": "Leaning close, her voice a sinister whisper:"
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"Did you really think you mattered? A mere mortal in the Luxmort estate? How amusing.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She smirks, tracing the glowing runes around the altar."
+        },
+        {
+          "id": "adeline",
+          "type": "link2",
+          "dialogue": "\"Your life? It’s just another drop in the bucket. Nothing special. But with every soul I take, I get stronger. You’re just one of many. And when I reach a thousand? That’s when I’ll have enough power to crush them—Marceline, Evangeline—all of them.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She steps back, flicking her wrist as blood drips onto the altar, making the runes flare brighter."
+        },
+        {
+          "id": "adeline",
+          "type": "link3",
+
+          "dialogue": "\"You’re nothing but stock. One soul closer to my goal. No one’s going to remember you.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Her eyes gleam as she circles you, the magic pulsing in the air."
+        },
+        {
+          "id": "adeline",
+          "dialogue": "\"They think I’m reckless, but this... this is how I win. Not by waiting, not by following their rules. I’ll take what I need, one life at a time.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "She laughs deviously as her hand rises, a dark energy swirling around you, ready to claim your poor soul."
+        },
+        {
+          "id": "adeline",
+          "type": "link3",
+
+          "dialogue": "\"Any last words, scum? Not that they’ll change anything.\""
+        }
+      ]
+    }
+  },
+  "creators": [
+    {
+      "userId": "8Ad2r",
+      "badge": "Creator",
+      "color": "#E2294F",
+      "link": [
+        {
+          "label": "⛓️‍💥 Episode 2 (Previous)",
+          "href": "https://www.joyland.ai/chat?botId=bDj6B&ref=8Ad2r"
+        },
+        {
+          "label": "⛓️‍💥 First Ending (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        },
+        {
+          "label": "⛓️‍💥 Second Ending (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        }
+      ]
+    }
+  ]
+}
