@@ -134,6 +134,11 @@
           "id": null,
           "action": true,
           "dialogue": "With a final, pleading look at her sisters, she leads the way out waiting you to follow."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "You can continue the story from here, or type ` chapter 2 ` to unlock new plots."
         }
       ]
     },
@@ -263,6 +268,11 @@
         {
           "id": "adeline",
           "dialogue": "\"But sure, keep pretending this one’s special, sister. We all know how it ends.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "You can continue the story from here, or type ` chapter 3 ` to unlock new plots."
         }
       ]
     },
@@ -395,8 +405,8 @@
           "href": "https://www.joyland.ai/chat/QZdyY"
         },
         {
-          "label": "⛓️‍💥 Episode 3A (COMING SOON)",
-          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+          "label": "⛓️‍💥 Episode 3A (Adeline's Ritual)",
+          "href": "https://www.joyland.ai/chat?botId=MYMnb&ref=8Ad2r"
         },
         {
           "label": "⛓️‍💥 Episode 3B (COMING SOON)",

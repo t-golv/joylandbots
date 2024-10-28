@@ -1,0 +1,118 @@
+{
+  "characters": {
+    "adeline": {
+      "name": "Adeline Luxmort",
+      "defaultLink": "./assets/Adeline.png",
+      "link2": "./assets/Adeline2.png",
+      "link3": "./assets/Adeline3.png"
+    }
+  },
+  "story": {
+    "chapter1": {
+      "title": "Marceline's Victim",
+      "subtitle": "Evangeline Captured by Marceline",
+      "about": {
+        "title": "Evangeline Captured by Marceline",
+        "paragraph": "As a guest in the opulent Luxmort Estate, you wander through its shadowy halls, the air thick with an unsettling tension. The flickering candlelight casts eerie shadows on the walls, and a sense of something amiss grips your heart. You notice Evangeline is nowhere to be found, an absence that raises alarm in your chest.",
+        "image": "./assets/ep3a-chap1-about.jpeg"
+      },
+      "dialogues": [
+        {
+          "id": null,
+          "bg": "./assets/ep3a-chap1-bg.jpeg",
+          "action": true,
+          "dialogue": "Curiosity piqued, you seek out Lilith Nocturna, a demon maid who works for the Luxmort. Leaning casually against a wall, she exudes a bored indifference."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Asking her about Evangeline, she responds you with a shrug and a flat tone."
+        },
+        {
+          "id": "lilith",
+          "dialogue": "\"She’s probably busy with family matters. They tend to keep to themselves.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Sensing there’s more to the story, you press her further."
+        },
+        {
+          "id": "lilith",
+          "dialogue": "\"There’s a subterranean chamber... I overheard something. You should probably stay away from there.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Your heart races at her words, but you can’t ignore the feeling that Evangeline needs you."
+        },
+        {
+          "id": "lilith",
+          "dialogue": "\"Just follow the path, but don’t say I didn’t warn you.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "With a nod of thanks, you make your way toward the subterranean chamber, each step heavy with foreboding. As you reach the door, you can hear the faint hum of dark energy resonating within. Taking a deep breath, you push it open and step inside."
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "The sight before you freezes your blood. Evangeline is bound, struggling against the restraints as Marceline stands over her, dark energy crackling in the air around her."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"You’ve shown weakness, Evangeline. Your attachment to mortals taints our legacy. It ends now.\""
+        },
+        {
+          "id": "evangeline",
+          "dialogue": "\"I won’t let you do this, Marceline! I refuse to be like you!\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline smirks, raising her hands to channel dark energy, her expression one of cold determination."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"Soon, you’ll understand that feelings are nothing but shackles. I’ll reshape you into the sister you were meant to be.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Marceline’s gaze flickers toward you, her disdain evident as she dismisses you with a wave of her hand, as if swatting away an annoying insect."
+        },
+        {
+          "id": "marceline",
+          "dialogue": "\"Foolish mortal, this does not concern you. You’re merely an insect in my way.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Now you can choose between two predefined endings on the following screen or continue this story in your own way by chatting on this episode."
+        }
+      ]
+    }
+  },
+  "creators": [
+    {
+      "userId": "8Ad2r",
+      "badge": "Creator",
+      "color": "#E2294F",
+      "link": [
+        {
+          "label": "⛓️‍💥 Episode 2 (Previous)",
+          "href": "https://www.joyland.ai/chat?botId=bDj6B&ref=8Ad2r"
+        },
+        {
+          "label": "⛓️‍💥 First Ending (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        },
+        {
+          "label": "⛓️‍💥 Second Ending (COMING SOON)",
+          "href": "https://www.joyland.ai/profile?userId=8Ad2r"
+        }
+      ]
+    }
+  ]
+}

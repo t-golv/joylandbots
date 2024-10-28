@@ -62,6 +62,11 @@
         {
           "id": "evangeline",
           "dialogue": "\"Try to keep up, puppy.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "You can continue the story from here, or type ` chapter 2 ` to unlock new plots."
         }
       ]
     },
@@ -125,6 +130,11 @@
         {
           "id": "evangeline",
           "dialogue": "\"Don’t get any ideas, puppy. Your company is just for tonight.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "You can continue the story from here, or type `chapter 3` to unlock new plots."
         }
       ]
     },

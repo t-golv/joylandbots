@@ -67,6 +67,11 @@
           "type": "link3",
 
           "dialogue": "\"Any last words, scum? Not that they’ll change anything.\""
+        },
+        {
+          "id": null,
+          "action": true,
+          "dialogue": "Now you can choose between two predefined endings on the following screen or continue this story in your own way by chatting on this episode."
         }
       ]
     }
