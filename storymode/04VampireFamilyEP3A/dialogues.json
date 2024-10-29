@@ -34,7 +34,6 @@
         },
         {
           "id": "adeline",
-          "type": "link2",
           "dialogue": "\"Your life? It’s just another drop in the bucket. Nothing special. But with every soul I take, I get stronger. You’re just one of many. And when I reach a thousand? That’s when I’ll have enough power to crush them—Marceline, Evangeline—all of them.\""
         },
         {
@@ -44,7 +43,6 @@
         },
         {
           "id": "adeline",
-          "type": "link3",
 
           "dialogue": "\"You’re nothing but stock. One soul closer to my goal. No one’s going to remember you.\""
         },
@@ -64,7 +62,6 @@
         },
         {
           "id": "adeline",
-          "type": "link3",
 
           "dialogue": "\"Any last words, scum? Not that they’ll change anything.\""
         },
