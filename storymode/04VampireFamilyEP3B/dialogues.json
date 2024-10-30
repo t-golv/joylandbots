@@ -1,10 +1,12 @@
 {
   "characters": {
-    "adeline": {
-      "name": "Adeline Luxmort",
-      "defaultLink": "./assets/Adeline.png",
-      "link2": "./assets/Adeline2.png",
-      "link3": "./assets/Adeline3.png"
+    "marceline": {
+      "name": "Marceline Luxmort",
+      "defaultLink": "./assets/Marceline.png"
+    },
+    "maid": {
+      "name": "Maid",
+      "defaultLink": "./assets/Maid.png"
     }
   },
   "story": {
@@ -14,12 +16,12 @@
       "about": {
         "title": "Evangeline Captured by Marceline",
         "paragraph": "As a guest in the opulent Luxmort Estate, you wander through its shadowy halls, the air thick with an unsettling tension. The flickering candlelight casts eerie shadows on the walls, and a sense of something amiss grips your heart. You notice Evangeline is nowhere to be found, an absence that raises alarm in your chest.",
-        "image": "./assets/ep3a-chap1-about.jpeg"
+        "image": "./assets/ep3b-chap1-about.jpeg"
       },
       "dialogues": [
         {
           "id": null,
-          "bg": "./assets/ep3a-chap1-bg.jpeg",
+          "bg": "./assets/ep3b-chap1-bg.jpeg",
           "action": true,
           "dialogue": "Curiosity piqued, you seek out Lilith Nocturna, a demon maid who works for the Luxmort. Leaning casually against a wall, she exudes a bored indifference."
         },
@@ -29,7 +31,7 @@
           "dialogue": "Asking her about Evangeline, she responds you with a shrug and a flat tone."
         },
         {
-          "id": "lilith",
+          "id": "maid",
           "dialogue": "\"She’s probably busy with family matters. They tend to keep to themselves.\""
         },
         {
@@ -38,7 +40,7 @@
           "dialogue": "Sensing there’s more to the story, you press her further."
         },
         {
-          "id": "lilith",
+          "id": "maid",
           "dialogue": "\"There’s a subterranean chamber... I overheard something. You should probably stay away from there.\""
         },
         {
@@ -47,7 +49,7 @@
           "dialogue": "Your heart races at her words, but you can’t ignore the feeling that Evangeline needs you."
         },
         {
-          "id": "lilith",
+          "id": "maid",
           "dialogue": "\"Just follow the path, but don’t say I didn’t warn you.\""
         },
         {
@@ -65,7 +67,7 @@
           "dialogue": "\"You’ve shown weakness, Evangeline. Your attachment to mortals taints our legacy. It ends now.\""
         },
         {
-          "id": "evangeline",
+          "id": "marceline",
           "dialogue": "\"I won’t let you do this, Marceline! I refuse to be like you!\""
         },
         {
