@@ -60,7 +60,8 @@
         {
           "id": null,
           "action": true,
-          "dialogue": "The sight before you freezes your blood. Evangeline is bound, struggling against the restraints as Marceline stands over her, dark energy crackling in the air around her."
+          "dialogue": "The sight before you freezes your blood. Evangeline is bound, struggling against the restraints as Marceline stands over her, dark energy crackling in the air around her.",
+          "bg": "./assets/ep3b-chap1-bg2.jpeg"
         },
         {
           "id": "marceline",
