@@ -1,0 +1,89 @@
+html .markdown-body {
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+html .markdown-body:hover #markdown-btn,
+html .markdown-body:active #markdown-btn {
+  opacity: 1;
+}
+html .markdown-body #markdown-btn:hover {
+  min-width: 100px;
+  width: 30%;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid #00bbf9;
+  box-shadow: 0px 0px 5px #006e9366;
+}
+html.theme-dark .markdown-body #markdown-btn:hover {
+  color: white;
+}
+html .markdown-body #markdown-btn {
+  overflow: hidden;
+  background: transparent;
+  background: rgba(141, 142, 153, 0.2);
+  border: none;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  color: transparent;
+  top: -2rem;
+  line-height: 2;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 1;
+  height: 2rem;
+  width: 2.5rem;
+  font-size: 0.55rem;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  text-transform: uppercase;
+  transition: background 500ms ease-in-out, width 500ms ease,
+    color 100ms 50ms ease;
+}
+html .markdown-body #markdown-btn:after {
+  content: "➤";
+  width: 100%;
+  padding: 20%;
+  height: 100%;
+  color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html.theme-dark .markdown-body #markdown-btn:after {
+  color: white;
+}
+html.theme-dark .markdown-body #markdown-btn:hover:after {
+  color: transparent;
+}
+
+html .markdown-body #markdown-btn:hover:after {
+  color: transparent;
+}
+
+html.theme-dark .markdown-body #markdown-btn:hover {
+  background: linear-gradient(60deg, #006e93 -20%, transparent 120%);
+  background-size: 300% 100%;
+  animation: gradientAnimation 3s ease infinite;
+}
+html .markdown-body #markdown-btn:hover {
+  background: linear-gradient(60deg, #00bbf966 -20%, transparent 120%);
+  background-size: 300% 100%;
+  animation: gradientAnimation 3s ease infinite;
+}
+html .markdown-body #markdown-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+/* Add this to your CSS file */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

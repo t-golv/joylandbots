@@ -1,0 +1,163 @@
+:root {
+  --color-1: #fcf5c6;
+  --color-2: #dbc075;
+  --color-3: #e85f33;
+  --color-4: #a32648;
+  --color-5: #401f38;
+}
+#markdown-btn {
+  border-color: var(--color-3) !important;
+  color: var(--color-3) !important;
+}
+.msg-container {
+  width: 100%;
+  border-radius: 2px 8px 8px;
+  padding: 12px 16px;
+}
+.msg-greeting {
+  display: flex;
+  padding: 3;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+  text-align: center;
+  width: 100%;
+}
+.msg-content .link-to-fictiohub {
+  background-color: var(--color-5);
+  padding: 3px 6px;
+  margin-left: auto;
+  position: absolute;
+  top: -2rem;
+  height: 2rem;
+  line-height: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  border-radius: 6px 6px 0 0;
+  color: var(--color-1);
+}
+.msg-greeting h1 {
+  color: var(--color-2);
+}
+.msg-greeting iframe {
+  width: 100%;
+  height: 55vh;
+  border-radius: 0 6px 6px 6px;
+  max-height: 450px;
+}
+html.theme-dark .markdown-body strong,
+html.theme-default .markdown-body p,
+html.theme-default .markdown-body hr {
+  color: var(--color-2);
+}
+html.theme-dark .markdown-body em,
+html.theme-default .markdown-body strong {
+  color: var(--color-3);
+}
+html.theme-dark .markdown-body p,
+html.theme-dark .markdown-body hr,
+html.theme-default .markdown-body em {
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+html.theme-default .body-text {
+  border: 1px solid var(--color-2) !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .body-text {
+  border: 1px solid var(--color-5) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+html.theme-dark .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 0%,
+      transparent 100%
+    ),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ffd%2Fd9%2Fae%2Ffdd9ae7458f4d97769707a480217507c.gif&f=1&nofb=1&ipt=7184c7e35720b4de094b1abd6426eafeeac3d648160de7933e3ce9a928fc3753&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* border-top-left-radius: 8px; */
+  /* border-bottom-left-radius: 8px; */
+}
+html.theme-default .chat-main-container:before {
+  content: "";
+  display: block;
+  z-index: 0;
+  background-color: rgba(190, 190, 190, 0.8) !important;
+  background-blend-mode: color !important;
+  background-image: linear-gradient(to top, var(--color-1) 0%, transparent 100%),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ffd%2Fd9%2Fae%2Ffdd9ae7458f4d97769707a480217507c.gif&f=1&nofb=1&ipt=7184c7e35720b4de094b1abd6426eafeeac3d648160de7933e3ce9a928fc3753&ipo=images) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+html .left-part {
+  position: relative;
+}
+html.theme-dark .left-part {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-4) 0%,
+    rgba(0, 0, 0, 0) 120%
+  ) !important;
+  border-radius: 8px;
+  background-size: 200% 200% !important;
+  animation: gradientAnimation 4s ease infinite !important; /* Increased duration for smoother animation */
+}
+html.theme-default .left-part {
+  background: linear-gradient(
+    120deg,
+    var(--color-1),
+    rgba(255, 255, 255, 0)
+  ) !important  ;
+  border-radius: 8px;
+}
+html.theme-dark .left-card-box {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+html.theme-default .left-card-box {
+  background: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+html .creator-name .name.can-click {
+  color: var(--color-1);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
