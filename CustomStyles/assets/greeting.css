@@ -10,13 +10,13 @@ html .markdown-body:active #markdown-btn {
 html .markdown-body #markdown-btn:hover {
   min-width: 100px;
   width: 30%;
-  color: black;
+  color: black !important;
   border-radius: 6px;
   border: 1px solid #00bbf9;
   box-shadow: 0px 0px 5px #006e9366;
 }
 html.theme-dark .markdown-body #markdown-btn:hover {
-  color: white;
+  color: white !important;
 }
 html .markdown-body #markdown-btn {
   overflow: hidden;

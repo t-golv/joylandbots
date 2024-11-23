@@ -4,7 +4,6 @@ async function main_script() {
   // Parse the URL to get parameters
   const url = new URL(scriptUrl);
   const dataParam = url.searchParams.get("path");
-  const charID = url.searchParams.get("charID");
   const dataParamHtml = url.searchParams.get("html");
 
   // Use the parameter as needed
@@ -48,16 +47,10 @@ async function main_script() {
 
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, "text/html");
-      if (charID) {
-        doc.body.querySelector(
-          ".link-to-fictiohub"
-        ).href = `https://fictiohub.web.app/characters/${charID}`;
-        doc.body.querySelector(".msg-content").innerHTML +=
-          markdownBody.innerHTML;
-      } else {
-        doc.body.querySelector(".msg-content").innerHTML =
-          markdownBody.innerHTML;
-      }
+
+      doc.body.querySelector(".msg-content").innerHTML +=
+        markdownBody.innerHTML;
+
       markdownBody.innerHTML = doc.documentElement.innerHTML; // Append the fetched HTML
     }
   }
