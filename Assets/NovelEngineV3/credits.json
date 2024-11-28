@@ -7,10 +7,8 @@
       "position": "right",
       "placeholder": {
         "name": "𝗧𝗵𝗲𝗼𝗱𝗼𝗿𝘂𝘀",
-        "userVip": true,
-        "vipEnum": "PREMIUM",
-        "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1730855948334_66c53332.webp",
-        "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1728009877102_159d9710.webp",
+        "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1732791273588_47325cca.webp",
+        "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1732791144328_1284115a.webp",
         "bio": ""
       }
     },
@@ -21,8 +19,6 @@
       "position": "left",
       "placeholder": {
         "name": "🅷🆄🅼🅰🅽",
-        "userVip": true,
-        "vipEnum": "PREMIUM",
         "headImg": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041777788_de2775ea.webp",
         "avatar": "https://s3.us-west-1.amazonaws.com/ai-character/uploaded/c/image/1725041744153_d44c5451.webp",
         "bio": "😊Your Friendly Neighborhood BOT Pimp😊"
